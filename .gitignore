@@ -1,0 +1,17 @@
+# Compiled executables
+*.exe
+
+# Debug output
+output_debug.txt
+
+# Python
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/

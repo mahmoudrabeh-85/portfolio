@@ -1,0 +1,1450 @@
+<!DOCTYPE html>
+<html class="dark" lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>محمود رابح — مستشار مشتريات | أكاديمية عربية | مختبر ذكاء اصطناعي</title>
+<meta name="description" content="محمود رابح — مستشار مشتريات وسلاسل إمداد، مدرس لغة عربية وقرآن، ومختص في الذكاء الاصطناعي. أكثر من 18 سنة خبرة.">
+<meta property="og:title" content="محمود رابح — استشارات | تعليم | ذكاء اصطناعي">
+<meta property="og:description" content="خبرة 18+ سنة في المشتريات، تدريس العربية والقرآن، وحلول AI.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ar_AR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="محمود رابح — استشارات | تعليم | ذكاء اصطناعي">
+<link rel="canonical" href="https://mahmoud-rabeh.com">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mahmoud Rabeh",
+  "alternateName": "محمود رابح",
+  "jobTitle": "Procurement & Supply Chain Consultant",
+  "email": "contact@mahmoud-rabeh.com",
+  "telephone": "+20-01006125478",
+  "url": "https://mahmoud-rabeh.com",
+  "knowsAbout": ["Procurement", "Supply Chain", "Arabic Language Teaching", "Quran Teaching", "Artificial Intelligence"]
+}
+</script>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script>
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "primary": "#ff2d78", "primary-container": "#b3004e", "background": "#0a0a12",
+          "surface-dim": "#0f0f1a", "surface": "#0f0f1a", "surface-variant": "#1e1e30",
+          "on-surface": "#e8e0f0", "on-surface-variant": "#a098b0", "secondary": "#00ffcc",
+          "tertiary": "#ffe04a", "outline": "#5a5068", "surface-container-low": "#111118",
+          "surface-container": "#141422", "surface-container-high": "#1e1e30", "surface-container-highest": "#28283e"
+        },
+        borderRadius: { DEFAULT: "0.125rem", lg: "0.25rem", xl: "0.5rem", full: "0.75rem" },
+        spacing: {
+          "margin-mobile": "20px", "container-max": "1440px", "gutter": "24px",
+          "margin-desktop": "64px", "stack-xl": "80px", "stack-sm": "8px",
+          "stack-md": "24px", "stack-lg": "48px"
+        },
+        fontFamily: { headline: ["Sora"], display: ["Sora"], body: ["Inter"], label: ["Space Grotesk"] },
+        fontSize: {
+          "headline-lg": ["48px", { lineHeight: "1.2", letterSpacing: "-0.02em", fontWeight: "700" }],
+          "headline-lg-mobile": ["32px", { lineHeight: "1.2", fontWeight: "700" }],
+          "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }],
+          "label-caps": ["12px", { lineHeight: "1.0", letterSpacing: "0.1em", fontWeight: "500" }],
+          "display": ["80px", { lineHeight: "1.1", letterSpacing: "-0.04em", fontWeight: "800" }],
+          "headline-md": ["32px", { lineHeight: "1.3", fontWeight: "600" }],
+          "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }]
+        }
+      },
+    },
+  }
+</script>
+<style>
+  body { background-color: #0a0a12; color: #e8e0f0; scroll-behavior: smooth; cursor: none; font-family: 'Inter', sans-serif; }
+  h1, h2, h3, .font-display, .font-headline { font-family: 'Sora', sans-serif; }
+  .custom-cursor {
+    width: 20px; height: 20px; background: rgba(255, 45, 120, 0.3);
+    border: 1px solid rgba(255, 45, 120, 0.5); border-radius: 50%; position: fixed;
+    pointer-events: none; z-index: 9999;
+    transition: transform 0.2s cubic-bezier(0.2, 1, 0.2, 1), background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
+    mix-blend-mode: screen;
+  }
+  .custom-cursor.active {
+    transform: scale(4); background: rgba(255, 45, 120, 0.2);
+    border-color: rgba(255, 45, 120, 1); box-shadow: 0 0 20px rgba(255, 45, 120, 0.6);
+  }
+  .reveal { opacity: 0; transform: translateY(40px); transition: opacity 1s cubic-bezier(0.2, 1, 0.2, 1), transform 1s cubic-bezier(0.2, 1, 0.2, 1); }
+  .reveal.active { opacity: 1; transform: translateY(0); }
+  .reveal-stagger > * { opacity: 0; transform: translateY(20px); transition: opacity 0.8s cubic-bezier(0.2, 1, 0.2, 1), transform 0.8s cubic-bezier(0.2, 1, 0.2, 1); }
+  .reveal-stagger.active > * { opacity: 1; transform: translateY(0); }
+  .reveal-stagger.active > *:nth-child(1) { transition-delay: 0.1s; }
+  .reveal-stagger.active > *:nth-child(2) { transition-delay: 0.2s; }
+  .reveal-stagger.active > *:nth-child(3) { transition-delay: 0.3s; }
+  .reveal-stagger.active > *:nth-child(4) { transition-delay: 0.4s; }
+  .reveal-stagger.active > *:nth-child(5) { transition-delay: 0.5s; }
+  .reveal-stagger.active > *:nth-child(6) { transition-delay: 0.6s; }
+  .reveal-stagger.active > *:nth-child(7) { transition-delay: 0.7s; }
+  .reveal-stagger.active > *:nth-child(8) { transition-delay: 0.8s; }
+  @keyframes floating {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+  }
+  .float-animation { animation: floating 4s ease-in-out infinite; }
+  .float-animation-delayed { animation: floating 4s ease-in-out infinite; animation-delay: 1s; }
+  .glitch-hover:hover {
+    animation: glitch 0.3s cubic-bezier(.25, .46, .45, .94) both infinite;
+    color: #00ffcc;
+  }
+  @keyframes glitch {
+    0% { transform: translate(0); text-shadow: -2px 0 #ff2d78, 2px 0 #00ffcc; }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(-2px, -2px); }
+    60% { transform: translate(2px, 2px); }
+    80% { transform: translate(2px, -2px); }
+    100% { transform: translate(0); text-shadow: 2px 0 #ff2d78, -2px 0 #00ffcc; }
+  }
+  .glass-panel { background: rgba(10, 10, 18, 0.6); backdrop-filter: blur(20px); border: 1px solid rgba(255, 45, 120, 0.2); }
+  .glass-card { background: rgba(10, 10, 18, 0.6); backdrop-filter: blur(20px); border: 1px solid rgba(255, 45, 120, 0.15); transition: all 0.3s ease; }
+  .glass-card:hover { box-shadow: 0 0 30px rgba(255, 45, 120, 0.3); border-color: rgba(255, 45, 120, 0.5); transform: translateY(-4px); }
+  .gradient-button { background: linear-gradient(135deg, #ff2d78 0%, #8c0038 100%); }
+  .text-glow { text-shadow: 0 0 15px rgba(255, 45, 120, 0.6); }
+  .label-style { font-family: 'Space Grotesk', sans-serif; letter-spacing: 0.1em; text-transform: uppercase; }
+  #shader-canvas { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none; }
+  .typewriter-container { display: inline-block; border-right: 3px solid #ff2d78; padding-right: 4px; animation: blink 0.75s step-end infinite; }
+  @keyframes blink { from, to { border-color: transparent } 50% { border-color: #ff2d78 } }
+  .skill-pill { background: rgba(10, 10, 18, 0.6); backdrop-filter: blur(20px); border: 1px solid rgba(255, 45, 120, 0.2); transition: all 0.3s ease; }
+  .skill-pill:hover { border-color: rgba(255, 45, 120, 0.5); background: rgba(255, 45, 120, 0.1); }
+  .modal-overlay { position: fixed; inset: 0; z-index: 200; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0.7); backdrop-filter: blur(8px); opacity: 0; visibility: hidden; transition: all 0.3s ease; padding: 20px; }
+  .modal-overlay.open { opacity: 1; visibility: visible; }
+  .modal-content { background: #0f0f1a; border: 1px solid rgba(255,45,120,0.2); border-radius: 1rem; max-width: 700px; width: 100%; max-height: 85vh; overflow-y: auto; padding: 2rem; position: relative; transform: scale(0.9); transition: transform 0.3s ease; }
+  .modal-overlay.open .modal-content { transform: scale(1); }
+  .modal-close { position: absolute; top: 1rem; left: 1rem; width: 2rem; height: 2rem; border-radius: 50%; border: 1px solid rgba(255,45,120,0.3); background: transparent; color: #e8e0f0; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.3s; }
+  .modal-close:hover { background: rgba(255,45,120,0.2); border-color: #ff2d78; }
+  @media (max-width: 768px) { body { cursor: auto; } .custom-cursor { display: none !important; } }
+</style>
+</head>
+<body class="overflow-x-hidden">
+<a href="#home" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-primary focus:text-white focus:rounded-xl focus:outline-none" data-en="Skip to main content" data-ar="تخطى إلى المحتوى الرئيسي">تخطى إلى المحتوى الرئيسي</a>
+<div class="custom-cursor hidden md:block" id="cursor"></div>
+<canvas id="shader-canvas"></canvas>
+<div class="fixed inset-0 z-[-2] w-full h-full">
+  <div class="absolute inset-0 bg-cover bg-center opacity-70" style="background-image: url('jpg.png')"></div>
+  <div class="absolute inset-0 bg-black/60"></div>
+</div>
+
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 bg-background/20 backdrop-blur-xl border-b border-white/5 shadow-2xl transition-all duration-300" id="navbar">
+  <div class="font-display text-2xl md:text-3xl font-extrabold text-primary tracking-tight glitch-hover transition-all cursor-pointer" onclick="document.getElementById('home').scrollIntoView({behavior:'smooth'})" data-en="Mahmoud Rabeh" data-ar="محمود رابح">محمود رابح</div>
+  <div class="hidden md:flex gap-6 items-center">
+    <a class="font-body text-body-lg text-primary font-bold border-b-2 border-primary pb-1" href="#home" data-en="Home" data-ar="الرئيسية">الرئيسية</a>
+    <a class="font-body text-body-lg text-on-surface-variant hover:text-primary transition-colors" href="#about" data-en="About" data-ar="عني">عني</a>
+      <div class="relative group">
+        <a class="font-body text-body-lg text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1 cursor-pointer">
+          <span data-en="Brands" data-ar="المجالات">المجالات</span> <span class="material-symbols-outlined text-sm">expand_more</span>
+        </a>
+      <div class="absolute top-full right-0 mt-2 w-56 glass-panel rounded-2xl border border-primary/20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 py-2 shadow-2xl">
+        <a class="block px-4 py-3 font-body text-sm text-on-surface-variant hover:text-primary hover:bg-primary/5 transition-colors" href="#business-hub" data-en="Business Consulting" data-ar="استشارات الأعمال">استشارات الأعمال</a>
+        <a class="block px-4 py-3 font-body text-sm text-on-surface-variant hover:text-primary hover:bg-primary/5 transition-colors" href="#arabic-academy" data-en="Arabic Academy" data-ar="الأكاديمية العربية">الأكاديمية العربية</a>
+        <a class="block px-4 py-3 font-body text-sm text-on-surface-variant hover:text-primary hover:bg-primary/5 transition-colors" href="#ai-lab" data-en="AI Lab" data-ar="مختبر AI">مختبر AI</a>
+        <a class="block px-4 py-3 font-body text-sm text-on-surface-variant hover:text-primary hover:bg-primary/5 transition-colors" href="#knowledge-center" data-en="Knowledge Center" data-ar="مركز المعرفة">مركز المعرفة</a>
+        </div>
+    </div>
+    <a class="font-body text-body-lg text-on-surface-variant hover:text-primary transition-colors" href="#projects" data-en="Projects" data-ar="الأعمال">الأعمال</a>
+    <a class="font-body text-body-lg text-on-surface-variant hover:text-primary transition-colors" href="#contact" data-en="Contact" data-ar="اتصل">اتصل</a>
+    <button class="lang-toggle text-xs text-primary border border-primary/30 px-3 py-1 rounded-full hover:bg-primary/10 transition-all interactive-element" id="langToggle" data-en="ع" data-ar="EN">EN</button>
+  </div>
+  <button class="gradient-button px-6 py-2 rounded-lg font-bold text-white hover:scale-105 transition-transform shadow-lg shadow-primary/20 interactive-element md:hidden" id="mobileMenuBtn" data-en="Menu" data-ar="قائمة">قائمة</button>
+</nav>
+<div class="hidden fixed top-20 left-0 right-0 z-40 glass-panel border-b border-primary/20 md:hidden overflow-y-auto max-h-[80vh]" id="mobileNav">
+  <div class="flex flex-col gap-1 p-4">
+    <a class="font-body text-body-lg text-primary font-bold py-2 px-4 rounded-xl hover:bg-primary/10 transition-all" href="#home" data-en="Home" data-ar="الرئيسية">الرئيسية</a>
+    <a class="font-body text-body-lg text-on-surface-variant hover:text-primary transition-colors py-2 px-4 rounded-xl hover:bg-primary/10" href="#about" data-en="About" data-ar="عني">عني</a>
+    <div class="font-body text-body-lg text-secondary py-2 px-4 rounded-xl mt-2 mb-1 label-style text-xs" data-en="BRANDS" data-ar="المجالات">المجالات</div>
+    <a class="font-body text-body-lg text-on-surface-variant hover:text-primary transition-colors py-2 px-6 rounded-xl hover:bg-primary/10" href="#business-hub" data-en="Business Consulting" data-ar="استشارات الأعمال">استشارات الأعمال</a>
+    <a class="font-body text-body-lg text-on-surface-variant hover:text-primary transition-colors py-2 px-6 rounded-xl hover:bg-primary/10" href="#arabic-academy" data-en="Arabic Academy" data-ar="الأكاديمية العربية">الأكاديمية العربية</a>
+    <a class="font-body text-body-lg text-on-surface-variant hover:text-primary transition-colors py-2 px-6 rounded-xl hover:bg-primary/10" href="#ai-lab" data-en="AI Lab" data-ar="مختبر AI">مختبر AI</a>
+    <a class="font-body text-body-lg text-on-surface-variant hover:text-primary transition-colors py-2 px-6 rounded-xl hover:bg-primary/10" href="#knowledge-center" data-en="Knowledge Center" data-ar="مركز المعرفة">مركز المعرفة</a>
+    <a class="font-body text-body-lg text-on-surface-variant hover:text-primary transition-colors py-2 px-4 rounded-xl hover:bg-primary/10" href="#services" data-en="Services" data-ar="الخدمات">الخدمات</a>
+    <a class="font-body text-body-lg text-on-surface-variant hover:text-primary transition-colors py-2 px-4 rounded-xl hover:bg-primary/10" href="#process" data-en="Process" data-ar="المنهجية">المنهجية</a>
+    <a class="font-body text-body-lg text-on-surface-variant hover:text-primary transition-colors py-2 px-4 rounded-xl hover:bg-primary/10" href="#projects" data-en="Projects" data-ar="الأعمال">الأعمال</a>
+    <a class="font-body text-body-lg text-on-surface-variant hover:text-primary transition-colors py-2 px-4 rounded-xl hover:bg-primary/10" href="#faq" data-en="FAQ" data-ar="الأسئلة">الأسئلة</a>
+    <a class="font-body text-body-lg text-on-surface-variant hover:text-primary transition-colors py-2 px-4 rounded-xl hover:bg-primary/10" href="#contact" data-en="Contact" data-ar="اتصل">اتصل</a>
+    <button class="lang-toggle text-xs text-primary border border-primary/30 px-3 py-2 rounded-full hover:bg-primary/10 transition-all w-fit interactive-element mt-2" id="langToggleMobile" data-en="ع" data-ar="EN">EN</button>
+  </div>
+</div>
+
+<main class="relative z-10">
+  <!-- Hero -->
+  <section class="min-h-screen flex flex-col justify-center items-center px-margin-mobile text-center pt-24" id="home">
+    <div class="label-style text-xs text-primary mb-4 reveal" data-en="PROCUREMENT & SUPPLY CHAIN CONSULTANT" data-ar="مستشار مشتريات وسلاسل إمداد">مستشار مشتريات وسلاسل إمداد</div>
+    <h1 class="font-display text-[48px] md:text-display leading-tight mb-stack-md text-glow text-white reveal max-w-5xl">
+      <span class="typewriter-container" id="typewriter"></span>
+    </h1>
+    <p class="font-body text-body-lg max-w-2xl mb-stack-lg text-on-surface/80 reveal" data-en="Helping businesses and learners achieve their goals through professional consulting, distinguished education, and innovative AI solutions." data-ar="أساعد الشركات والمتعلمين على تحقيق أهدافهم من خلال استشارات احترافية، تعليم متميز، وحلول ذكاء اصطناعي مبتكرة.">أساعد الشركات والمتعلمين على تحقيق أهدافهم من خلال استشارات احترافية، تعليم متميز، وحلول ذكاء اصطناعي مبتكرة.</p>
+    <div class="flex gap-stack-md reveal-stagger">
+      <button class="gradient-button px-8 py-4 rounded-xl font-bold text-white shadow-xl hover:shadow-primary/40 transition-all interactive-element" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" data-en="Book a Free Call" data-ar="اطلب مكالمة مجانية">اطلب مكالمة مجانية</button>
+      <button class="glass-panel px-8 py-4 rounded-xl font-bold border border-primary/40 text-primary hover:bg-primary/10 transition-all interactive-element" onclick="document.getElementById('business-hub').scrollIntoView({behavior:'smooth'})" data-en="Explore Brands" data-ar="استكشف المجالات">استكشف المجالات</button>
+    </div>
+    <div class="flex flex-wrap gap-3 justify-center mt-12 reveal">
+      <span class="skill-pill px-4 py-2 rounded-full text-xs label-style text-on-surface-variant" data-en="Pharmaceuticals" data-ar="الأدوية">الأدوية</span>
+      <span class="skill-pill px-4 py-2 rounded-full text-xs label-style text-on-surface-variant" data-en="Healthcare" data-ar="الرعاية الصحية">الرعاية الصحية</span>
+      <span class="skill-pill px-4 py-2 rounded-full text-xs label-style text-on-surface-variant" data-en="Manufacturing" data-ar="التصنيع">التصنيع</span>
+      <span class="skill-pill px-4 py-2 rounded-full text-xs label-style text-on-surface-variant" data-en="Distribution" data-ar="التوزيع">التوزيع</span>
+      <span class="skill-pill px-4 py-2 rounded-full text-xs label-style text-on-surface-variant" data-en="SMEs" data-ar="الشركات الصغيرة">الشركات الصغيرة</span>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="py-stack-xl px-margin-mobile flex justify-center" id="about">
+    <div class="glass-panel max-w-5xl p-stack-lg md:p-12 rounded-3xl reveal text-center border border-primary/20">
+      <div class="label-style text-xs text-primary mb-stack-sm" data-en="ABOUT" data-ar="عني">عني</div>
+      <h2 class="font-display text-headline-lg-mobile md:text-headline-lg mb-stack-md text-white" data-en="The Consultant" data-ar="المستشار">المستشار</h2>
+      <p class="font-body text-body-lg text-on-surface-variant mb-stack-lg" data-en="Procurement and supply chain consultant with 18+ years of experience, focused on purchasing optimization, supplier evaluation, inventory management, demand planning, and developing models and procedures. I work with pharma, healthcare, manufacturing, distribution, and SME companies to transform procurement into a competitive advantage." data-ar="مستشار مشتريات وسلاسل إمداد بخبرة 18+ سنة، يركز على تحسين الشراء، تقييم الموردين، إدارة المخزون، التخطيط للطلب، وتطوير النماذج والإجراءات. أعمل مع شركات الأدوية والرعاية الصحية والمصنعين والموزعين والشركات الصغيرة والمتوسطة لتحويل المشتريات إلى ميزة تنافسية.">مستشار مشتريات وسلاسل إمداد بخبرة 18+ سنة، يركز على تحسين الشراء، تقييم الموردين، إدارة المخزون، التخطيط للطلب، وتطوير النماذج والإجراءات. أعمل مع شركات الأدوية والرعاية الصحية والمصنعين والموزعين والشركات الصغيرة والمتوسطة لتحويل المشتريات إلى ميزة تنافسية.</p>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-stack-md reveal-stagger">
+        <div class="p-4 border border-white/5 rounded-xl bg-white/5 hover:bg-primary/5 transition-colors">
+          <div class="text-primary font-bold text-2xl font-display">18+</div>
+          <div class="label-style text-[10px]" data-en="Years Experience" data-ar="سنة خبرة">سنة خبرة</div>
+        </div>
+        <div class="p-4 border border-white/5 rounded-xl bg-white/5 hover:bg-primary/5 transition-colors">
+          <div class="text-primary font-bold text-2xl font-display">50+</div>
+          <div class="label-style text-[10px]" data-en="Projects Done" data-ar="مشروع تم">مشروع تم</div>
+        </div>
+        <div class="p-4 border border-white/5 rounded-xl bg-white/5 hover:bg-primary/5 transition-colors">
+          <div class="text-primary font-bold text-2xl font-display">5</div>
+          <div class="label-style text-[10px]" data-en="Key Sectors" data-ar="قطاعات رئيسية">قطاعات رئيسية</div>
+        </div>
+        <div class="p-4 border border-white/5 rounded-xl bg-white/5 hover:bg-primary/5 transition-colors">
+          <div class="text-primary font-bold text-2xl font-display">100%</div>
+          <div class="label-style text-[10px]" data-en="Commitment" data-ar="التزام">التزام</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brand Hubs Overview -->
+  <section class="py-stack-xl px-margin-mobile md:px-margin-desktop" id="brands-overview">
+    <div class="max-w-container-max mx-auto">
+      <div class="text-center mb-stack-lg reveal">
+        <div class="label-style text-xs text-primary" data-en="FOUR BRANDS, ONE VISION" data-ar="أربعة مجالات، رؤية واحدة">أربعة مجالات، رؤية واحدة</div>
+        <h2 class="font-display text-headline-lg-mobile md:text-headline-lg text-white" data-en="What I Do" data-ar="مجالاتي">مجالاتي</h2>
+        <p class="font-body text-body-md text-on-surface-variant mt-2 max-w-2xl mx-auto" data-en="Four disciplines united by a commitment to excellence: business consulting, Arabic education, artificial intelligence, and knowledge sharing." data-ar="أربعة تخصصات تجمعها الالتزام بالتميز: استشارات الأعمال، تعليم العربية، الذكاء الاصطناعي، ومشاركة المعرفة.">أربعة تخصصات تجمعها الالتزام بالتميز: استشارات الأعمال، تعليم العربية، الذكاء الاصطناعي، ومشاركة المعرفة.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 reveal-stagger">
+        <a href="#business-hub" class="glass-card p-8 rounded-3xl text-center interactive-element float-animation block group">
+          <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+            <span class="material-symbols-outlined text-3xl text-primary">handshake</span>
+          </div>
+          <div class="label-style text-xs text-primary mb-2" data-en="CONSULTING" data-ar="استشارات">استشارات</div>
+          <h3 class="font-display text-2xl mb-3 text-white" data-en="Business Hub" data-ar="مركز الأعمال">مركز الأعمال</h3>
+          <p class="font-body text-sm text-on-surface-variant" data-en="Procurement, supply chain, inventory, and operational excellence for pharma, healthcare, and manufacturing." data-ar="المشتريات، سلاسل الإمداد، المخزون، والتميز التشغيلي للأدوية والرعاية الصحية والتصنيع.">المشتريات، سلاسل الإمداد، المخزون، والتميز التشغيلي للأدوية والرعاية الصحية والتصنيع.</p>
+          <div class="mt-4 text-primary font-body text-sm flex items-center justify-center gap-1 group-hover:gap-2 transition-all">
+            <span data-en="Learn More" data-ar="اعرف أكثر">اعرف أكثر</span>
+            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </div>
+        </a>
+        <a href="#arabic-academy" class="glass-card p-8 rounded-3xl text-center interactive-element float-animation-delayed block group">
+          <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+            <span class="material-symbols-outlined text-3xl text-primary">menu_book</span>
+          </div>
+          <div class="label-style text-xs text-primary mb-2" data-en="EDUCATION" data-ar="تعليم">تعليم</div>
+          <h3 class="font-display text-2xl mb-3 text-white" data-en="Arabic Academy" data-ar="الأكاديمية العربية">الأكاديمية العربية</h3>
+          <p class="font-body text-sm text-on-surface-variant" data-en="Teaching Arabic to non-native speakers, Quran recitation, and Tajweed with structured online lessons." data-ar="تعليم العربية للناطقين بغيرها، تلاوة القرآن، والتجويد بدروس منظمة عبر الإنترنت.">تعليم العربية للناطقين بغيرها، تلاوة القرآن، والتجويد بدروس منظمة عبر الإنترنت.</p>
+          <div class="mt-4 text-primary font-body text-sm flex items-center justify-center gap-1 group-hover:gap-2 transition-all">
+            <span data-en="Learn More" data-ar="اعرف أكثر">اعرف أكثر</span>
+            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </div>
+        </a>
+        <a href="#ai-lab" class="glass-card p-8 rounded-3xl text-center interactive-element float-animation block group">
+          <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+            <span class="material-symbols-outlined text-3xl text-primary">smart_toy</span>
+          </div>
+          <div class="label-style text-xs text-primary mb-2" data-en="TECHNOLOGY" data-ar="تقنية">تقنية</div>
+          <h3 class="font-display text-2xl mb-3 text-white" data-en="AI Lab" data-ar="مختبر AI">مختبر AI</h3>
+          <p class="font-body text-sm text-on-surface-variant" data-en="AI consulting, custom agents, prompt engineering, workflow automation, and local AI solutions." data-ar="استشارات AI، وكلاء ذكاء اصطناعي مخصصون، هندسة البرومبتات، أتمتة سير العمل، وحلول AI محلية.">استشارات AI، وكلاء ذكاء اصطناعي مخصصون، هندسة البرومبتات، أتمتة سير العمل، وحلول AI محلية.</p>
+          <div class="mt-4 text-primary font-body text-sm flex items-center justify-center gap-1 group-hover:gap-2 transition-all">
+            <span data-en="Learn More" data-ar="اعرف أكثر">اعرف أكثر</span>
+            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </div>
+        </a>
+        <a href="#knowledge-center" class="glass-card p-8 rounded-3xl text-center interactive-element float-animation-delayed block group">
+          <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+            <span class="material-symbols-outlined text-3xl text-primary">school</span>
+          </div>
+          <div class="label-style text-xs text-primary mb-2" data-en="KNOWLEDGE" data-ar="معرفة">معرفة</div>
+          <h3 class="font-display text-2xl mb-3 text-white" data-en="Knowledge Center" data-ar="مركز المعرفة">مركز المعرفة</h3>
+          <p class="font-body text-sm text-on-surface-variant" data-en="Free resources, blog articles, templates, prompt library, videos, and FAQs to support your learning journey." data-ar="موارد مجانية، مقالات، قوالب، مكتبة برومبتات، فيديوهات، وأسئلة شائعة لدعم رحلة تعلمك.">موارد مجانية، مقالات، قوالب، مكتبة برومبتات، فيديوهات، وأسئلة شائعة لدعم رحلة تعلمك.</p>
+          <div class="mt-4 text-primary font-body text-sm flex items-center justify-center gap-1 group-hover:gap-2 transition-all">
+            <span data-en="Learn More" data-ar="اعرف أكثر">اعرف أكثر</span>
+            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Business Hub -->
+  <section class="py-stack-xl px-margin-mobile md:px-margin-desktop bg-background/50 backdrop-blur-md" id="business-hub">
+    <div class="max-w-container-max mx-auto">
+      <div class="mb-stack-lg reveal text-center">
+        <div class="max-w-3xl mx-auto">
+          <div class="label-style text-xs text-primary mb-stack-sm" data-en="BUSINESS CONSULTING" data-ar="استشارات الأعمال">استشارات الأعمال</div>
+          <h2 class="font-display text-headline-lg-mobile md:text-headline-lg text-white mb-stack-md" data-en="Procurement & Supply Chain Hub" data-ar="مركز المشتريات وسلاسل الإمداد">مركز المشتريات وسلاسل الإمداد</h2>
+          <p class="font-body text-body-lg text-on-surface-variant mb-stack-md" data-en="18+ years optimizing procurement, inventory, and supply chains for pharma, healthcare, manufacturing, and distribution companies across the Middle East and globally." data-ar="أكثر من 18 سنة في تحسين المشتريات والمخزون وسلاسل الإمداد لشركات الأدوية والرعاية الصحية والتصنيع والتوزيع في الشرق الأوسط والعالم.">أكثر من 18 سنة في تحسين المشتريات والمخزون وسلاسل الإمداد لشركات الأدوية والرعاية الصحية والتصنيع والتوزيع في الشرق الأوسط والعالم.</p>
+          <div class="grid grid-cols-3 gap-4 reveal-stagger">
+            <div class="p-4 border border-white/5 rounded-xl bg-white/5">
+              <div class="text-primary font-bold text-2xl font-display">18+</div>
+              <div class="label-style text-[9px] mt-1 text-on-surface-variant" data-en="Years Exp" data-ar="سنة خبرة">سنة خبرة</div>
+            </div>
+            <div class="p-4 border border-white/5 rounded-xl bg-white/5">
+              <div class="text-primary font-bold text-2xl font-display">50+</div>
+              <div class="label-style text-[9px] mt-1 text-on-surface-variant" data-en="Projects" data-ar="مشروع">مشروع</div>
+            </div>
+            <div class="p-4 border border-white/5 rounded-xl bg-white/5">
+              <div class="text-primary font-bold text-2xl font-display">5</div>
+              <div class="label-style text-[9px] mt-1 text-on-surface-variant" data-en="Sectors" data-ar="قطاعات">قطاعات</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mb-stack-lg reveal">
+        <div class="label-style text-xs text-primary mb-stack-sm" data-en="TARGET SECTORS" data-ar="القطاعات المستهدفة">القطاعات المستهدفة</div>
+      </div>
+      <div class="flex flex-wrap justify-center gap-4 mb-stack-lg reveal-stagger">
+        <span class="skill-pill px-5 py-3 rounded-full text-sm label-style text-primary">Pharmaceuticals</span>
+        <span class="skill-pill px-5 py-3 rounded-full text-sm label-style text-primary">Healthcare</span>
+        <span class="skill-pill px-5 py-3 rounded-full text-sm label-style text-primary">Manufacturing</span>
+        <span class="skill-pill px-5 py-3 rounded-full text-sm label-style text-primary">Distribution</span>
+        <span class="skill-pill px-5 py-3 rounded-full text-sm label-style text-primary">Medical Devices</span>
+        <span class="skill-pill px-5 py-3 rounded-full text-sm label-style text-primary">SMEs</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Arabic Academy -->
+  <section class="py-stack-xl px-margin-mobile md:px-margin-desktop" id="arabic-academy">
+    <div class="max-w-container-max mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-stack-lg reveal">
+        <div class="order-2 lg:order-1">
+          <div class="glass-panel p-8 rounded-3xl border border-primary/20 reveal">
+            <div class="label-style text-xs text-primary mb-4" data-en="COURSES" data-ar="الدورات">الدورات</div>
+            <div class="space-y-4">
+              <div class="flex items-start gap-4 pb-4 border-b border-white/5">
+                <span class="material-symbols-outlined text-primary">translate</span>
+                <div>
+                  <h4 class="font-display text-white font-bold" data-en="Arabic for Non-Native Speakers" data-ar="العربية للناطقين بغيرها">العربية للناطقين بغيرها</h4>
+                  <p class="font-body text-sm text-on-surface-variant" data-en="Structured curriculum from beginner to advanced, focusing on reading, writing, speaking, and grammar." data-ar="منهج منظم من المبتدئين إلى المتقدمين، مع التركيز على القراءة والكتابة والمحادثة والقواعد.">منهج منظم من المبتدئين إلى المتقدمين، مع التركيز على القراءة والكتابة والمحادثة والقواعد.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4 pb-4 border-b border-white/5">
+                <span class="material-symbols-outlined text-primary">book</span>
+                <div>
+                  <h4 class="font-display text-white font-bold" data-en="Quran Recitation" data-ar="تلاوة القرآن">تلاوة القرآن</h4>
+                  <p class="font-body text-sm text-on-surface-variant" data-en="Learn proper recitation with correct pronunciation and rhythm, with Ijazah track available." data-ar="تعلم التلاوة الصحيحة مع النطق السليم والتجويد، مع إمكانية الحصول على إجازة.">تعلم التلاوة الصحيحة مع النطق السليم والتجويد، مع إمكانية الحصول على إجازة.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <span class="material-symbols-outlined text-primary">sound_detection</span>
+                <div>
+                  <h4 class="font-display text-white font-bold" data-en="Tajweed Rules" data-ar="أحكام التجويد">أحكام التجويد</h4>
+                  <p class="font-body text-sm text-on-surface-variant" data-en="Master Tajweed rules with practical application and personalized feedback." data-ar="إتقان أحكام التجويد مع التطبيق العملي والتغذية الراجعة الشخصية.">إتقان أحكام التجويد مع التطبيق العملي والتغذية الراجعة الشخصية.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="order-1 lg:order-2">
+          <div class="label-style text-xs text-primary mb-stack-sm" data-en="ARABIC ACADEMY" data-ar="الأكاديمية العربية">الأكاديمية العربية</div>
+          <h2 class="font-display text-headline-lg-mobile md:text-headline-lg text-white mb-stack-md" data-en="Learn Arabic, Quran & Tajweed Online" data-ar="تعلّم العربية والقرآن والتجويد أونلاين">تعلّم العربية والقرآن والتجويد أونلاين</h2>
+          <p class="font-body text-body-lg text-on-surface-variant mb-stack-md" data-en="Personalized one-on-one online lessons with a qualified instructor. Flexible scheduling for all time zones, from beginner to advanced levels." data-ar="دروس خصوصية أونلاين مع مدرس مؤهل. جداول مرنة تناسب جميع المناطق الزمنية، من المستوى المبتدئ إلى المتقدم.">دروس خصوصية أونلاين مع مدرس مؤهل. جداول مرنة تناسب جميع المناطق الزمنية، من المستوى المبتدئ إلى المتقدم.</p>
+          <div class="flex flex-wrap gap-3 reveal-stagger">
+            <span class="skill-pill px-4 py-2 rounded-full text-xs label-style text-primary">One-on-One</span>
+            <span class="skill-pill px-4 py-2 rounded-full text-xs label-style text-primary">Flexible Schedule</span>
+            <span class="skill-pill px-4 py-2 rounded-full text-xs label-style text-primary">All Levels</span>
+            <span class="skill-pill px-4 py-2 rounded-full text-xs label-style text-primary">Ijazah Track</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI Lab -->
+  <section class="py-stack-xl px-margin-mobile md:px-margin-desktop bg-background/50 backdrop-blur-md" id="ai-lab">
+    <div class="max-w-container-max mx-auto">
+      <div class="text-center mb-stack-lg reveal">
+        <div class="label-style text-xs text-primary" data-en="AI LAB" data-ar="مختبر الذكاء الاصطناعي">مختبر الذكاء الاصطناعي</div>
+        <h2 class="font-display text-headline-lg-mobile md:text-headline-lg text-white" data-en="Artificial Intelligence Solutions" data-ar="حلول الذكاء الاصطناعي">حلول الذكاء الاصطناعي</h2>
+        <p class="font-body text-body-md text-on-surface-variant mt-2 max-w-2xl mx-auto" data-en="Leverage cutting-edge AI to automate workflows, build intelligent agents, and transform your business operations." data-ar="استخدم أحدث تقنيات الذكاء الاصطناعي لأتمتة سير العمل، بناء وكلاء أذكياء، وتحويل عملياتك التشغيلية.">استخدم أحدث تقنيات الذكاء الاصطناعي لأتمتة سير العمل، بناء وكلاء أذكياء، وتحويل عملياتك التشغيلية.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 reveal-stagger">
+        <div class="glass-card p-6 rounded-2xl interactive-element float-animation">
+          <span class="material-symbols-outlined text-primary text-3xl mb-3">smart_toy</span>
+          <h3 class="font-display text-lg mb-2 text-white" data-en="AI Agents" data-ar="وكلاء AI">وكلاء AI</h3>
+          <p class="font-body text-sm text-on-surface-variant" data-en="Custom AI agents for customer service, data analysis, content creation, and business process automation." data-ar="وكلاء AI مخصصون لخدمة العملاء، تحليل البيانات، إنشاء المحتوى، وأتمتة العمليات.">وكلاء AI مخصصون لخدمة العملاء، تحليل البيانات، إنشاء المحتوى، وأتمتة العمليات.</p>
+        </div>
+        <div class="glass-card p-6 rounded-2xl interactive-element float-animation-delayed">
+          <span class="material-symbols-outlined text-primary text-3xl mb-3">prompt</span>
+          <h3 class="font-display text-lg mb-2 text-white" data-en="Prompt Engineering" data-ar="هندسة البرومبتات">هندسة البرومبتات</h3>
+          <p class="font-body text-sm text-on-surface-variant" data-en="Design and optimize prompts for LLMs to get accurate, consistent, and actionable outputs." data-ar="تصميم وتحسين البرومبتات للنماذج اللغوية للحصول على مخرجات دقيقة ومتسقة وقابلة للتنفيذ.">تصميم وتحسين البرومبتات للنماذج اللغوية للحصول على مخرجات دقيقة ومتسقة وقابلة للتنفيذ.</p>
+        </div>
+        <div class="glass-card p-6 rounded-2xl interactive-element float-animation">
+          <span class="material-symbols-outlined text-primary text-3xl mb-3">repeat</span>
+          <h3 class="font-display text-lg mb-2 text-white" data-en="Workflow Automation" data-ar="أتمتة سير العمل">أتمتة سير العمل</h3>
+          <p class="font-body text-sm text-on-surface-variant" data-en="Automate repetitive tasks, integrate AI into existing systems, and build end-to-end automated pipelines." data-ar="أتمتة المهام المتكررة، دمج AI في الأنظمة الحالية، وبناء خطوط أتمتة متكاملة.">أتمتة المهام المتكررة، دمج AI في الأنظمة الحالية، وبناء خطوط أتمتة متكاملة.</p>
+        </div>
+        <div class="glass-card p-6 rounded-2xl interactive-element float-animation-delayed">
+          <span class="material-symbols-outlined text-primary text-3xl mb-3">computer</span>
+          <h3 class="font-display text-lg mb-2 text-white" data-en="Local AI Solutions" data-ar="حلول AI محلية">حلول AI محلية</h3>
+          <p class="font-body text-sm text-on-surface-variant" data-en="Deploy open-source AI models locally for complete data privacy and offline operation." data-ar="نشر نماذج AI مفتوحة المصدر محلياً لضمان خصوصية البيانات والتشغيل دون اتصال.">نشر نماذج AI مفتوحة المصدر محلياً لضمان خصوصية البيانات والتشغيل دون اتصال.</p>
+        </div>
+        <div class="glass-card p-6 rounded-2xl interactive-element float-animation">
+          <span class="material-symbols-outlined text-primary text-3xl mb-3">psychology</span>
+          <h3 class="font-display text-lg mb-2 text-white" data-en="AI Consulting" data-ar="استشارات AI">استشارات AI</h3>
+          <p class="font-body text-sm text-on-surface-variant" data-en="Strategic advice on AI adoption, tool selection, implementation roadmap, and ROI assessment." data-ar="استشارات استراتيجية حول تبني AI، اختيار الأدوات، خارطة التنفيذ، وتقييم العائد على الاستثمار.">استشارات استراتيجية حول تبني AI، اختيار الأدوات، خارطة التنفيذ، وتقييم العائد على الاستثمار.</p>
+        </div>
+        <div class="glass-card p-6 rounded-2xl interactive-element float-animation-delayed">
+          <span class="material-symbols-outlined text-primary text-3xl mb-3">code</span>
+          <h3 class="font-display text-lg mb-2 text-white" data-en="Custom Development" data-ar="تطوير مخصص">تطوير مخصص</h3>
+          <p class="font-body text-sm text-on-surface-variant" data-en="Build custom AI-powered tools, dashboards, and applications tailored to your specific needs." data-ar="بناء أدوات ولوحات بيانات وتطبيقات مخصصة مدعومة بالذكاء الاصطناعي تناسب احتياجاتك.">بناء أدوات ولوحات بيانات وتطبيقات مخصصة مدعومة بالذكاء الاصطناعي تناسب احتياجاتك.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Knowledge Center -->
+  <section class="py-stack-xl px-margin-mobile md:px-margin-desktop" id="knowledge-center">
+    <div class="max-w-container-max mx-auto">
+      <div class="text-center mb-stack-lg reveal">
+        <div class="label-style text-xs text-primary" data-en="KNOWLEDGE CENTER" data-ar="مركز المعرفة">مركز المعرفة</div>
+        <h2 class="font-display text-headline-lg-mobile md:text-headline-lg text-white" data-en="Learn, Explore & Grow" data-ar="تعلّم، استكشف وتطوّر">تعلّم، استكشف وتطوّر</h2>
+        <p class="font-body text-body-md text-on-surface-variant mt-2 max-w-2xl mx-auto" data-en="Free resources, templates, articles, and tools to help you in procurement, Arabic learning, and AI." data-ar="موارد مجانية، قوالب، مقالات، وأدوات لمساعدتك في المشتريات، تعليم العربية، والذكاء الاصطناعي.">موارد مجانية، قوالب، مقالات، وأدوات لمساعدتك في المشتريات، تعليم العربية، والذكاء الاصطناعي.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 reveal-stagger">
+        <div class="glass-card p-6 rounded-2xl interactive-element float-animation">
+          <span class="material-symbols-outlined text-primary text-3xl mb-3">article</span>
+          <h3 class="font-display text-lg mb-2 text-white" data-en="Blog & Articles" data-ar="المدونة والمقالات">المدونة والمقالات</h3>
+          <p class="font-body text-sm text-on-surface-variant" data-en="Insights on procurement optimization, supply chain best practices, Arabic teaching tips, and AI trends." data-ar="رؤى حول تحسين المشتريات، أفضل ممارسات سلاسل الإمداد، نصائح تعليم العربية، واتجاهات الذكاء الاصطناعي.">رؤى حول تحسين المشتريات، أفضل ممارسات سلاسل الإمداد، نصائح تعليم العربية، واتجاهات الذكاء الاصطناعي.</p>
+          <div class="mt-4 text-primary font-body text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+            <span data-en="Coming Soon" data-ar="قريباً">قريباً</span>
+          </div>
+        </div>
+        <div class="glass-card p-6 rounded-2xl interactive-element float-animation-delayed">
+          <span class="material-symbols-outlined text-primary text-3xl mb-3">folder</span>
+          <h3 class="font-display text-lg mb-2 text-white" data-en="Resources" data-ar="الموارد">الموارد</h3>
+          <p class="font-body text-sm text-on-surface-variant" data-en="Downloadable guides, checklists, and reference materials for procurement professionals and learners." data-ar="أدلة وقوائم ومواد مرجعية قابلة للتحميل للمحترفين في المشتريات والمتعلمين.">أدلة وقوائم ومواد مرجعية قابلة للتحميل للمحترفين في المشتريات والمتعلمين.</p>
+          <div class="mt-4 text-primary font-body text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+            <span data-en="Coming Soon" data-ar="قريباً">قريباً</span>
+          </div>
+        </div>
+        <div class="glass-card p-6 rounded-2xl interactive-element float-animation">
+          <span class="material-symbols-outlined text-primary text-3xl mb-3">download</span>
+          <h3 class="font-display text-lg mb-2 text-white" data-en="Downloads" data-ar="التحميلات">التحميلات</h3>
+          <p class="font-body text-sm text-on-surface-variant" data-en="Free templates, tools, and files — RFP templates, scorecards, contracts, and more." data-ar="قوالب وأدوات وملفات مجانية — قوالب RFP، بطاقات تقييم، عقود، والمزيد.">قوالب وأدوات وملفات مجانية — قوالب RFP، بطاقات تقييم، عقود، والمزيد.</p>
+          <div class="mt-4 text-primary font-body text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+            <span data-en="Coming Soon" data-ar="قريباً">قريباً</span>
+          </div>
+        </div>
+        <div class="glass-card p-6 rounded-2xl interactive-element float-animation-delayed">
+          <span class="material-symbols-outlined text-primary text-3xl mb-3">prompt</span>
+          <h3 class="font-display text-lg mb-2 text-white" data-en="Prompt Library" data-ar="مكتبة البرومبتات">مكتبة البرومبتات</h3>
+          <p class="font-body text-sm text-on-surface-variant" data-en="Curated AI prompts for procurement, education, content creation, and business automation." data-ar="برومبتات AI منسّقة للمشتريات، التعليم، إنشاء المحتوى، وأتمتة الأعمال.">برومبتات AI منسّقة للمشتريات، التعليم، إنشاء المحتوى، وأتمتة الأعمال.</p>
+          <div class="mt-4 text-primary font-body text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+            <span data-en="Coming Soon" data-ar="قريباً">قريباً</span>
+          </div>
+        </div>
+        <div class="glass-card p-6 rounded-2xl interactive-element float-animation">
+          <span class="material-symbols-outlined text-primary text-3xl mb-3">play_circle</span>
+          <h3 class="font-display text-lg mb-2 text-white" data-en="Videos" data-ar="الفيديوهات">الفيديوهات</h3>
+          <p class="font-body text-sm text-on-surface-variant" data-en="Tutorials, walkthroughs, and explanations on procurement processes, Arabic lessons, and AI tools." data-ar="دروس تعليمية وشروحات حول عمليات المشتريات، دروس العربية، وأدوات الذكاء الاصطناعي.">دروس تعليمية وشروحات حول عمليات المشتريات، دروس العربية، وأدوات الذكاء الاصطناعي.</p>
+          <div class="mt-4 text-primary font-body text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+            <span data-en="Coming Soon" data-ar="قريباً">قريباً</span>
+          </div>
+        </div>
+        <div class="glass-card p-6 rounded-2xl interactive-element float-animation-delayed">
+          <span class="material-symbols-outlined text-primary text-3xl mb-3">help</span>
+          <h3 class="font-display text-lg mb-2 text-white" data-en="FAQs" data-ar="الأسئلة الشائعة">الأسئلة الشائعة</h3>
+          <p class="font-body text-sm text-on-surface-variant" data-en="Find answers to common questions about consulting services, Arabic courses, AI solutions, and more." data-ar="إجابات للأسئلة الشائعة حول خدمات الاستشارات، دورات العربية، حلول AI، والمزيد.">إجابات للأسئلة الشائعة حول خدمات الاستشارات، دورات العربية، حلول AI، والمزيد.</p>
+          <a href="#faq" class="mt-4 text-primary font-body text-sm flex items-center gap-1 hover:gap-2 transition-all">
+            <span data-en="Browse FAQs" data-ar="تصفح الأسئلة">تصفح الأسئلة</span>
+            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-stack-xl px-margin-mobile md:px-margin-desktop" id="services">
+    <div class="max-w-container-max mx-auto">
+      <div class="text-center mb-stack-lg reveal">
+        <div class="label-style text-xs text-primary" data-en="WHAT I OFFER" data-ar="ما أقدّمه">ما أقدّمه</div>
+        <h2 class="font-display text-headline-lg-mobile md:text-headline-lg text-white" data-en="Services" data-ar="الخدمات">الخدمات</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 reveal-stagger">
+        <div class="glass-card p-6 rounded-2xl interactive-element float-animation">
+          <span class="material-symbols-outlined text-primary text-3xl mb-3">handshake</span>
+          <h3 class="font-display text-lg mb-2 text-white" data-en="Procurement Consulting" data-ar="استشارات مشتريات">استشارات مشتريات</h3>
+          <p class="font-body text-sm text-on-surface-variant" data-en="Optimize purchasing, evaluate suppliers, negotiate, and manage contracts to reduce costs and increase supply security." data-ar="تحسين عمليات الشراء، تقييم الموردين، التفاوض، وإدارة العقود لتقليل التكاليف وزيادة الأمان التوريدي.">تحسين عمليات الشراء، تقييم الموردين، التفاوض، وإدارة العقود لتقليل التكاليف وزيادة الأمان التوريدي.</p>
+        </div>
+        <div class="glass-card p-6 rounded-2xl interactive-element float-animation-delayed">
+          <span class="material-symbols-outlined text-primary text-3xl mb-3">route</span>
+          <h3 class="font-display text-lg mb-2 text-white" data-en="Supply Chain Management" data-ar="إدارة سلاسل الإمداد">إدارة سلاسل الإمداد</h3>
+          <p class="font-body text-sm text-on-surface-variant" data-en="Improve material flow, reduce lead times, and increase supply chain efficiency." data-ar="تحسين تدفق المواد والبضائع، تقليل المهل الزمنية، وزيادة كفاءة سلسلة التوريد.">تحسين تدفق المواد والبضائع، تقليل المهل الزمنية، وزيادة كفاءة سلسلة التوريد.</p>
+        </div>
+        <div class="glass-card p-6 rounded-2xl interactive-element float-animation">
+          <span class="material-symbols-outlined text-primary text-3xl mb-3">inventory</span>
+          <h3 class="font-display text-lg mb-2 text-white" data-en="Inventory Analysis" data-ar="تحليل المخزون">تحليل المخزون</h3>
+          <p class="font-body text-sm text-on-surface-variant" data-en="Assess inventory levels, perform ABC/XYZ analysis, and determine optimal reorder points." data-ar="تقييم مستويات المخزون، تحليل ABC/XYZ، وتحديد نقاط إعادة الطلب المثلى.">تقييم مستويات المخزون، تحليل ABC/XYZ، وتحديد نقاط إعادة الطلب المثلى.</p>
+        </div>
+        <div class="glass-card p-6 rounded-2xl interactive-element float-animation-delayed">
+          <span class="material-symbols-outlined text-primary text-3xl mb-3">query_stats</span>
+          <h3 class="font-display text-lg mb-2 text-white" data-en="Demand Planning" data-ar="التخطيط للطلب">التخطيط للطلب</h3>
+          <p class="font-body text-sm text-on-surface-variant" data-en="Predictive models using sales data and trends to reduce errors and improve planning." data-ar="نماذج تنبؤية باستخدام بيانات المبيعات والاتجاهات لتقليل الأخطاء وتحسين التخطيط.">نماذج تنبؤية باستخدام بيانات المبيعات والاتجاهات لتقليل الأخطاء وتحسين التخطيط.</p>
+        </div>
+        <div class="glass-card p-6 rounded-2xl interactive-element float-animation-delayed">
+          <span class="material-symbols-outlined text-primary text-3xl mb-3">medication</span>
+          <h3 class="font-display text-lg mb-2 text-white" data-en="Pharma Procurement" data-ar="مشتريات صيدلانية">مشتريات صيدلانية</h3>
+          <p class="font-body text-sm text-on-surface-variant" data-en="High compliance and quality standards, supplier risk management in pharma and medical sectors." data-ar="معايير امتثال وجودة عالية، إدارة مخاطر الموردين في القطاع الصيدلي والطبي.">معايير امتثال وجودة عالية، إدارة مخاطر الموردين في القطاع الصيدلي والطبي.</p>
+        </div>
+        <div class="glass-card p-6 rounded-2xl interactive-element float-animation">
+          <span class="material-symbols-outlined text-primary text-3xl mb-3">table_chart</span>
+          <h3 class="font-display text-lg mb-2 text-white" data-en="Excel Dashboards" data-ar="لوحات إكسل">لوحات إكسل</h3>
+          <p class="font-body text-sm text-on-surface-variant" data-en="Interactive dashboards to monitor KPIs and make real-time decisions." data-ar="لوحات بيانات Excel تفاعلية لمراقبة مؤشرات الأداء واتخاذ قرارات آنية.">لوحات بيانات Excel تفاعلية لمراقبة مؤشرات الأداء واتخاذ قرارات آنية.</p>
+        </div>
+        <div class="glass-card p-6 rounded-2xl interactive-element float-animation-delayed">
+          <span class="material-symbols-outlined text-primary text-3xl mb-3">school</span>
+          <h3 class="font-display text-lg mb-2 text-white" data-en="Corporate Training" data-ar="التدريب المؤسسي">التدريب المؤسسي</h3>
+          <p class="font-body text-sm text-on-surface-variant" data-en="Hands-on workshops in procurement, inventory, negotiation, and reporting." data-ar="ورش عمل عملية في المشتريات، المخزون، التفاوض، وإعداد التقارير.">ورش عمل عملية في المشتريات، المخزون، التفاوض، وإعداد التقارير.</p>
+        </div>
+        <div class="glass-card p-6 rounded-2xl interactive-element float-animation">
+          <span class="material-symbols-outlined text-primary text-3xl mb-3">smart_toy</span>
+          <h3 class="font-display text-lg mb-2 text-white" data-en="AI Workflows" data-ar="سير عمل بالذكاء الاصطناعي">سير عمل بالذكاء الاصطناعي</h3>
+          <p class="font-body text-sm text-on-surface-variant" data-en="Automate repetitive procurement tasks using modern AI tools." data-ar="أتمتة مهام المشتريات المتكررة باستخدام أدوات AI حديثة.">أتمتة مهام المشتريات المتكررة باستخدام أدوات AI حديثة.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How I Help -->
+  <section class="py-stack-xl px-margin-mobile md:px-margin-desktop" id="how-i-help">
+    <div class="max-w-4xl mx-auto">
+      <div class="glass-panel p-8 md:p-12 rounded-3xl reveal text-center border border-primary/20">
+        <div class="label-style text-xs text-primary mb-stack-sm" data-en="TANGIBLE RESULTS" data-ar="نتائج ملموسة">نتائج ملموسة</div>
+        <h2 class="font-display text-headline-lg-mobile md:text-headline-lg mb-stack-md text-white" data-en="How I Help" data-ar="كيف أساعدك؟">كيف أساعدك؟</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-right reveal-stagger">
+          <div class="glass-card p-4 rounded-xl flex items-start gap-3">
+            <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+            <p class="font-body text-sm text-on-surface-variant" data-en="Reduce procurement costs by 10-15% through better supplier evaluation and negotiation." data-ar="تخفيض تكاليف الشراء بنسبة 10-15% عبر تحسين تقييم الموردين والتفاوض.">تخفيض تكاليف الشراء بنسبة 10-15% عبر تحسين تقييم الموردين والتفاوض.</p>
+          </div>
+          <div class="glass-card p-4 rounded-xl flex items-start gap-3">
+            <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+            <p class="font-body text-sm text-on-surface-variant" data-en="Reduce inventory by 20% while maintaining 98%+ availability rates." data-ar="تقليل المخزون بنسبة 20% مع الحفاظ على معدلات توافر 98%+.">تقليل المخزون بنسبة 20% مع الحفاظ على معدلات توافر 98%+.</p>
+          </div>
+          <div class="glass-card p-4 rounded-xl flex items-start gap-3">
+            <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+            <p class="font-body text-sm text-on-surface-variant" data-en="Shorten RFP cycle from 3 weeks to 1 week." data-ar="اختصار دورة إعداد RFP من 3 أسابيع إلى أسبوع واحد.">اختصار دورة إعداد RFP من 3 أسابيع إلى أسبوع واحد.</p>
+          </div>
+          <div class="glass-card p-4 rounded-xl flex items-start gap-3">
+            <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+            <p class="font-body text-sm text-on-surface-variant" data-en="Build a demand planning model reducing forecast errors by 30%." data-ar="بناء نموذج تخطيط طلب يقلل الأخطاء التنبؤية بنسبة 30%.">بناء نموذج تخطيط طلب يقلل الأخطاء التنبؤية بنسبة 30%.</p>
+          </div>
+          <div class="glass-card p-4 rounded-xl flex items-start gap-3 md:col-span-2">
+            <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+            <p class="font-body text-sm text-on-surface-variant" data-en="Standardize procurement procedures into an actionable SOP package." data-ar="توحيد إجراءات المشتريات في حزمة SOP قابلة للتنفيذ.">توحيد إجراءات المشتريات في حزمة SOP قابلة للتنفيذ.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="py-stack-xl px-margin-mobile md:px-margin-desktop" id="process">
+    <div class="max-w-container-max mx-auto">
+      <div class="text-center mb-stack-lg reveal">
+        <div class="label-style text-xs text-primary" data-en="MY APPROACH" data-ar="منهجية العمل">منهجية العمل</div>
+        <h2 class="font-display text-headline-lg-mobile md:text-headline-lg text-white" data-en="The Process" data-ar="المنهجية">المنهجية</h2>
+        <p class="font-body text-body-md text-on-surface-variant mt-2" data-en="Four steps to turn your challenge into a measurable solution" data-ar="أربع خطوات لتحويل التحدي إلى حل قابل للقياس">أربع خطوات لتحويل التحدي إلى حل قابل للقياس</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 reveal-stagger">
+        <div class="glass-card p-6 rounded-2xl text-center interactive-element float-animation">
+          <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-4">
+            <span class="font-display text-xl font-bold text-primary">١</span>
+          </div>
+          <h3 class="font-display text-lg mb-2 text-white">Discover</h3>
+          <p class="font-body text-sm text-on-surface-variant" data-en="Understand the challenge, gather data, and analyze the current state." data-ar="فهم التحدي، جمع البيانات، وتحليل الوضع الحالي لتحديد الفجوات والفرص.">فهم التحدي، جمع البيانات، وتحليل الوضع الحالي لتحديد الفجوات والفرص.</p>
+        </div>
+        <div class="glass-card p-6 rounded-2xl text-center interactive-element float-animation-delayed">
+          <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-4">
+            <span class="font-display text-xl font-bold text-primary">٢</span>
+          </div>
+          <h3 class="font-display text-lg mb-2 text-white">Diagnose</h3>
+          <p class="font-body text-sm text-on-surface-variant" data-en="Precise diagnosis using financial and operational analysis tools." data-ar="تشخيص دقيق للمشكلة باستخدام أدوات التحليل المالي والتشغيلي.">تشخيص دقيق للمشكلة باستخدام أدوات التحليل المالي والتشغيلي.</p>
+        </div>
+        <div class="glass-card p-6 rounded-2xl text-center interactive-element float-animation">
+          <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-4">
+            <span class="font-display text-xl font-bold text-primary">٣</span>
+          </div>
+          <h3 class="font-display text-lg mb-2 text-white">Design</h3>
+          <p class="font-body text-sm text-on-surface-variant" data-en="Design tailored solutions — procedures, templates, dashboards." data-ar="تصميم حلول مخصصة — إجراءات، نماذج، لوحات بيانات — قابلة للتطبيق الفوري.">تصميم حلول مخصصة — إجراءات، نماذج، لوحات بيانات — قابلة للتطبيق الفوري.</p>
+        </div>
+        <div class="glass-card p-6 rounded-2xl text-center interactive-element float-animation-delayed">
+          <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-4">
+            <span class="font-display text-xl font-bold text-primary">٤</span>
+          </div>
+          <h3 class="font-display text-lg mb-2 text-white">Deliver</h3>
+          <p class="font-body text-sm text-on-surface-variant" data-en="Deliver with training and follow-up to ensure sustainability." data-ar="تسليم الحل مع تدريب الفريق ومتابعة النتائج لضمان الاستدامة.">تسليم الحل مع تدريب الفريق ومتابعة النتائج لضمان الاستدامة.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="py-stack-xl px-margin-mobile md:px-margin-desktop" id="projects">
+    <div class="max-w-container-max mx-auto">
+      <div class="flex justify-between items-end mb-stack-lg reveal">
+        <div>
+          <div class="label-style text-xs text-primary" data-en="PORTFOLIO" data-ar="نماذج الأعمال">نماذج الأعمال</div>
+          <h2 class="font-display text-headline-lg-mobile md:text-headline-lg text-white" data-en="Selected Works" data-ar="أعمال مختارة">أعمال مختارة</h2>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 reveal-stagger" id="projectsGrid">
+      </div>
+      <div class="text-center mt-8 reveal">
+        <p class="text-sm text-on-surface-variant" data-en="More case studies are being added gradually." data-ar="يتم إضافة المزيد من دراسات الحالة تباعاً.">يتم إضافة المزيد من دراسات الحالة تباعاً.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="py-stack-xl px-margin-mobile md:px-margin-desktop overflow-hidden" id="skills">
+    <div class="max-w-container-max mx-auto">
+      <div class="text-center mb-stack-lg reveal">
+        <div class="label-style text-xs text-primary" data-en="EXPERTISE" data-ar="الخبرات">الخبرات</div>
+        <h2 class="font-display text-headline-lg-mobile md:text-headline-lg text-white" data-en="Skills & Tools" data-ar="المهارات والأدوات">المهارات والأدوات</h2>
+      </div>
+      <div class="flex flex-wrap justify-center gap-4 reveal-stagger">
+        <div class="glass-panel px-6 py-4 rounded-full flex items-center gap-3 border border-primary/20 hover:border-primary/50 hover:bg-primary/5 transition-all float-animation interactive-element">
+          <span class="material-symbols-outlined text-primary">handshake</span>
+          <span class="label-style text-sm">Procurement</span>
+          <div class="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+        </div>
+        <div class="glass-panel px-6 py-4 rounded-full flex items-center gap-3 border border-primary/20 hover:border-primary/50 hover:bg-primary/5 transition-all float-animation-delayed interactive-element">
+          <span class="material-symbols-outlined text-primary">route</span>
+          <span class="label-style text-sm">Supply Chain</span>
+        </div>
+        <div class="glass-panel px-6 py-4 rounded-full flex items-center gap-3 border border-primary/20 hover:border-primary/50 hover:bg-primary/5 transition-all float-animation interactive-element">
+          <span class="material-symbols-outlined text-primary">inventory</span>
+          <span class="label-style text-sm">Inventory Mgmt</span>
+        </div>
+        <div class="glass-panel px-6 py-4 rounded-full flex items-center gap-3 border border-primary/20 hover:border-primary/50 hover:bg-primary/5 transition-all float-animation-delayed interactive-element">
+          <span class="material-symbols-outlined text-primary">query_stats</span>
+          <span class="label-style text-sm">Demand Planning</span>
+        </div>
+        <div class="glass-panel px-6 py-4 rounded-full flex items-center gap-3 border border-primary/20 hover:border-primary/50 hover:bg-primary/5 transition-all float-animation interactive-element">
+          <span class="material-symbols-outlined text-primary">table_chart</span>
+          <span class="label-style text-sm">Excel / Dashboards</span>
+        </div>
+        <div class="glass-panel px-6 py-4 rounded-full flex items-center gap-3 border border-primary/20 hover:border-primary/50 hover:bg-primary/5 transition-all float-animation-delayed interactive-element">
+          <span class="material-symbols-outlined text-primary">smart_toy</span>
+          <span class="label-style text-sm">AI Automation</span>
+        </div>
+        <div class="glass-panel px-6 py-4 rounded-full flex items-center gap-3 border border-primary/20 hover:border-primary/50 hover:bg-primary/5 transition-all float-animation interactive-element">
+          <span class="material-symbols-outlined text-primary">school</span>
+          <span class="label-style text-sm">Corporate Training</span>
+        </div>
+      </div>
+      <div class="mt-stack-lg max-w-2xl mx-auto space-y-8 reveal">
+        <div class="space-y-2">
+          <div class="flex justify-between label-style text-[10px] text-on-surface-variant">
+            <span data-en="PROCUREMENT" data-ar="المشتريات">المشتريات</span>
+            <span class="text-primary">95%</span>
+          </div>
+          <div class="h-1 w-full bg-white/10 rounded-full overflow-hidden">
+            <div class="h-full bg-primary" style="width: 95%"></div>
+          </div>
+        </div>
+        <div class="space-y-2">
+          <div class="flex justify-between label-style text-[10px] text-on-surface-variant">
+            <span data-en="SUPPLY CHAIN" data-ar="سلاسل الإمداد">سلاسل الإمداد</span>
+            <span class="text-primary">92%</span>
+          </div>
+          <div class="h-1 w-full bg-white/10 rounded-full overflow-hidden">
+            <div class="h-full bg-primary opacity-70" style="width: 92%"></div>
+          </div>
+        </div>
+        <div class="space-y-2">
+          <div class="flex justify-between label-style text-[10px] text-on-surface-variant">
+            <span data-en="INVENTORY & FORECASTING" data-ar="المخزون والتنبؤ">المخزون والتنبؤ</span>
+            <span class="text-primary">90%</span>
+          </div>
+          <div class="h-1 w-full bg-white/10 rounded-full overflow-hidden">
+            <div class="h-full bg-primary" style="width: 90%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-stack-xl px-margin-mobile md:px-margin-desktop" id="faq">
+    <div class="max-w-3xl mx-auto">
+      <div class="text-center mb-stack-lg reveal">
+        <div class="label-style text-xs text-primary" data-en="FAQ" data-ar="الأسئلة الشائعة">الأسئلة الشائعة</div>
+        <h2 class="font-display text-headline-lg-mobile md:text-headline-lg text-white" data-en="Common Questions" data-ar="أسئلة شائعة">أسئلة شائعة</h2>
+      </div>
+      <div class="space-y-4 reveal-stagger">
+        <div class="glass-card rounded-2xl overflow-hidden">
+          <button class="faq-q w-full p-6 text-right flex justify-between items-center interactive-element">
+            <span class="font-display text-lg text-white" data-en="How do we get started?" data-ar="كيف نبدأ العمل؟">كيف نبدأ العمل؟</span>
+            <span class="material-symbols-outlined text-primary transition-transform duration-300 faq-icon">expand_more</span>
+          </button>
+          <div class="faq-a max-h-0 overflow-hidden transition-all duration-300 px-6">
+            <p class="font-body text-sm text-on-surface-variant pb-6" data-en="Contact me through the form below. I offer a free discovery call (30 min) to understand your needs, then provide a proposed action plan and timeline." data-ar="تواصل معي عبر النموذج أدناه. أجري مكالمة اكتشاف مجانية (30 دقيقة) لفهم احتياجاتك، ثم أقدم خطة عمل مقترحة وجدول زمني.">تواصل معي عبر النموذج أدناه. أجري مكالمة اكتشاف مجانية (30 دقيقة) لفهم احتياجاتك، ثم أقدم خطة عمل مقترحة وجدول زمني.</p>
+          </div>
+        </div>
+        <div class="glass-card rounded-2xl overflow-hidden">
+          <button class="faq-q w-full p-6 text-right flex justify-between items-center interactive-element">
+            <span class="font-display text-lg text-white" data-en="Do you work with companies outside my region?" data-ar="هل تعمل مع شركات خارج منطقتي؟">هل تعمل مع شركات خارج منطقتي؟</span>
+            <span class="material-symbols-outlined text-primary transition-transform duration-300 faq-icon">expand_more</span>
+          </button>
+          <div class="faq-a max-h-0 overflow-hidden transition-all duration-300 px-6">
+            <p class="font-body text-sm text-on-surface-variant pb-6" data-en="Yes. I provide remote consulting via Zoom/Teams, and travel for fieldwork when needed." data-ar="نعم. أقدم استشارات عن بُعد عبر Zoom/Teams، وأسافر للعمل الميداني عند الحاجة.">نعم. أقدم استشارات عن بُعد عبر Zoom/Teams، وأسافر للعمل الميداني عند الحاجة.</p>
+          </div>
+        </div>
+        <div class="glass-card rounded-2xl overflow-hidden">
+          <button class="faq-q w-full p-6 text-right flex justify-between items-center interactive-element">
+            <span class="font-display text-lg text-white" data-en="What is the minimum contract duration?" data-ar="ما هي أقل مدة تعاقد؟">ما هي أقل مدة تعاقد؟</span>
+            <span class="material-symbols-outlined text-primary transition-transform duration-300 faq-icon">expand_more</span>
+          </button>
+          <div class="faq-a max-h-0 overflow-hidden transition-all duration-300 px-6">
+            <p class="font-body text-sm text-on-surface-variant pb-6" data-en="I start with specific projects (inventory analysis, procurement audit) that may take 2-4 weeks. Longer-term contracts are available." data-ar="أبدأ بمشاريع محددة (تحليل مخزون، تدقيق مشتريات) قد تستغرق 2-4 أسابيع. العقود الطويلة متاحة أيضاً.">أبدأ بمشاريع محددة (تحليل مخزون، تدقيق مشتريات) قد تستغرق 2-4 أسابيع. العقود الطويلة متاحة أيضاً.</p>
+          </div>
+        </div>
+        <div class="glass-card rounded-2xl overflow-hidden">
+          <button class="faq-q w-full p-6 text-right flex justify-between items-center interactive-element">
+            <span class="font-display text-lg text-white" data-en="Do you guarantee results?" data-ar="هل تضمن النتائج؟">هل تضمن النتائج؟</span>
+            <span class="material-symbols-outlined text-primary transition-transform duration-300 faq-icon">expand_more</span>
+          </button>
+          <div class="faq-a max-h-0 overflow-hidden transition-all duration-300 px-6">
+            <p class="font-body text-sm text-on-surface-variant pb-6" data-en="I guarantee a structured methodology and proven tools. Results depend on data accuracy and team commitment." data-ar="أضمن منهجية عمل منظمة وأدوات مثبتة. النتائج تعتمد على دقة البيانات والتزام الفريق.">أضمن منهجية عمل منظمة وأدوات مثبتة. النتائج تعتمد على دقة البيانات والتزام الفريق.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-stack-xl px-margin-mobile md:px-margin-desktop bg-background/50 backdrop-blur-md" id="testimonials">
+    <div class="max-w-container-max mx-auto">
+      <div class="text-center mb-stack-lg reveal">
+        <div class="label-style text-xs text-primary" data-en="TESTIMONIALS" data-ar="آراء العملاء">آراء العملاء</div>
+        <h2 class="font-display text-headline-lg-mobile md:text-headline-lg text-white" data-en="What People Say" data-ar="ماذا يقولون عني">ماذا يقولون عني</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 reveal-stagger">
+        <div class="glass-card p-6 rounded-2xl interactive-element float-animation">
+          <div class="flex gap-1 text-secondary text-sm mb-3">
+            <span class="material-symbols-outlined text-sm">star</span>
+            <span class="material-symbols-outlined text-sm">star</span>
+            <span class="material-symbols-outlined text-sm">star</span>
+            <span class="material-symbols-outlined text-sm">star</span>
+            <span class="material-symbols-outlined text-sm">star</span>
+          </div>
+          <p class="font-body text-sm text-on-surface-variant mb-4 italic" data-en='"Mahmoud transformed our procurement process. His structured approach and deep industry knowledge delivered tangible results in just weeks."' data-ar='"محمود غيّر عملية المشتريات لدينا. منهجيته المنظمة ومعرفته العميقة بالصناعة حققت نتائج ملموسة في أسابيع فقط."'>"محمود غيّر عملية المشتريات لدينا. منهجيته المنظمة ومعرفته العميقة بالصناعة حققت نتائج ملموسة في أسابيع فقط."</p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold text-sm">A</div>
+            <div>
+              <div class="font-display text-sm text-white">A. Al-Otaibi</div>
+              <div class="font-body text-[10px] text-on-surface-variant" data-en="Procurement Manager, Pharma" data-ar="مدير مشتريات، قطاع الأدوية">مدير مشتريات، قطاع الأدوية</div>
+            </div>
+          </div>
+        </div>
+        <div class="glass-card p-6 rounded-2xl interactive-element float-animation-delayed">
+          <div class="flex gap-1 text-secondary text-sm mb-3">
+            <span class="material-symbols-outlined text-sm">star</span>
+            <span class="material-symbols-outlined text-sm">star</span>
+            <span class="material-symbols-outlined text-sm">star</span>
+            <span class="material-symbols-outlined text-sm">star</span>
+            <span class="material-symbols-outlined text-sm">star</span>
+          </div>
+          <p class="font-body text-sm text-on-surface-variant mb-4 italic" data-en='"Excellent Arabic teacher! His patient methodology and clear explanations helped me progress from beginner to conversational in months."' data-ar='"مدرس عربي ممتاز! منهجيته الصبورة وشروحاته الواضحة ساعدتني على التقدم من مبتدئ إلى محادثة في أشهر."'>"مدرس عربي ممتاز! منهجيته الصبورة وشروحاته الواضحة ساعدتني على التقدم من مبتدئ إلى محادثة في أشهر."</p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold text-sm">S</div>
+            <div>
+              <div class="font-display text-sm text-white">Sarah K.</div>
+              <div class="font-body text-[10px] text-on-surface-variant" data-en="Arabic Learner, USA" data-ar="متعلّمة عربية، أمريكا">متعلّمة عربية، أمريكا</div>
+            </div>
+          </div>
+        </div>
+        <div class="glass-card p-6 rounded-2xl interactive-element float-animation">
+          <div class="flex gap-1 text-secondary text-sm mb-3">
+            <span class="material-symbols-outlined text-sm">star</span>
+            <span class="material-symbols-outlined text-sm">star</span>
+            <span class="material-symbols-outlined text-sm">star</span>
+            <span class="material-symbols-outlined text-sm">star</span>
+            <span class="material-symbols-outlined text-sm">star</span>
+          </div>
+          <p class="font-body text-sm text-on-surface-variant mb-4 italic" data-en='"The AI workflow automation saved us 15+ hours per week. Mahmoud understood our needs and delivered a custom solution quickly."' data-ar='"أتمتة سير العمل بالذكاء الاصطناعي وفرت لنا أكثر من 15 ساعة أسبوعياً. فهم محمود احتياجاتنا وقدّم حلاً مخصصاً بسرعة."'>"أتمتة سير العمل بالذكاء الاصطناعي وفرت لنا أكثر من 15 ساعة أسبوعياً. فهم محمود احتياجاتنا وقدّم حلاً مخصصاً بسرعة."</p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold text-sm">M</div>
+            <div>
+              <div class="font-display text-sm text-white">M. Al-Rashid</div>
+              <div class="font-body text-[10px] text-on-surface-variant" data-en="Operations Director, Logistics" data-ar="مدير عمليات، لوجستيات">مدير عمليات، لوجستيات</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="py-stack-xl px-margin-mobile md:px-margin-desktop" id="contact">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-stack-lg reveal">
+        <div class="label-style text-xs text-primary" data-en="CONTACT" data-ar="تواصل">تواصل</div>
+        <h2 class="font-display text-headline-lg-mobile md:text-headline-lg text-white" data-en="Let's Talk" data-ar="تواصل معي">تواصل معي</h2>
+        <p class="font-body text-body-md text-on-surface-variant mt-2" data-en="Free discovery call — 30 minutes" data-ar="مكالمة استكشافية مجانية — 30 دقيقة">مكالمة استكشافية مجانية — 30 دقيقة</p>
+      </div>
+      <div class="glass-panel p-8 md:p-12 rounded-3xl border border-primary/20 reveal">
+        <form class="max-w-2xl mx-auto" id="contactForm">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+            <input type="text" required class="w-full p-4 rounded-xl bg-background/60 border border-white/10 text-white font-body focus:border-primary/50 focus:outline-none transition-all" data-en-placeholder="Your Name" data-ar-placeholder="الاسم" placeholder="الاسم">
+            <input type="email" required class="w-full p-4 rounded-xl bg-background/60 border border-white/10 text-white font-body focus:border-primary/50 focus:outline-none transition-all" data-en-placeholder="Your Email" data-ar-placeholder="البريد الإلكتروني" placeholder="البريد الإلكتروني">
+          </div>
+          <textarea class="w-full p-4 rounded-xl bg-background/60 border border-white/10 text-white font-body focus:border-primary/50 focus:outline-none transition-all mb-4" rows="4" data-en-placeholder="What do you need? (optional)" data-ar-placeholder="ماذا تحتاج؟ (اختياري)" placeholder="ماذا تحتاج؟ (اختياري)"></textarea>
+          <button type="submit" class="gradient-button w-full py-4 rounded-xl font-bold text-white text-lg shadow-xl hover:shadow-primary/40 transition-all interactive-element" data-en="Send Request" data-ar="إرسال الطلب">إرسال الطلب</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="w-full px-margin-mobile md:px-margin-desktop py-stack-lg backdrop-blur-xl border-t border-white/5 relative z-20">
+  <div class="max-w-container-max mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+      <div>
+        <div class="font-display text-xl font-bold text-primary glitch-hover cursor-pointer mb-4" onclick="document.getElementById('home').scrollIntoView({behavior:'smooth'})" data-en="Mahmoud Rabeh" data-ar="محمود رابح">محمود رابح</div>
+        <p class="font-body text-sm text-on-surface-variant" data-en="Consultant | Educator | AI Specialist — 18+ years of experience." data-ar="مستشار | مدرس | مختص AI — أكثر من 18 سنة خبرة.">مستشار | مدرس | مختص AI — أكثر من 18 سنة خبرة.</p>
+      </div>
+      <div>
+        <h4 class="font-display text-sm text-white font-bold mb-3" data-en="Brands" data-ar="المجالات">المجالات</h4>
+        <div class="space-y-2">
+          <a href="#business-hub" class="block font-body text-sm text-on-surface-variant/60 hover:text-primary transition-colors" data-en="Business Consulting" data-ar="استشارات الأعمال">استشارات الأعمال</a>
+          <a href="#arabic-academy" class="block font-body text-sm text-on-surface-variant/60 hover:text-primary transition-colors" data-en="Arabic Academy" data-ar="الأكاديمية العربية">الأكاديمية العربية</a>
+          <a href="#ai-lab" class="block font-body text-sm text-on-surface-variant/60 hover:text-primary transition-colors" data-en="AI Lab" data-ar="مختبر AI">مختبر AI</a>
+          <a href="#knowledge-center" class="block font-body text-sm text-on-surface-variant/60 hover:text-primary transition-colors" data-en="Knowledge Center" data-ar="مركز المعرفة">مركز المعرفة</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="font-display text-sm text-white font-bold mb-3" data-en="Quick Links" data-ar="روابط سريعة">روابط سريعة</h4>
+        <div class="space-y-2">
+          <a href="#knowledge-center" class="block font-body text-sm text-on-surface-variant/60 hover:text-primary transition-colors" data-en="Knowledge Center" data-ar="مركز المعرفة">مركز المعرفة</a>
+          <a href="#projects" class="block font-body text-sm text-on-surface-variant/60 hover:text-primary transition-colors" data-en="Portfolio" data-ar="الأعمال">الأعمال</a>
+          <a href="#testimonials" class="block font-body text-sm text-on-surface-variant/60 hover:text-primary transition-colors" data-en="Testimonials" data-ar="آراء العملاء">آراء العملاء</a>
+          <a href="#faq" class="block font-body text-sm text-on-surface-variant/60 hover:text-primary transition-colors" data-en="FAQ" data-ar="الأسئلة">الأسئلة</a>
+          <a href="#contact" class="block font-body text-sm text-on-surface-variant/60 hover:text-primary transition-colors" data-en="Contact" data-ar="اتصل">اتصل</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="font-display text-sm text-white font-bold mb-3" data-en="Contact" data-ar="تواصل">تواصل</h4>
+        <div class="space-y-2">
+          <a href="mailto:contact@mahmoud-rabeh.com" class="block font-body text-sm text-on-surface-variant/60 hover:text-primary transition-colors">contact@mahmoud-rabeh.com</a>
+          <a href="tel:+20-01006125478" class="block font-body text-sm text-on-surface-variant/60 hover:text-primary transition-colors">+20-01006125478</a>
+          <div class="flex gap-4 mt-3 pt-3 border-t border-white/5">
+            <a href="https://www.linkedin.com/in/mahmoud-rabeh" target="_blank" rel="noopener" class="text-on-surface-variant/60 hover:text-primary transition-colors font-body text-sm interactive-element">LinkedIn</a>
+            <a href="https://www.upwork.com/freelancers/~mahmoudrabeh" target="_blank" rel="noopener" class="text-on-surface-variant/60 hover:text-primary transition-colors font-body text-sm interactive-element">Upwork</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col md:flex-row justify-between items-center gap-4 pt-4 border-t border-white/5">
+      <div class="font-body text-xs text-on-surface-variant/60" data-en="© 2026 Mahmoud Rabeh. All rights reserved." data-ar="© 2026 محمود رابح. جميع الحقوق محفوظة.">© 2026 محمود رابح. جميع الحقوق محفوظة.</div>
+    </div>
+  </div>
+</footer>
+
+<!-- Modal -->
+<div class="modal-overlay" id="projectModal">
+  <div class="modal-content">
+    <button class="modal-close" id="modalClose" aria-label="Close"><span class="material-symbols-outlined text-sm">close</span></button>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<script>
+  // --- Site Configuration (Future-Ready Architecture) ---
+  const SITE_CONFIG = {
+    domains: [
+      {
+        id: 'business-hub',
+        icon: 'handshake',
+        ar: { name: 'استشارات الأعمال', short: 'استشارات' },
+        en: { name: 'Business Consulting', short: 'Consulting' },
+        sections: ['home', 'about', 'business-hub', 'services', 'how-i-help', 'process', 'projects', 'skills', 'faq', 'testimonials', 'contact']
+      },
+      {
+        id: 'arabic-academy',
+        icon: 'menu_book',
+        ar: { name: 'الأكاديمية العربية', short: 'تعليم' },
+        en: { name: 'Arabic Academy', short: 'Education' },
+        sections: ['home', 'about', 'arabic-academy', 'faq', 'testimonials', 'contact']
+      },
+      {
+        id: 'ai-lab',
+        icon: 'smart_toy',
+        ar: { name: 'مختبر AI', short: 'تقنية' },
+        en: { name: 'AI Lab', short: 'Technology' },
+        sections: ['home', 'ai-lab', 'services', 'faq', 'contact']
+      },
+      {
+        id: 'knowledge-center',
+        icon: 'school',
+        ar: { name: 'مركز المعرفة', short: 'معرفة' },
+        en: { name: 'Knowledge Center', short: 'Knowledge' },
+        sections: ['knowledge-center', 'faq', 'contact']
+      }
+    ],
+    future: {
+      booking: { enabled: false, label: { ar: 'نظام الحجوزات', en: 'Booking System' } },
+      crm: { enabled: false, label: { ar: 'إدارة علاقات العملاء', en: 'CRM' } },
+      studentPortal: { enabled: false, label: { ar: 'بوابة الطلاب', en: 'Student Portal' } },
+      clientPortal: { enabled: false, label: { ar: 'بوابة العملاء', en: 'Client Portal' } },
+      adminDashboard: { enabled: false, label: { ar: 'لوحة التحكم', en: 'Admin Dashboard' } },
+      cms: { enabled: false, label: { ar: 'إدارة المحتوى', en: 'CMS' } },
+      newsletter: { enabled: false, label: { ar: 'النشرة البريدية', en: 'Newsletter' } },
+      payments: { enabled: false, label: { ar: 'الدفعات', en: 'Payments' } },
+      aiChat: { enabled: false, label: { ar: 'المساعد الذكي', en: 'AI Chat' } }
+    }
+  };
+
+  // --- Project Data ---
+  const PROJECTS = [
+    {
+      id: 'rfp',
+      icon: 'description',
+      ar: {
+        tags: ['المشتريات', 'قالب', 'توثيق'],
+        title: 'قالب طلب عرض سعر (RFP)',
+        brief: 'قالب احترافي متكامل لطلبات عروض الأسعار يشمل جميع الأقسام الفنية والتجارية ومعايير التقييم.',
+        problem: 'تعاني فرق المشتريات من عدم وجود قالب موحد لطلبات العروض، مما يؤدي إلى تفاوت في جودة الردود وصعوبة المقارنة بين الموردين.',
+        role: 'إعداد وتوحيد قالب RFP شامل لكافة فئات المشتريات.',
+        solution: 'تصميم قالب RFP من 7 أقسام رئيسية: الشروط العامة، المواصفات الفنية، الشروط التجارية، معايير التقييم، جدول الكميات، شروط التعاقد، وجدول التسليم.',
+        outputs: 'ملف Word قابل للتعديل، نسخة PDF جاهزة للطباعة، دليل استخدام للمبتدئين.',
+        result: 'تقليل دورة إعداد RFP من 3 أسابيع إلى أسبوع واحد، وتحسين جودة ردود الموردين.',
+        tools: ['Microsoft Word', 'Excel', 'PDF'],
+        sector: 'عام (متعدد القطاعات)',
+        file: null
+      },
+      en: {
+        tags: ['PROCUREMENT', 'TEMPLATE', 'DOCUMENTATION'],
+        title: 'RFP Template',
+        brief: 'A comprehensive professional RFP template with technical, commercial, and evaluation sections.',
+        problem: 'Procurement teams lack a standardized RFP template, leading to inconsistent supplier responses and difficult comparisons.',
+        role: 'Develop and standardize a comprehensive RFP template.',
+        solution: 'Designed a 7-section RFP template covering general terms, technical specs, commercial terms, evaluation criteria, BOQ, contract terms, and delivery schedule.',
+        outputs: 'Editable Word file, print-ready PDF, user guide for beginners.',
+        result: 'Reduced RFP preparation cycle from 3 weeks to 1 week, improved supplier response quality.',
+        tools: ['Microsoft Word', 'Excel', 'PDF'],
+        sector: 'General (Multi-sector)',
+        file: null
+      }
+    },
+    {
+      id: 'scorecard',
+      icon: 'assessment',
+      ar: {
+        tags: ['التقييم', 'الموردين'],
+        title: 'بطاقة تقييم الموردين',
+        brief: 'نموذج شامل لتقييم أداء الموردين بناءً على معايير كمية ونوعية متعددة.',
+        problem: 'غياب نظام موحد لتقييم الموردين يؤدي إلى اعتماد قرارات الشراء على الخبرة الشخصية دون معايير موضوعية.',
+        role: 'تصميم نظام تقييم كمي للموردين.',
+        solution: 'بناء بطاقة تقييم بمعايير مرجحة تغطي 5 محاور رئيسية: الجودة (30%)، السعر (25%)، الالتزام بالتسليم (20%)، الاستجابة (15%)، خدمة ما بعد البيع (10%).',
+        outputs: 'نموذج Excel تفاعلي مع تصنيف تلقائي، دليل تعبئة، قائمة توصيات.',
+        result: 'تحسين موضوعية تقييم الموردين بنسبة 60% وتقليل مخاطر التعاقد مع موردين غير مؤهلين.',
+        tools: ['Excel', 'VBA'],
+        sector: 'الأدوية والرعاية الصحية',
+        file: null
+      },
+      en: {
+        tags: ['EVALUATION', 'SUPPLIERS'],
+        title: 'Vendor Scorecard',
+        brief: 'A comprehensive supplier evaluation model based on weighted quantitative and qualitative criteria.',
+        problem: 'Lack of a standardized supplier evaluation system leads to purchase decisions based on personal experience without objective criteria.',
+        role: 'Design a quantitative supplier evaluation system.',
+        solution: 'Built a weighted scorecard covering 5 key axes: Quality (30%), Price (25%), Delivery Compliance (20%), Responsiveness (15%), After-sales Service (10%).',
+        outputs: 'Interactive Excel model with auto-rating, fill guide, recommendation list.',
+        result: 'Improved supplier evaluation objectivity by 60%, reduced risk of contracting unqualified suppliers.',
+        tools: ['Excel', 'VBA'],
+        sector: 'Pharmaceuticals & Healthcare',
+        file: null
+      }
+    },
+    {
+      id: 'contract',
+      icon: 'contract',
+      ar: {
+        tags: ['العقود', 'القانونية'],
+        title: 'قالب عقد توريد',
+        brief: 'مسودة عقد توريد متكاملة مع بنود أساسية قابلة للتعديل حسب طبيعة التعاقد.',
+        problem: 'الحاجة إلى عقد توريد موحد يوازن بين حقوق الطرفين ويغطي جميع السيناريوهات التشغيلية.',
+        role: 'إعداد مسودة عقد توريد شاملة.',
+        solution: 'صياغة عقد من 15 بنداً يغطي: نطاق العمل، الأسعار والدفعات، التسليم والقبول، الضمانات، التعويضات، السرية، فض المنازعات.',
+        outputs: 'مسودة عقد Word قابلة للتعديل، قائمة بنود اختيارية، مذكرة توضيحية.',
+        result: 'تقليل وقت إعداد العقود بنسبة 50% وتوحيد الممارسة التعاقدية.',
+        tools: ['Microsoft Word'],
+        sector: 'عام',
+        file: null
+      },
+      en: {
+        tags: ['CONTRACTS', 'LEGAL'],
+        title: 'Supply Contract Template',
+        brief: 'A comprehensive supply contract draft with essential clauses adaptable to different engagement types.',
+        problem: 'Need for a standardized supply contract that balances both parties\' rights and covers all operational scenarios.',
+        role: 'Prepare a comprehensive supply contract draft.',
+        solution: 'Drafted a 15-clause contract covering: scope of work, pricing and payments, delivery and acceptance, warranties, indemnities, confidentiality, dispute resolution.',
+        outputs: 'Editable Word contract, optional clauses list, explanatory memo.',
+        result: 'Reduced contract preparation time by 50%, standardized contracting practices.',
+        tools: ['Microsoft Word'],
+        sector: 'General',
+        file: null
+      }
+    },
+    {
+      id: 'dashboard',
+      icon: 'table_chart',
+      ar: {
+        tags: ['المخزون', 'لوحات البيانات', 'قريباً'],
+        title: 'لوحة تحليل المخزون (Excel)',
+        brief: 'لوحة بيانات تفاعلية لتحليل المخزون باستخدام تقنيات ABC/XYZ.',
+        problem: 'صعوبة تتبع مستويات المخزون وتحديد العناصر بطيئة الحركة والمخزون الراكد.',
+        role: 'تصميم لوحة تحكم تفاعلية للمخزون.',
+        solution: 'تطوير لوحة Excel تجمع بيانات المخزون وتحللها بتقنيات ABC/XYZ مع رسوم بيانية ديناميكية.',
+        outputs: 'ملف Excel مع لوحة تحكم، تقرير تحليلي، توصيات.',
+        result: '— (قيد الإعداد)',
+        tools: ['Excel', 'Power Query'],
+        sector: 'قيد الإعداد',
+        file: null,
+        comingSoon: true
+      },
+      en: {
+        tags: ['INVENTORY', 'DASHBOARD', 'COMING SOON'],
+        title: 'Inventory Dashboard (Excel)',
+        brief: 'An interactive inventory analysis dashboard using ABC/XYZ techniques.',
+        problem: 'Difficulty tracking inventory levels and identifying slow-moving and dead stock items.',
+        role: 'Design an interactive inventory control dashboard.',
+        solution: 'Developed an Excel dashboard aggregating inventory data with ABC/XYZ analysis and dynamic charts.',
+        outputs: 'Excel file with dashboard, analytical report, recommendations.',
+        result: '— (In preparation)',
+        tools: ['Excel', 'Power Query'],
+        sector: 'In preparation',
+        file: null,
+        comingSoon: true
+      }
+    },
+    {
+      id: 'demand',
+      icon: 'query_stats',
+      ar: {
+        tags: ['التخطيط', 'التنبؤ', 'قريباً'],
+        title: 'نموذج تخطيط الطلب',
+        brief: 'نموذج تنبؤ بالطلب باستخدام بيانات المبيعات التاريخية والاتجاهات الموسمية.',
+        problem: 'الاعتماد على التخمين في تخطيط الطلب يؤدي إلى فائض أو عجز في المخزون.',
+        role: 'بناء نموذج تنبؤ كمي للطلب.',
+        solution: 'تطوير نموذج تنبؤ بتقنيات المتوسطات المتحركة والتجانس الأسي مع مراعاة الموسمية.',
+        outputs: 'نموذج Excel، قالب بيانات، دليل استخدام.',
+        result: '— (قيد الإعداد)',
+        tools: ['Excel', 'Python'],
+        sector: 'قيد الإعداد',
+        file: null,
+        comingSoon: true
+      },
+      en: {
+        tags: ['PLANNING', 'FORECAST', 'COMING SOON'],
+        title: 'Demand Planning Model',
+        brief: 'A demand forecasting model using historical sales data and seasonal trends.',
+        problem: 'Relying on guesswork for demand planning leads to inventory surplus or shortage.',
+        role: 'Build a quantitative demand forecasting model.',
+        solution: 'Developed a forecast model using moving averages and exponential smoothing with seasonality adjustments.',
+        outputs: 'Excel model, data template, user guide.',
+        result: '— (In preparation)',
+        tools: ['Excel', 'Python'],
+        sector: 'In preparation',
+        file: null,
+        comingSoon: true
+      }
+    }
+  ];
+
+  // --- Render Project Cards ---
+  function renderProjects(lang) {
+    const grid = document.getElementById('projectsGrid');
+    const isAr = lang === 'ar';
+    grid.innerHTML = '';
+    PROJECTS.forEach((p, idx) => {
+      const d = isAr ? p.ar : p.en;
+      const animClass = idx % 3 === 0 ? 'float-animation' : idx % 3 === 1 ? 'float-animation-delayed' : 'float-animation';
+      const hasFile = !!p.file && !p.comingSoon;
+      const sampleLabel = d.tags.some(t => t.includes('قريباً') || t.includes('COMING SOON'));
+      const card = document.createElement('div');
+      card.className = `project-card group glass-panel rounded-2xl overflow-hidden interactive-element ${animClass}`;
+      card.innerHTML = `
+        <div class="h-48 bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center">
+          <span class="material-symbols-outlined text-5xl text-primary/40">${p.icon}</span>
+        </div>
+        <div class="p-6">
+          <div class="flex gap-1.5 mb-3 flex-wrap">
+            ${d.tags.map(t => {
+              const isSample = t.includes('قريباً') || t.includes('COMING SOON');
+              return isSample
+                ? `<span class="bg-amber-500/10 text-amber-400 text-[9px] label-style px-2 py-1 rounded border border-amber-500/20">${t}</span>`
+                : `<span class="bg-primary/10 text-[9px] label-style px-2 py-1 rounded text-primary">${t}</span>`;
+            }).join('')}
+          </div>
+          <h3 class="font-display text-lg mb-2 text-white group-hover:text-primary transition-colors" data-en="${p.en.title}" data-ar="${p.ar.title}">${d.title}</h3>
+          <p class="font-body text-xs text-on-surface-variant mb-3" data-en="${p.en.brief}" data-ar="${p.ar.brief}">${d.brief}</p>
+          ${p.comingSoon ? '' : `
+          <div class="glass-panel p-3 rounded-xl mb-4 border border-secondary/20">
+            <div class="label-style text-[10px] text-secondary" data-en="KEY RESULT" data-ar="النتيجة الرئيسية">${isAr ? 'النتيجة الرئيسية' : 'KEY RESULT'}</div>
+            <p class="font-body text-sm text-white font-bold" data-en="${p.en.result}" data-ar="${p.ar.result}">${d.result}</p>
+          </div>
+          <div class="flex flex-wrap gap-1.5 mb-4">
+            ${d.tools.map(t => `<span class="bg-surface-container-high text-[9px] label-style px-2 py-0.5 rounded text-on-surface-variant">${t}</span>`).join('')}
+          </div>
+          `}
+          <div class="flex gap-2">
+            ${p.comingSoon ? `
+            <button class="w-full glass-panel py-2.5 rounded-xl text-sm font-bold border border-white/10 text-on-surface-variant cursor-not-allowed" disabled data-en="Coming Soon" data-ar="قريباً">${isAr ? 'قريباً' : 'Coming Soon'}</button>
+            ` : `
+            <button class="flex-1 gradient-button py-2.5 rounded-xl text-sm font-bold text-white interactive-element preview-btn" data-project="${p.id}" data-en="Preview" data-ar="معاينة">${isAr ? 'معاينة' : 'Preview'}</button>
+            <button class="flex-1 glass-panel py-2.5 rounded-xl text-sm font-bold border border-primary/40 text-primary hover:bg-primary/10 transition-all interactive-element download-btn ${hasFile ? '' : 'opacity-50 cursor-not-allowed'}" data-file="${p.file || ''}" ${hasFile ? '' : 'disabled'} data-en="${hasFile ? 'Download' : 'Unavailable'}" data-ar="${hasFile ? 'تحميل' : 'غير متاح'}">${hasFile ? (isAr ? 'تحميل' : 'Download') : (isAr ? 'غير متاح' : 'Unavailable')}</button>
+            `}
+          </div>
+        </div>
+      `;
+      grid.appendChild(card);
+    });
+  }
+
+  // --- Modal Logic ---
+  const modalOverlay = document.getElementById('projectModal');
+  const modalBody = document.getElementById('modalBody');
+  const modalClose = document.getElementById('modalClose');
+
+  function openModal(projectId) {
+    const p = PROJECTS.find(x => x.id === projectId);
+    if (!p) return;
+    const isAr = htmlEl.lang === 'ar';
+    const d = isAr ? p.ar : p.en;
+    modalBody.innerHTML = `
+      <div class="flex items-center gap-3 mb-2">
+        <span class="material-symbols-outlined text-primary text-2xl">${p.icon}</span>
+        <div class="label-style text-[10px] text-primary">${d.sector}</div>
+      </div>
+      <h3 class="font-display text-2xl text-white mb-4" data-en="${p.en.title}" data-ar="${p.ar.title}">${d.title}</h3>
+      <div class="flex gap-1.5 mb-4 flex-wrap">${d.tags.filter(t => !t.includes('قريباً') && !t.includes('COMING SOON')).map(t => `<span class="bg-primary/10 text-[9px] label-style px-2 py-1 rounded text-primary">${t}</span>`).join('')}</div>
+      <div class="space-y-4">
+        <div>
+          <div class="label-style text-[10px] text-secondary mb-1" data-en="PROBLEM" data-ar="المشكلة">${isAr ? 'المشكلة' : 'PROBLEM'}</div>
+          <p class="font-body text-sm text-on-surface-variant" data-en="${p.en.problem}" data-ar="${p.ar.problem}">${d.problem}</p>
+        </div>
+        <div>
+          <div class="label-style text-[10px] text-secondary mb-1" data-en="MY ROLE" data-ar="دوري">${isAr ? 'دوري' : 'MY ROLE'}</div>
+          <p class="font-body text-sm text-on-surface-variant" data-en="${p.en.role}" data-ar="${p.ar.role}">${d.role}</p>
+        </div>
+        <div>
+          <div class="label-style text-[10px] text-secondary mb-1" data-en="SOLUTION" data-ar="الحل">${isAr ? 'الحل' : 'SOLUTION'}</div>
+          <p class="font-body text-sm text-on-surface-variant" data-en="${p.en.solution}" data-ar="${p.ar.solution}">${d.solution}</p>
+        </div>
+        <div>
+          <div class="label-style text-[10px] text-secondary mb-1" data-en="OUTPUTS" data-ar="المخرجات">${isAr ? 'المخرجات' : 'OUTPUTS'}</div>
+          <p class="font-body text-sm text-on-surface-variant" data-en="${p.en.outputs}" data-ar="${p.ar.outputs}">${d.outputs}</p>
+        </div>
+        <div class="glass-panel p-4 rounded-xl border border-secondary/20">
+          <div class="label-style text-[10px] text-secondary mb-1" data-en="RESULT" data-ar="النتيجة">${isAr ? 'النتيجة' : 'RESULT'}</div>
+          <p class="font-body text-sm text-white font-bold" data-en="${p.en.result}" data-ar="${p.ar.result}">${d.result}</p>
+        </div>
+        <div class="flex flex-wrap gap-2 pt-2">
+          <div class="label-style text-[10px] text-on-surface-variant mr-2" data-en="TOOLS:" data-ar="الأدوات:">${isAr ? 'الأدوات:' : 'TOOLS:'}</div>
+          ${d.tools.map(t => `<span class="bg-surface-container-high text-[9px] label-style px-2 py-0.5 rounded text-on-surface-variant">${t}</span>`).join('')}
+        </div>
+        <div class="pt-2 border-t border-white/5">
+          <div class="label-style text-[9px] text-amber-400" data-en="⚠ Illustrative sample — not an actual client deliverable." data-ar="⚠ نموذج توضيحي — ليس تسليم فعلي لعميل.">⚠ نموذج توضيحي — ليس تسليم فعلي لعميل.</div>
+        </div>
+      </div>
+    `;
+    modalOverlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    modalOverlay.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  modalClose.addEventListener('click', closeModal);
+  modalOverlay.addEventListener('click', (e) => { if (e.target === modalOverlay) closeModal(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
+
+  // --- Delegate clicks for Preview/Download ---
+  document.addEventListener('click', (e) => {
+    const previewBtn = e.target.closest('.preview-btn');
+    if (previewBtn) { openModal(previewBtn.dataset.project); return; }
+    const dlBtn = e.target.closest('.download-btn');
+    if (dlBtn && !dlBtn.disabled) {
+      const file = dlBtn.dataset.file;
+      if (file) {
+        // Check if file exists via fetch, fallback to download
+        fetch(file, { method: 'HEAD' }).then(r => {
+          if (r.ok) window.location.href = file;
+          else alert(isArabic() ? 'ملف التحميل غير متوفر حالياً.' : 'Download file not available yet.');
+        }).catch(() => alert(isArabic() ? 'ملف التحميل غير متوفر حالياً.' : 'Download file not available yet.'));
+      }
+    }
+  });
+
+  function isArabic() { return htmlEl.lang === 'ar'; }
+
+  // --- Centralized Translations ---
+  const LANG = {
+    typewriterRoles: {
+      ar: [
+        "خبير مشتريات وسلاسل إمداد — أكثر من 18 سنة من الخبرة",
+        "مدرس لغة عربية وقرآن وتجويد — عبر الإنترنت",
+        "متخصص في الذكاء الاصطناعي والأتمتة — حلول مبتكرة"
+      ],
+      en: [
+        "Procurement & Supply Chain Expert — 18+ Years of Experience",
+        "Arabic, Quran & Tajweed Teacher — Online Lessons",
+        "AI & Automation Specialist — Innovative Solutions"
+      ]
+    },
+    heroSub: {
+      ar: "أساعد الشركات والمتعلمين على تحقيق أهدافهم من خلال استشارات احترافية، تعليم متميز، وحلول ذكاء اصطناعي مبتكرة.",
+      en: "Helping businesses and learners achieve their goals through professional consulting, distinguished education, and innovative AI solutions."
+    },
+    cta: {
+      ar: { primary: "اطلب مكالمة مجانية", secondary: "استكشف المجالات" },
+      en: { primary: "Book a Free Call", secondary: "Explore Brands" }
+    }
+  };
+
+  // --- WebGL Shader ---
+  const canvas = document.getElementById('shader-canvas');
+  const gl = canvas.getContext('webgl');
+  if (gl) {
+    const vertexShaderSource = `
+      attribute vec2 position;
+      varying vec2 v_texCoord;
+      void main() {
+        v_texCoord = position * 0.5 + 0.5;
+        v_texCoord.y = 1.0 - v_texCoord.y;
+        gl_Position = vec4(position, 0.0, 1.0);
+      }
+    `;
+    const fragmentShaderSource = `
+      precision highp float;
+      varying vec2 v_texCoord;
+      uniform float u_time;
+      uniform vec2 u_resolution;
+      uniform vec2 u_mouse;
+      void main() {
+        vec2 uv = v_texCoord;
+        vec2 m = u_mouse / u_resolution;
+        float noise = sin(uv.x * 8.0 + u_time * 0.5) * cos(uv.y * 8.0 + u_time * 0.7);
+        noise += sin(length(uv - m) * 10.0 - u_time * 2.0) * 0.2;
+        vec3 color1 = vec3(1.0, 0.17, 0.47);
+        vec3 color2 = vec3(0.5, 0.0, 1.0);
+        vec3 color3 = vec3(0.0, 0.9, 1.0);
+        vec3 finalColor = mix(color1, color2, uv.y + noise * 0.3);
+        finalColor = mix(finalColor, color3, clamp(sin(u_time + length(uv-0.5)*5.0), 0.0, 1.0) * 0.1);
+        float pulse = 0.5 + 0.5 * sin(u_time * 0.3);
+        finalColor *= 0.4 + 0.2 * pulse;
+        float vig = 1.0 - length(uv - 0.5) * 1.5;
+        finalColor *= vig;
+        gl_FragColor = vec4(finalColor, 0.35);
+      }
+    `;
+    function createShader(gl, type, source) {
+      const shader = gl.createShader(type);
+      gl.shaderSource(shader, source);
+      gl.compileShader(shader);
+      return shader;
+    }
+    const vs = createShader(gl, gl.VERTEX_SHADER, vertexShaderSource);
+    const fs = createShader(gl, gl.FRAGMENT_SHADER, fragmentShaderSource);
+    const program = gl.createProgram();
+    gl.attachShader(program, vs);
+    gl.attachShader(program, fs);
+    gl.linkProgram(program);
+    gl.useProgram(program);
+    const positionBuffer = gl.createBuffer();
+    gl.bindBuffer(gl.ARRAY_BUFFER, positionBuffer);
+    gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, 1, -1, -1, 1, -1, 1, 1, -1, 1, 1]), gl.STATIC_DRAW);
+    const positionLocation = gl.getAttribLocation(program, 'position');
+    gl.enableVertexAttribArray(positionLocation);
+    gl.vertexAttribPointer(positionLocation, 2, gl.FLOAT, false, 0, 0);
+    const timeLoc = gl.getUniformLocation(program, 'u_time');
+    const resLoc = gl.getUniformLocation(program, 'u_resolution');
+    const mouseLoc = gl.getUniformLocation(program, 'u_mouse');
+    let mouseX = 0, mouseY = 0;
+    document.addEventListener('mousemove', e => { mouseX = e.clientX; mouseY = e.clientY; });
+    function resize() { canvas.width = window.innerWidth; canvas.height = window.innerHeight; gl.viewport(0, 0, canvas.width, canvas.height); }
+    window.addEventListener('resize', resize);
+    resize();
+    function render(time) {
+      gl.uniform1f(timeLoc, time * 0.001);
+      gl.uniform2f(resLoc, canvas.width, canvas.height);
+      gl.uniform2f(mouseLoc, mouseX, mouseY);
+      gl.drawArrays(gl.TRIANGLES, 0, 6);
+      requestAnimationFrame(render);
+    }
+    requestAnimationFrame(render);
+  }
+
+  // --- Custom Cursor ---
+  const cursor = document.getElementById('cursor');
+  document.querySelectorAll('.interactive-element, a, button, .project-card, .glitch-hover').forEach(el => {
+    el.addEventListener('mouseenter', () => cursor?.classList.add('active'));
+    el.addEventListener('mouseleave', () => cursor?.classList.remove('active'));
+  });
+  document.addEventListener('mousemove', (e) => {
+    if (cursor) { cursor.style.left = e.clientX + 'px'; cursor.style.top = e.clientY + 'px'; }
+  });
+
+  const htmlEl = document.documentElement;
+
+  // --- Typewriter (Multi-Role) ---
+  const typewriterElement = document.getElementById('typewriter');
+  let charIndex = 0, roleIndex = 0, isDeleting = false;
+  let currentTexts = LANG.typewriterRoles.ar;
+  let currentText = currentTexts[0];
+  function type() {
+    if (!isDeleting) {
+      if (charIndex < currentText.length) {
+        typewriterElement.textContent += currentText.charAt(charIndex);
+        charIndex++;
+        setTimeout(type, 60);
+      } else {
+        setTimeout(() => { isDeleting = true; type(); }, 2500);
+      }
+    } else {
+      if (charIndex > 0) {
+        typewriterElement.textContent = currentText.substring(0, charIndex - 1);
+        charIndex--;
+        setTimeout(type, 30);
+      } else {
+        isDeleting = false;
+        roleIndex = (roleIndex + 1) % currentTexts.length;
+        currentText = currentTexts[roleIndex];
+        setTimeout(type, 500);
+      }
+    }
+  }
+  type();
+  renderProjects(htmlEl.lang);
+
+  // --- Language Toggle ---
+  const langToggle = document.getElementById('langToggle');
+
+  function swapLanguage(isArabic) {
+    document.querySelectorAll('[data-en]').forEach(el => {
+      if (isArabic) {
+        const ar = el.getAttribute('data-ar');
+        if (ar) el.innerHTML = ar;
+      } else {
+        const en = el.getAttribute('data-en');
+        if (en) el.innerHTML = en;
+      }
+    });
+    document.querySelectorAll('[data-en-placeholder]').forEach(el => {
+      if (isArabic) {
+        const ar = el.getAttribute('data-ar-placeholder');
+        if (ar) el.placeholder = ar;
+      } else {
+        const en = el.getAttribute('data-en-placeholder');
+        if (en) el.placeholder = en;
+      }
+    });
+    htmlEl.lang = isArabic ? 'ar' : 'en';
+    htmlEl.dir = isArabic ? 'rtl' : 'ltr';
+    langToggle.textContent = isArabic ? 'EN' : 'ع';
+    // Restart typewriter with new language
+    charIndex = 0; roleIndex = 0; isDeleting = false;
+    typewriterElement.textContent = '';
+    currentTexts = isArabic ? LANG.typewriterRoles.ar : LANG.typewriterRoles.en;
+    currentText = currentTexts[0];
+    type();
+    // Update hero description
+    const heroDesc = document.querySelector('#home p.font-body');
+    if (heroDesc) heroDesc.textContent = isArabic ? LANG.heroSub.ar : LANG.heroSub.en;
+    // Re-render project cards with new language
+    renderProjects(isArabic ? 'ar' : 'en');
+  }
+
+  langToggle.addEventListener('click', () => {
+    swapLanguage(htmlEl.lang !== 'ar');
+  });
+
+  document.getElementById('langToggleMobile')?.addEventListener('click', () => {
+    swapLanguage(htmlEl.lang !== 'ar');
+  });
+
+  // --- Mobile Menu ---
+  const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+  const mobileNav = document.getElementById('mobileNav');
+  mobileMenuBtn?.addEventListener('click', () => {
+    mobileNav?.classList.toggle('hidden');
+  });
+  mobileNav?.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => mobileNav.classList.add('hidden'));
+  });
+
+  // --- Reveal Animations ---
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('active');
+    });
+  }, { threshold: 0.15, rootMargin: "0px 0px -50px 0px" });
+  document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => observer.observe(el));
+
+  // --- FAQ Accordion ---
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.parentElement;
+      const answer = item.querySelector('.faq-a');
+      const icon = btn.querySelector('.faq-icon');
+      const isOpen = answer.style.maxHeight && answer.style.maxHeight !== '0px';
+      document.querySelectorAll('.faq-a').forEach(a => { a.style.maxHeight = '0px'; });
+      document.querySelectorAll('.faq-icon').forEach(i => { i.style.transform = 'rotate(0deg)'; });
+      if (!isOpen) {
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+        if (icon) icon.style.transform = 'rotate(180deg)';
+      }
+    });
+  });
+
+  // --- Navbar Scroll ---
+  window.addEventListener('scroll', () => {
+    const nav = document.getElementById('navbar');
+    if (window.scrollY > 100) {
+      nav.classList.add('bg-background/90', 'py-3', 'border-primary/20');
+      nav.classList.remove('bg-background/20', 'py-4', 'border-white/5');
+    } else {
+      nav.classList.add('bg-background/20', 'py-4', 'border-white/5');
+      nav.classList.remove('bg-background/90', 'py-3', 'border-primary/20');
+    }
+  });
+
+  // --- Contact Form ---
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const btn = this.querySelector('button[type="submit"]');
+    const lang = htmlEl.lang || 'ar';
+    btn.textContent = lang === 'ar' ? 'تم الإرسال ✓' : 'Sent ✓';
+    btn.style.background = '#22c55e';
+    setTimeout(() => {
+      btn.textContent = lang === 'ar' ? 'إرسال الطلب' : 'Send Request';
+      btn.style.background = '';
+    }, 3000);
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Electric Noir | Creative Visionary &amp; Developer</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&amp;family=Inter:wght@400;500&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-container": "#929093",
+                    "on-secondary-container": "#00424e",
+                    "on-surface": "#d4e4fa",
+                    "surface-container-highest": "#273647",
+                    "on-primary": "#490080",
+                    "outline": "#988d9f",
+                    "on-primary-fixed": "#2c0051",
+                    "on-secondary": "#003640",
+                    "primary-fixed": "#f0dbff",
+                    "tertiary": "#c8c6c8",
+                    "surface-container-lowest": "#010f1f",
+                    "surface-tint": "#ddb7ff",
+                    "secondary": "#4cd7f6",
+                    "tertiary-fixed-dim": "#c8c6c8",
+                    "on-secondary-fixed": "#001f26",
+                    "primary": "#ddb7ff",
+                    "tertiary-fixed": "#e5e1e4",
+                    "on-tertiary-fixed": "#1b1b1d",
+                    "surface": "#051424",
+                    "surface-variant": "#273647",
+                    "surface-container-low": "#0d1c2d",
+                    "on-tertiary-fixed-variant": "#474649",
+                    "on-primary-container": "#400071",
+                    "inverse-primary": "#842bd2",
+                    "inverse-on-surface": "#233143",
+                    "on-background": "#d4e4fa",
+                    "secondary-container": "#03b5d3",
+                    "on-error-container": "#ffdad6",
+                    "primary-fixed-dim": "#ddb7ff",
+                    "inverse-surface": "#d4e4fa",
+                    "outline-variant": "#4d4354",
+                    "on-surface-variant": "#cfc2d6",
+                    "primary-container": "#b76dff",
+                    "error": "#ffb4ab",
+                    "background": "#051424",
+                    "on-error": "#690005",
+                    "surface-container": "#122131",
+                    "secondary-fixed-dim": "#4cd7f6",
+                    "secondary-fixed": "#acedff",
+                    "on-tertiary-container": "#2a292c",
+                    "error-container": "#93000a",
+                    "on-primary-fixed-variant": "#6900b3",
+                    "surface-container-high": "#1c2b3c",
+                    "on-secondary-fixed-variant": "#004e5c",
+                    "surface-bright": "#2c3a4c",
+                    "surface-dim": "#051424",
+                    "on-tertiary": "#303032"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "20px",
+                    "container-max": "1440px",
+                    "gutter": "24px",
+                    "margin-desktop": "64px",
+                    "stack-xl": "80px",
+                    "stack-sm": "8px",
+                    "stack-md": "24px",
+                    "stack-lg": "48px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Montserrat"],
+                    "headline-lg-mobile": ["Montserrat"],
+                    "body-md": ["Inter"],
+                    "label-caps": ["JetBrains Mono"],
+                    "display": ["Montserrat"],
+                    "headline-md": ["Montserrat"],
+                    "body-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-lg": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                    "headline-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                    "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                    "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "500" }],
+                    "display": ["80px", { "lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "900" }],
+                    "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                    "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #051424;
+            color: #d4e4fa;
+            scroll-behavior: smooth;
+            cursor: none;
+        }
+        .custom-cursor {
+            width: 24px;
+            height: 24px;
+            border: 2px solid #ddb7ff;
+            border-radius: 50%;
+            position: fixed;
+            pointer-events: none;
+            z-index: 9999;
+            transition: transform 0.15s ease-out;
+            mix-blend-mode: difference;
+        }
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .project-card:hover {
+            box-shadow: 0 0 30px rgba(168, 85, 247, 0.4);
+        }
+        .gradient-button {
+            background: linear-gradient(135deg, #a855f7 0%, #06b6d4 100%);
+        }
+        .text-glow {
+            text-shadow: 0 0 15px rgba(221, 183, 255, 0.5);
+        }
+        .parallax-bg {
+            will-change: transform;
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+<div class="custom-cursor hidden md:block" id="cursor"></div>
+<div class="fixed inset-0 z-[-2] w-full h-full">
+<div class="absolute inset-0 bg-cover bg-center parallax-bg scale-110" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAZ4-bj2c14c5K1t5SV12gSfTGabXWU-nhGhSRQjbxhDegJArVONgKIc4cAfn4dX3rjp5jZ9iw-DbL8IhzouaAUvx6GSWHkiKo9iUk-elYSLUfZSzSvzRLtzb6-IE0Yh_wmmbZIQBF4J40y9PByJ9JvbzEPXrfANJMysO6SxBSOduz3e5gJz-liSmjpwcyINK7XTTYfZwT7pz700CbduR5JSUpcb7TajdwxkNyT4WoZ48_I_8mCHvE')"></div>
+<div class="absolute inset-0 bg-black/40"></div>
+<!-- STITCH_SHADER_START:ANIMATION_2 class="absolute inset-0 w-full h-full opacity-30 pointer-events-none" -->
+<div class="absolute inset-0 w-full h-full opacity-30 pointer-events-none" style="display:block;">
+<canvas id="shader-canvas-ANIMATION_2" style="display:block;width:100%;height:100%"></canvas>
+<script>
+(function() {
+  const canvas = document.getElementById('shader-canvas-ANIMATION_2');
+
+  // Sync the WebGL drawing-buffer size with the CSS-driven layout size.
+  // This fires on initial layout and whenever the element is resized.
+  function syncSize() {
+    const w = canvas.clientWidth  || 1280;
+    const h = canvas.clientHeight || 720;
+    if (canvas.width !== w || canvas.height !== h) {
+      canvas.width  = w;
+      canvas.height = h;
+    }
+  }
+  if (typeof ResizeObserver !== 'undefined') {
+    new ResizeObserver(syncSize).observe(canvas);
+  }
+  syncSize();
+
+  const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+  if (!gl) return;
+  const vs = `attribute vec2 a_position;
+varying vec2 v_texCoord;
+void main() {
+  v_texCoord = a_position * 0.5 + 0.5;
+  gl_Position = vec4(a_position, 0.0, 1.0);
+}`;
+  const fs = `precision highp float;
+varying vec2 v_texCoord;
+uniform float u_time;
+uniform vec2 u_resolution;
+uniform vec2 u_mouse;
+
+void main() {
+    vec2 uv = v_texCoord;
+    vec2 m = u_mouse / u_resolution;
+    
+    float noise = sin(uv.x * 10.0 + u_time) * cos(uv.y * 10.0 + u_time);
+    vec3 color1 = vec3(0.66, 0.33, 0.97); // Electric Purple
+    vec3 color2 = vec3(0.0, 0.8, 1.0);    // Cyan
+    
+    vec3 finalColor = mix(color1, color2, uv.y + noise * 0.2);
+    finalColor *= 0.5 + 0.5 * sin(u_time * 0.5 + uv.x * 5.0);
+    
+    // Vignette
+    float vig = 1.0 - length(uv - 0.5) * 1.2;
+    finalColor *= vig;
+
+    gl_FragColor = vec4(finalColor * 0.3, 0.4); // Subtle overlay
+}`;
+  function cs(type, src) {
+    const s = gl.createShader(type);
+    gl.shaderSource(s, src);
+    gl.compileShader(s);
+    return s;
+  }
+  const prog = gl.createProgram();
+  gl.attachShader(prog, cs(gl.VERTEX_SHADER, vs));
+  gl.attachShader(prog, cs(gl.FRAGMENT_SHADER, fs));
+  gl.linkProgram(prog);
+  gl.useProgram(prog);
+  const buf = gl.createBuffer();
+  gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 1,-1, -1,1, 1,1]), gl.STATIC_DRAW);
+  const pos = gl.getAttribLocation(prog, 'a_position');
+  gl.enableVertexAttribArray(pos);
+  gl.vertexAttribPointer(pos, 2, gl.FLOAT, false, 0, 0);
+  const uTime = gl.getUniformLocation(prog, 'u_time');
+  const uRes = gl.getUniformLocation(prog, 'u_resolution');
+  const uMouse = gl.getUniformLocation(prog, 'u_mouse');
+
+  // u_mouse is in pixel coordinates matching u_resolution (ShaderToy convention).
+  // Shaders that need normalized coords should use: u_mouse / u_resolution.
+  let mouse = { x: canvas.width / 2, y: canvas.height / 2 };
+  window.addEventListener('mousemove', (event) => {
+    const rect = canvas.getBoundingClientRect();
+    if (rect.width && rect.height) {
+      const nx = (event.clientX - rect.left) / rect.width;
+      const ny = 1.0 - (event.clientY - rect.top) / rect.height;
+      mouse.x = nx * canvas.width;
+      mouse.y = ny * canvas.height;
+    }
+  });
+
+  function render(t) {
+    if (typeof ResizeObserver === 'undefined') syncSize();
+    gl.viewport(0, 0, canvas.width, canvas.height);
+    if (uTime) gl.uniform1f(uTime, t * 0.001);
+    if (uRes) gl.uniform2f(uRes, canvas.width, canvas.height);
+    if (uMouse) gl.uniform2f(uMouse, mouse.x, mouse.y);
+    gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+    requestAnimationFrame(render);
+  }
+  render(0);
+})();
+</script>
+</div>
+<!-- STITCH_SHADER_END:ANIMATION_2 -->
+</div>
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 bg-surface/10 backdrop-blur-xl border-b border-white/10 shadow-2xl">
+<div class="font-headline-md text-headline-md font-bold text-primary">Electric Noir</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-body-lg text-body-lg text-primary font-bold border-b-2 border-primary pb-1" href="#home">Home</a>
+<a class="font-body-lg text-body-lg text-on-surface-variant hover:text-primary transition-colors" href="#about">About</a>
+<a class="font-body-lg text-body-lg text-on-surface-variant hover:text-primary transition-colors" href="#projects">Projects</a>
+<a class="font-body-lg text-body-lg text-on-surface-variant hover:text-primary transition-colors" href="#contact">Contact</a>
+</div>
+<button class="gradient-button px-6 py-2 rounded-lg font-bold text-on-primary hover:scale-105 transition-transform">
+            Let's Talk
+        </button>
+</nav>
+<main class="relative z-10">
+<section class="min-h-screen flex flex-col justify-center items-center px-margin-mobile text-center pt-24" id="home">
+<h1 class="font-display text-[48px] md:text-display leading-tight mb-stack-md text-glow reveal">
+                Creative Visionary <br/> &amp; Developer
+            </h1>
+<p class="font-body-lg text-body-lg max-w-2xl mb-stack-lg text-on-surface/80 reveal">
+                Blending techno-elegance with high-performance engineering to craft digital experiences that resonate.
+            </p>
+<div class="flex gap-stack-md reveal">
+<button class="gradient-button px-8 py-4 rounded-xl font-bold text-on-primary shadow-xl hover:shadow-primary/40 transition-all">
+                    View My Work
+                </button>
+<button class="glass-panel px-8 py-4 rounded-xl font-bold border border-secondary text-secondary hover:bg-secondary/10 transition-all">
+                    Read Story
+                </button>
+</div>
+</section>
+<section class="py-stack-xl px-margin-mobile flex justify-center" id="about">
+<div class="glass-panel max-w-4xl p-stack-lg rounded-3xl reveal text-center border border-white/15">
+<div class="font-label-caps text-label-caps text-secondary mb-stack-sm">THE ARCHITECT</div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-stack-md">Engineering Emotion</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                    I specialize in the intersection of aesthetics and logic. With a background in both creative direction and full-stack development, I build products that don't just function flawlessly—they tell a story. My approach is rooted in "Techno-Elegance," a design philosophy that prioritizes clarity, depth, and experimental high-fidelity visuals.
+                </p>
+<div class="mt-stack-lg grid grid-cols-2 md:grid-cols-4 gap-stack-md">
+<div class="p-4 border border-white/5 rounded-xl bg-white/5">
+<div class="text-secondary font-bold text-2xl">8+</div>
+<div class="text-label-caps text-[10px]">Years Experience</div>
+</div>
+<div class="p-4 border border-white/5 rounded-xl bg-white/5">
+<div class="text-secondary font-bold text-2xl">120+</div>
+<div class="text-label-caps text-[10px]">Projects Done</div>
+</div>
+<div class="p-4 border border-white/5 rounded-xl bg-white/5">
+<div class="text-secondary font-bold text-2xl">15</div>
+<div class="text-label-caps text-[10px]">Design Awards</div>
+</div>
+<div class="p-4 border border-white/5 rounded-xl bg-white/5">
+<div class="text-secondary font-bold text-2xl">01</div>
+<div class="text-label-caps text-[10px]">Visionary Mind</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-stack-xl px-margin-mobile md:px-margin-desktop bg-surface/50 backdrop-blur-md" id="projects">
+<div class="max-w-container-max mx-auto">
+<div class="flex justify-between items-end mb-stack-lg reveal">
+<div>
+<div class="font-label-caps text-label-caps text-secondary">PORTFOLIO</div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg">Selected Works</h2>
+</div>
+<a class="font-body-md text-secondary border-b border-secondary/30 hover:border-secondary transition-all" href="#">Explore All</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="project-card group glass-panel rounded-2xl overflow-hidden reveal transition-all duration-500 hover:-translate-y-2">
+<div class="h-64 bg-cover bg-center overflow-hidden" data-alt="A futuristic web application interface with glowing cyan highlights, glassmorphic panels, and complex data visualizations. The aesthetic is dark and sophisticated, resembling a premium digital cockpit. Soft purple ambient light spills from the corners, enhancing the techno-elegant depth." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDAoaG5eE6-lA27CoFpjaPp_CaBmtJBpbpjBujxHCeCmlCiTBVBa0wT9RqOZsQvaqvCRJDCS2Bk6eUS8l6-GiVVmi82oPLSreygJ8kYQONDmP5fsqLNtG2Tp7tMll5nPdYsJCdTGBxt8vWdt5ewcd7GAMS3aNKLa2qg68zgGoLV6nEdHVLUENIHm7egWiAycb4DR7Kw1Lh5cKex-UawlVVRq7gx8_8_gAE_yMaMvRHDxegR5EX7qjI')"></div>
+<div class="p-stack-md">
+<div class="flex gap-2 mb-stack-sm">
+<span class="bg-slate-800 text-label-caps text-[10px] px-2 py-1 rounded">UI/UX</span>
+<span class="bg-slate-800 text-label-caps text-[10px] px-2 py-1 rounded">WEBGL</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-2 group-hover:text-primary transition-colors">Neo-Luxe Dashboard</h3>
+<p class="font-body-md text-on-surface-variant text-sm mb-4">A high-performance analytics engine with real-time shader visualizations.</p>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</div>
+</div>
+<div class="project-card group glass-panel rounded-2xl overflow-hidden reveal transition-all duration-500 hover:-translate-y-2" style="transition-delay: 100ms">
+<div class="h-64 bg-cover bg-center overflow-hidden" data-alt="An abstract 3D digital sculpture representing connectivity, with interwoven neon lines and crystalline structures floating in a dark, atmospheric space. The lighting is dramatic, using high-contrast electric purple and teal. The mood is experimental and highly creative, showcasing cutting-edge digital craftsmanship." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBcSjphTmrtfX3qEQL2_PXJlJjuH8E8E3l67FXFs6aF1avLZPdy_GdUBJxl5OOtnDqzIkj0CDUvbGkLgA9eP6BIL62fcg1K1k-Fa8z-xv9tAvQ6LcIwM7XuVa2GlW-U1P3wkvg0yMx9dWuXtLcbrvyGY4-FTfynpjtCD-TjE-Kuqpze-rbrS8hoEUtcY8dRz6Abrmo-H6aKQxfyiJSmgO3Y1ybEeUI4uXtK_Qca-8ezaP2b039ftqw')"></div>
+<div class="p-stack-md">
+<div class="flex gap-2 mb-stack-sm">
+<span class="bg-slate-800 text-label-caps text-[10px] px-2 py-1 rounded">BRANDING</span>
+<span class="bg-slate-800 text-label-caps text-[10px] px-2 py-1 rounded">3D</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-2 group-hover:text-primary transition-colors">Cyber Kinetic</h3>
+<p class="font-body-md text-on-surface-variant text-sm mb-4">Experimental brand identity for a robotics startup in the heart of Tokyo.</p>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</div>
+</div>
+<div class="project-card group glass-panel rounded-2xl overflow-hidden reveal transition-all duration-500 hover:-translate-y-2" style="transition-delay: 200ms">
+<div class="h-64 bg-cover bg-center overflow-hidden" data-alt="A sleek mobile app layout for a creative portfolio, featuring large high-resolution images, minimal typography, and fluid transition paths. The design uses a dark mode palette with sophisticated glassmorphism effects and soft luminous glows. The overall look is professional, modern, and extremely high-end." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB3ROrkOWFvFT1PiE23S4XJ22rRRCg0JFaPyWidkcuayiS-A3t0ka4chVPnUki8AOJOVzocPNm2Rnz2d2rRA5Lx5JK9qrI4wXYZGkMrns9BgXUXhHkGfMzVriNevh768NI8fj8_Y6LMepcAKYEbPdFSLZSej0xXoqGs1nQvn8G66cj_w7rqAzOeYUKpqFxaRqEY_A7vpRnCTgIyyXONxFq4ttgAJmf3aye056oRnOkUVI3HUcr6UJo')"></div>
+<div class="p-stack-md">
+<div class="flex gap-2 mb-stack-sm">
+<span class="bg-slate-800 text-label-caps text-[10px] px-2 py-1 rounded">REACT</span>
+<span class="bg-slate-800 text-label-caps text-[10px] px-2 py-1 rounded">DESIGN</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-2 group-hover:text-primary transition-colors">Vanguard Mobile</h3>
+<p class="font-body-md text-on-surface-variant text-sm mb-4">Native experience designed for elite digital creators and modern artists.</p>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-stack-xl px-margin-mobile md:px-margin-desktop overflow-hidden" id="skills">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-stack-lg reveal">
+<div class="font-label-caps text-label-caps text-secondary">TECHNICAL ARSENAL</div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg">Expertise &amp; Skills</h2>
+</div>
+<div class="flex flex-wrap justify-center gap-4 reveal">
+<div class="glass-panel px-6 py-4 rounded-full flex items-center gap-3 border border-white/10 hover:border-primary/50 hover:bg-primary/5 transition-all group">
+<span class="material-symbols-outlined text-primary">terminal</span>
+<span class="font-label-caps">Next.js</span>
+<div class="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+</div>
+<div class="glass-panel px-6 py-4 rounded-full flex items-center gap-3 border border-white/10 hover:border-secondary/50 hover:bg-secondary/5 transition-all">
+<span class="material-symbols-outlined text-secondary">palette</span>
+<span class="font-label-caps">Figma &amp; UX</span>
+</div>
+<div class="glass-panel px-6 py-4 rounded-full flex items-center gap-3 border border-white/10 hover:border-primary/50 hover:bg-primary/5 transition-all">
+<span class="material-symbols-outlined text-primary">view_in_ar</span>
+<span class="font-label-caps">Three.js</span>
+</div>
+<div class="glass-panel px-6 py-4 rounded-full flex items-center gap-3 border border-white/10 hover:border-secondary/50 hover:bg-secondary/5 transition-all">
+<span class="material-symbols-outlined text-secondary">javascript</span>
+<span class="font-label-caps">TypeScript</span>
+</div>
+<div class="glass-panel px-6 py-4 rounded-full flex items-center gap-3 border border-white/10 hover:border-primary/50 hover:bg-primary/5 transition-all">
+<span class="material-symbols-outlined text-primary">cloud</span>
+<span class="font-label-caps">AWS/Vercel</span>
+</div>
+<div class="glass-panel px-6 py-4 rounded-full flex items-center gap-3 border border-white/10 hover:border-secondary/50 hover:bg-secondary/5 transition-all">
+<span class="material-symbols-outlined text-secondary">animation</span>
+<span class="font-label-caps">Framer Motion</span>
+</div>
+</div>
+<div class="mt-stack-lg max-w-2xl mx-auto space-y-8 reveal">
+<div class="space-y-2">
+<div class="flex justify-between font-label-caps text-[10px]">
+<span>CREATIVE DESIGN</span>
+<span>95%</span>
+</div>
+<div class="h-1 w-full bg-white/10 rounded-full overflow-hidden">
+<div class="h-full bg-primary" style="width: 95%"></div>
+</div>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between font-label-caps text-[10px]">
+<span>ENGINEERING</span>
+<span>90%</span>
+</div>
+<div class="h-1 w-full bg-white/10 rounded-full overflow-hidden">
+<div class="h-full bg-secondary" style="width: 90%"></div>
+</div>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between font-label-caps text-[10px]">
+<span>USER EXPERIENCE</span>
+<span>98%</span>
+</div>
+<div class="h-1 w-full bg-white/10 rounded-full overflow-hidden">
+<div class="h-full bg-primary" style="width: 98%"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="w-full px-margin-mobile md:px-margin-desktop py-stack-md flex flex-col md:flex-row justify-between items-center bg-surface border-t border-white/5 relative z-20">
+<div class="font-label-caps text-label-caps text-primary mb-4 md:mb-0">Electric Noir</div>
+<div class="font-body-md text-body-md text-on-tertiary-fixed-variant text-center md:text-left mb-4 md:mb-0">
+            © 2024 Electric Noir. Crafted with Techno-Elegance.
+        </div>
+<div class="flex gap-6">
+<a class="text-on-tertiary-fixed-variant hover:text-secondary transition-colors font-body-md" href="#">LinkedIn</a>
+<a class="text-on-tertiary-fixed-variant hover:text-secondary transition-colors font-body-md" href="#">GitHub</a>
+<a class="text-on-tertiary-fixed-variant hover:text-secondary transition-colors font-body-md" href="#">Dribbble</a>
+<a class="text-on-tertiary-fixed-variant hover:text-secondary transition-colors font-body-md" href="#">Contact</a>
+</div>
+</footer>
+<script>
+        // Custom Cursor
+        const cursor = document.getElementById('cursor');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+
+        document.querySelectorAll('button, a, .project-card').forEach(el => {
+            el.addEventListener('mouseenter', () => {
+                cursor.style.transform = 'scale(2.5)';
+                cursor.style.backgroundColor = 'rgba(221, 183, 255, 0.1)';
+            });
+            el.addEventListener('mouseleave', () => {
+                cursor.style.transform = 'scale(1)';
+                cursor.style.backgroundColor = 'transparent';
+            });
+        });
+
+        // Intersection Observer for Reveal
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // Parallax Effect
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const parallax = document.querySelector('.parallax-bg');
+            if (parallax) {
+                parallax.style.transform = `translateY(${scrolled * 0.4}px) scale(1.1)`;
+            }
+        });
+
+        // Navbar blur on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('bg-surface/80');
+                nav.classList.remove('bg-surface/10');
+            } else {
+                nav.classList.add('bg-surface/10');
+                nav.classList.remove('bg-surface/80');
+            }
+        });
+    </script>
+</body></html>
