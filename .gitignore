@@ -1,3 +1,8 @@
+# Environment files (NEVER commit)
+.env
+.env.*
+!.env.example
+
 # Compiled executables
 *.exe
 
@@ -15,3 +20,33 @@ Thumbs.db
 # Editor
 .vscode/
 .idea/
+
+# Node
+node_modules/
+package-lock.json
+
+# Build artifacts
+dist/
+build/
+.wrangler/
+
+# Backup files
+*.backup.*
+*.bak
+
+# Internal planning docs (not for production)
+00_Project/
+01_Profile/
+03_Business/
+04_Portfolio/
+09_Website/PRD.md
+09_Website/Content.md
+09_Website/AcceptanceCriteria.md
+AGENTS.md
+opencode.json
+stitch_modern_animated_portfolio_redesign/
+
+# Misc
+__validate.py
+output_debug.txt
+*.log

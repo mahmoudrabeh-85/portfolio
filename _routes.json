@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "include": ["/*"],
+  "exclude": [
+    "/_headers",
+    "/_routes.json",
+    "/robots.txt",
+    "/sitemap.xml",
+    "/favicon.svg",
+    "/SECURITY.md",
+    "/DEPLOYMENT.md",
+    "/.env.example"
+  ],
+  "rules": [
+    {
+      "handle": [
+        {
+          "serve": "portfolio.html"
+        }
+      ]
+    }
+  ]
+}
