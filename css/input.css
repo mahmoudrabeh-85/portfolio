@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+html { overflow-x: hidden; }
 body { background-color: #1a1a28; color: #f0ebf5; scroll-behavior: smooth; cursor: none; font-family: 'Inter', sans-serif; }
 h1, h2, h3, .font-display, .font-headline { font-family: 'Sora', sans-serif; }
 .custom-cursor {
