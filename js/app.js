@@ -491,7 +491,6 @@
     }
   }
   type();
-  renderProjects(htmlEl.lang);
 
   // --- Language Toggle ---
   const langToggle = document.getElementById('langToggle');
@@ -527,9 +526,8 @@
     // Update hero description
     const heroDesc = document.querySelector('#home p.font-body');
     if (heroDesc) heroDesc.textContent = isArabicLang ? LANG.heroSub.ar : LANG.heroSub.en;
-    // Re-render project cards with new language
-    renderProjects(isArabicLang ? 'ar' : 'en');
-  }
+  // Project cards are static in portfolio.html
+}
 
   langToggle.addEventListener('click', () => {
     swapLanguage(htmlEl.lang !== 'ar');
