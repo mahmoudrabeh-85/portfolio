@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "primary": "#D4A843", "primary-container": "#B8953A", "background": "#1a1a28",
+        "primary": "#D4A843", "primary-container": "#B8953A", "background": "#3a3a60",
         "surface-dim": "#20202e", "surface": "#222230", "surface-variant": "#33334a",
         "on-surface": "#f0ebf5", "on-surface-variant": "#b8b0c4", "secondary": "#00ffcc",
         "tertiary": "#ffe04a", "outline": "#7a718a", "surface-container-low": "#252534",
