@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html { overflow-x: hidden; }
-body { background-color: #3a3a60; color: #f0ebf5; scroll-behavior: smooth; cursor: none; font-family: 'Inter', sans-serif; }
+body { background-color: #8b7baa; color: #f0ebf5; scroll-behavior: smooth; cursor: none; font-family: 'Inter', sans-serif; }
 .social-bar {
   position: fixed;
   top: 50%;
