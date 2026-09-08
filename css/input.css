@@ -7,7 +7,7 @@ body { background-color: #8b7baa; color: #f0ebf5; scroll-behavior: smooth; curso
 .social-stack {
   position: fixed;
   bottom: 20px;
-  inset-inline-start: 14px;
+  left: 14px;
   z-index: 60;
   display: flex;
   flex-direction: column;
@@ -139,4 +139,65 @@ h1, h2, h3, .font-display, .font-headline { font-family: 'Sora', sans-serif; }
 .modal-overlay.open .modal-content { transform: scale(1); }
 .modal-close { position: absolute; top: 1rem; left: 1rem; width: 2rem; height: 2rem; border-radius: 50%; border: 1px solid rgba(212,168,67,0.3); background: transparent; color: #f0ebf5; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.3s; }
 .modal-close:hover { background: rgba(212,168,67,0.2); border-color: #D4A843; }
-@media (max-width: 768px) { body { cursor: auto; } .custom-cursor { display: none !important; } }
+/* ========== RESPONSIVE ========== */
+/* Tablet (≤ 768px) */
+@media (max-width: 768px) {
+  body { cursor: auto; }
+  .custom-cursor { display: none !important; }
+
+  /* Nav */
+  #langToggle { font-size: 10px; padding: 4px 8px; white-space: nowrap; }
+
+  /* Hero */
+  .typewriter-container { font-size: 28px; }
+
+  /* Social bar — compact */
+  .social-stack { width: 46px; bottom: 14px; left: 10px; }
+  .social-bar { gap: 6px; padding: 5px; }
+  .social-icon { width: 34px; height: 34px; }
+  .social-icon svg { width: 20px; height: 20px; }
+
+  /* QR badge — smaller */
+  .qr-float img { width: 60px; height: 60px; }
+  .qr-float span { font-size: 9px; }
+  .qr-float .qr-download { font-size: 9px; padding: 2px 8px; }
+
+  /* Sections — reduce vertical spacing */
+  section { padding-top: 48px; padding-bottom: 48px; }
+
+  /* Cards — consistent sizing */
+  .glass-card { padding: 1.25rem; }
+  .glass-card h3 { font-size: 1.125rem; }
+  .glass-card p { font-size: 0.8125rem; line-height: 1.5; }
+
+  /* Grids — single column on tablet for complex layouts */
+  #skills .grid { grid-template-columns: 1fr; gap: 1rem; }
+  #faq .space-y-4 { gap: 0.75rem; }
+}
+
+/* Mobile (≤ 480px) */
+@media (max-width: 480px) {
+  /* Social bar — minimal */
+  .social-stack { width: 40px; bottom: 10px; left: 8px; }
+  .social-bar { gap: 4px; padding: 4px; }
+  .social-icon { width: 30px; height: 30px; }
+  .social-icon svg { width: 18px; height: 18px; }
+
+  /* QR — hide on very small */
+  .qr-float { display: none; }
+
+  /* Nav — compact button */
+  #langToggle { font-size: 9px; padding: 3px 6px; }
+
+  /* Modal — full width */
+  .modal-content { padding: 1rem; border-radius: 0.75rem; }
+
+  /* Sections — tighter spacing */
+  section { padding-top: 32px; padding-bottom: 32px; }
+
+  /* Cards — smaller padding */
+  .glass-card { padding: 1rem; }
+
+  /* Buttons — full width on mobile */
+  .gradient-button { width: 100%; }
+}

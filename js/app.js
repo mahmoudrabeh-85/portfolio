@@ -516,7 +516,7 @@
     });
     htmlEl.lang = isArabicLang ? 'ar' : 'en';
     htmlEl.dir = isArabicLang ? 'rtl' : 'ltr';
-    langToggle.textContent = isArabicLang ? 'EN' : 'ع';
+    langToggle.textContent = isArabicLang ? 'Change Language' : 'تغيير اللغة';
     // Restart typewriter with new language
     charIndex = 0; roleIndex = 0; isDeleting = false;
     typewriterElement.textContent = '';
@@ -530,10 +530,6 @@
 }
 
   langToggle.addEventListener('click', () => {
-    swapLanguage(htmlEl.lang !== 'ar');
-  });
-
-  document.getElementById('langToggleMobile')?.addEventListener('click', () => {
     swapLanguage(htmlEl.lang !== 'ar');
   });
 
