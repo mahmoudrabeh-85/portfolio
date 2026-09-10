@@ -50,3 +50,15 @@ stitch_modern_animated_portfolio_redesign/
 __validate.py
 output_debug.txt
 *.log
+
+# Client data — NEVER commit (contains customer PII: names, phones)
+bot/bookings.json
+bot/bookings_report*.xlsx
+bot/bookings_report*.csv
+bot/bookings_*.json
+
+# Local-only scripts & archives (not part of the site)
+check_free.py
+*.zip
+stitch_modern_animated_portfolio_redesign (4).zip
+stitch_modern_animated_portfolio_redesign (5).zip

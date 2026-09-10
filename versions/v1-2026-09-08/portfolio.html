@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html class="dark" lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>محمود رابح — مستشار مشتريات | أكاديمية عربية | مختبر ذكاء اصطناعي</title>
+<meta name="description" content="محمود رابح — مستشار مشتريات وسلاسل إمداد، مدرس لغة عربية وقرآن، ومختص في الذكاء الاصطناعي. أكثر من 18 سنة خبرة.">
+<meta property="og:title" content="محمود رابح — استشارات | تعليم | ذكاء اصطناعي">
+<meta property="og:description" content="خبرة 18+ سنة في المشتريات، تدريس العربية والقرآن، وحلول AI.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ar_AR">
+<meta property="og:url" content="https://mahmoud-rabeh.com/">
+<meta property="og:image" content="https://mahmoud-rabeh.com/jpg.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="محمود رابح — استشارات | تعليم | ذكاء اصطناعي">
+<meta name="twitter:description" content="خبرة 18+ سنة في المشتريات، تدريس العربية والقرآن، وحلول AI.">
+<meta name="twitter:image" content="https://mahmoud-rabeh.com/jpg.png">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://mahmoud-rabeh.com/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mahmoud Rabeh",
+  "alternateName": "محمود رابح",
+  "jobTitle": "Procurement & Supply Chain Consultant",
+  "email": "contact@mahmoud-rabeh.com",
+  "telephone": "+20-01006125478",
+  "url": "https://mahmoud-rabeh.com",
+  "knowsAbout": ["Procurement", "Supply Chain", "Arabic Language Teaching", "Quran Teaching", "Artificial Intelligence"]
+}
+</script>
+<link rel="stylesheet" href="css/style.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+</head>
+<body class="overflow-x-hidden">
+<a href="#home" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-primary focus:text-white focus:rounded-xl focus:outline-none" data-en="Skip to main content" data-ar="تخطى إلى المحتوى الرئيسي">تخطى إلى المحتوى الرئيسي</a>
+<div class="custom-cursor hidden md:block" id="cursor"></div>
+<canvas id="shader-canvas"></canvas>
+<div class="fixed inset-0 z-[-2] w-full h-full">
+  <div class="absolute inset-0 bg-cover bg-center opacity-60" style="background-image: url('jpg.png')"></div>
+  <div class="absolute inset-0 bg-black/10"></div>
+</div>
+
+<!-- Floating Social Bar + QR -->
+<div class="social-stack">
+<div class="social-bar">
+  <a href="https://wa.me/201006125478" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="واتساب"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#25D366" d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zM12.05 21.84c1.573 0 3.126-.414 4.49-1.196l.316-.186 3.39 1.003-.91-3.272.204-.33a9.87 9.87 0 001.462-5.151c-.002-5.464-4.45-9.911-9.913-9.911a9.866 9.866 0 00-9.914 9.912c0 5.464 4.448 9.911 9.915 9.911zm5.249-7.523c-.286-.143-1.695-.837-1.957-.932-.262-.095-.453-.143-.644.143-.19.286-.738.932-.904 1.123-.167.19-.334.214-.62.072-.286-.143-1.21-.446-2.304-1.42-.851-.758-1.426-1.695-1.593-1.981-.167-.286-.018-.44.125-.583.13-.128.286-.334.43-.5.143-.167.19-.286.286-.477.095-.19.048-.357-.024-.5-.072-.143-.644-1.553-.882-2.126-.232-.558-.467-.482-.644-.491l-.555-.01c-.19 0-.5.072-.762.357-.262.286-1.002 1.003-1.002 2.443s1.026 2.83 1.168 3.027c.143.19 2.012 3.073 4.878 4.31.683.295 1.215.47 1.63.602.685.218 1.31.187 1.803.114.55-.082 1.695-.692 1.934-1.36.24-.668.24-1.24.167-1.36-.072-.12-.262-.19-.55-.334z"/></svg></a>
+  <a href="https://t.me/mahmoudrabeh1" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="تيليجرام"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#229ED9" d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></a>
+  <a href="https://www.linkedin.com/in/mahmoud-rabeh-7102071a3" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="لينكدإن"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#0A66C2" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg></a>
+</div>
+
+<!-- Floating QR Badge -->
+<div class="qr-float">
+  <a href="https://mahmoudrabeh.vercel.app" target="_blank" rel="noopener noreferrer" class="interactive-element" aria-label="Scan QR to visit website">
+    <img src="assets/qr-portfolio.png" alt="QR Code - Mahmoud Rabeh Portfolio">
+  </a>
+  <span data-en="Scan Me" data-ar="امسحني">امسحني</span>
+  <a href="assets/qr-portfolio-download.png" download="Mahmoud-Rabeh-QR.png" class="interactive-element qr-download" title="Download QR" aria-label="Download QR Code" data-en="Download" data-ar="تحميل">تحميل</a>
+</div>
+</div>
+
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 bg-background/20 backdrop-blur-xl border-b border-white/5 shadow-2xl transition-all duration-300" id="navbar">
+  <div class="font-display text-2xl md:text-3xl font-extrabold text-primary tracking-tight glitch-hover transition-all cursor-pointer" data-scroll-to="#home" data-en="Mahmoud Rabeh" data-ar="محمود رابح">محمود رابح</div>
+  <div class="hidden md:flex gap-6 items-center">
+    <a class="font-body text-body-lg text-primary font-bold border-b-2 border-primary pb-1" href="#home" data-en="Home" data-ar="الرئيسية">الرئيسية</a>
+    <a class="font-body text-body-lg text-on-surface-variant hover:text-primary transition-colors" href="#about" data-en="About" data-ar="عني">عني</a>
+      <div class="relative group">
+        <a class="font-body text-body-lg text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1 cursor-pointer">
+          <span data-en="Brands" data-ar="المجالات">المجالات</span> <span class="material-symbols-outlined text-sm">expand_more</span>
+        </a>
+      <div class="absolute top-full right-0 mt-2 w-56 glass-panel rounded-2xl border border-primary/20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 py-2 shadow-2xl">
+        <a class="block px-4 py-3 font-body text-sm text-on-surface-variant hover:text-primary hover:bg-primary/5 transition-colors" href="#business-hub" data-en="Business Consulting" data-ar="استشارات الأعمال">استشارات الأعمال</a>
+        <a class="block px-4 py-3 font-body text-sm text-on-surface-variant hover:text-primary hover:bg-primary/5 transition-colors" href="#arabic-academy" data-en="Arabic Academy" data-ar="الأكاديمية العربية">الأكاديمية العربية</a>
+        <a class="block px-4 py-3 font-body text-sm text-on-surface-variant hover:text-primary hover:bg-primary/5 transition-colors" href="#ai-lab" data-en="AI Lab" data-ar="مختبر AI">مختبر AI</a>
+        </div>
+    </div>
+    <a class="font-body text-body-lg text-on-surface-variant hover:text-primary transition-colors" href="#projects" data-en="Projects" data-ar="الأعمال">الأعمال</a>
+    <a class="font-body text-body-lg text-on-surface-variant hover:text-primary transition-colors" href="#contact" data-en="Contact" data-ar="اتصل">اتصل</a>
+  </div>
+  <button class="lang-toggle text-xs text-primary border border-primary/30 px-3 py-2 rounded-full hover:bg-primary/10 transition-all interactive-element whitespace-nowrap" id="langToggle">Change Language</button>
+  <button class="gradient-button px-6 py-2 rounded-lg font-bold text-white hover:scale-105 transition-transform shadow-lg shadow-primary/20 interactive-element md:hidden" id="mobileMenuBtn" data-en="Menu" data-ar="قائمة">قائمة</button>
+</nav>
+<div class="hidden fixed top-20 left-0 right-0 z-40 glass-panel border-b border-primary/20 md:hidden overflow-y-auto max-h-[80vh]" id="mobileNav">
+  <div class="flex flex-col gap-1 p-4">
+    <a class="font-body text-body-lg text-primary font-bold py-2 px-4 rounded-xl hover:bg-primary/10 transition-all" href="#home" data-en="Home" data-ar="الرئيسية">الرئيسية</a>
+    <a class="font-body text-body-lg text-on-surface-variant hover:text-primary transition-colors py-2 px-4 rounded-xl hover:bg-primary/10" href="#about" data-en="About" data-ar="عني">عني</a>
+    <div class="font-body text-body-lg text-secondary py-2 px-4 rounded-xl mt-2 mb-1 label-style text-xs" data-en="BRANDS" data-ar="المجالات">المجالات</div>
+    <a class="font-body text-body-lg text-on-surface-variant hover:text-primary transition-colors py-2 px-6 rounded-xl hover:bg-primary/10" href="#business-hub" data-en="Business Consulting" data-ar="استشارات الأعمال">استشارات الأعمال</a>
+    <a class="font-body text-body-lg text-on-surface-variant hover:text-primary transition-colors py-2 px-6 rounded-xl hover:bg-primary/10" href="#arabic-academy" data-en="Arabic Academy" data-ar="الأكاديمية العربية">الأكاديمية العربية</a>
+    <a class="font-body text-body-lg text-on-surface-variant hover:text-primary transition-colors py-2 px-6 rounded-xl hover:bg-primary/10" href="#ai-lab" data-en="AI Lab" data-ar="مختبر AI">مختبر AI</a>
+    <a class="font-body text-body-lg text-on-surface-variant hover:text-primary transition-colors py-2 px-4 rounded-xl hover:bg-primary/10" href="#services" data-en="Services" data-ar="الخدمات">الخدمات</a>
+    <a class="font-body text-body-lg text-on-surface-variant hover:text-primary transition-colors py-2 px-4 rounded-xl hover:bg-primary/10" href="#process" data-en="Process" data-ar="المنهجية">المنهجية</a>
+    <a class="font-body text-body-lg text-on-surface-variant hover:text-primary transition-colors py-2 px-4 rounded-xl hover:bg-primary/10" href="#projects" data-en="Projects" data-ar="الأعمال">الأعمال</a>
+    <a class="font-body text-body-lg text-on-surface-variant hover:text-primary transition-colors py-2 px-4 rounded-xl hover:bg-primary/10" href="#faq" data-en="FAQ" data-ar="الأسئلة">الأسئلة</a>
+    <a class="font-body text-body-lg text-on-surface-variant hover:text-primary transition-colors py-2 px-4 rounded-xl hover:bg-primary/10" href="#contact" data-en="Contact" data-ar="اتصل">اتصل</a>
+  </div>
+</div>
+
+<main class="relative z-10">
+  <!-- Hero -->
+  <section class="min-h-screen flex flex-col justify-center items-center px-margin-mobile text-center pt-24" id="home">
+    <div class="label-style text-xs text-primary mb-4 reveal" data-en="PROCUREMENT & SUPPLY CHAIN CONSULTANT" data-ar="مستشار مشتريات وسلاسل إمداد">مستشار مشتريات وسلاسل إمداد</div>
+    <h1 class="font-display text-[48px] md:text-display leading-tight mb-stack-md text-glow text-white reveal max-w-5xl">
+      <span class="typewriter-container" id="typewriter"></span>
+    </h1>
+    <p class="font-body text-body-lg max-w-2xl mb-stack-lg text-on-surface/80 reveal" data-en="Helping businesses and learners achieve their goals through professional consulting, distinguished education, and innovative AI solutions." data-ar="أساعد الشركات والمتعلمين على تحقيق أهدافهم من خلال استشارات احترافية، تعليم متميز، وحلول ذكاء اصطناعي مبتكرة.">أساعد الشركات والمتعلمين على تحقيق أهدافهم من خلال استشارات احترافية، تعليم متميز، وحلول ذكاء اصطناعي مبتكرة.</p>
+    <div class="flex flex-wrap justify-center gap-stack-md reveal-stagger">
+      <button class="gradient-button px-8 py-4 rounded-xl font-bold text-white shadow-xl hover:shadow-primary/40 transition-all interactive-element" data-scroll-to="#contact" data-en="Book a Free Call" data-ar="اطلب مكالمة مجانية">اطلب مكالمة مجانية</button>
+      <button class="glass-panel px-8 py-4 rounded-xl font-bold border border-primary/40 text-primary hover:bg-primary/10 transition-all interactive-element" data-scroll-to="#business-hub" data-en="Explore Brands" data-ar="استكشف المجالات">استكشف المجالات</button>
+    </div>
+    <div class="flex items-center justify-center gap-4 mt-6 reveal">
+      <a href="https://wa.me/201006125478" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="واتساب"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#25D366" d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zM12.05 21.84c1.573 0 3.126-.414 4.49-1.196l.316-.186 3.39 1.003-.91-3.272.204-.33a9.87 9.87 0 001.462-5.151c-.002-5.464-4.45-9.911-9.913-9.911a9.866 9.866 0 00-9.914 9.912c0 5.464 4.448 9.911 9.915 9.911zm5.249-7.523c-.286-.143-1.695-.837-1.957-.932-.262-.095-.453-.143-.644.143-.19.286-.738.932-.904 1.123-.167.19-.334.214-.62.072-.286-.143-1.21-.446-2.304-1.42-.851-.758-1.426-1.695-1.593-1.981-.167-.286-.018-.44.125-.583.13-.128.286-.334.43-.5.143-.167.19-.286.286-.477.095-.19.048-.357-.024-.5-.072-.143-.644-1.553-.882-2.126-.232-.558-.467-.482-.644-.491l-.555-.01c-.19 0-.5.072-.762.357-.262.286-1.002 1.003-1.002 2.443s1.026 2.83 1.168 3.027c.143.19 2.012 3.073 4.878 4.31.683.295 1.215.47 1.63.602.685.218 1.31.187 1.803.114.55-.082 1.695-.692 1.934-1.36.24-.668.24-1.24.167-1.36-.072-.12-.262-.19-.55-.334z"/></svg></a>
+<a href="https://t.me/mahmoudrabeh1" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="تيليجرام"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#229ED9" d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></a>
+      <a href="https://www.linkedin.com/in/mahmoud-rabeh-7102071a3" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="لينكدإن"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#0A66C2" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg></a>
+    </div>
+    <div class="flex flex-wrap gap-3 justify-center mt-8 reveal">
+      <span class="skill-pill px-4 py-2 rounded-full text-xs label-style text-on-surface-variant" data-en="Pharmaceuticals" data-ar="الأدوية">الأدوية</span>
+      <span class="skill-pill px-4 py-2 rounded-full text-xs label-style text-on-surface-variant" data-en="Healthcare" data-ar="الرعاية الصحية">الرعاية الصحية</span>
+      <span class="skill-pill px-4 py-2 rounded-full text-xs label-style text-on-surface-variant" data-en="Manufacturing" data-ar="التصنيع">التصنيع</span>
+      <span class="skill-pill px-4 py-2 rounded-full text-xs label-style text-on-surface-variant" data-en="Distribution" data-ar="التوزيع">التوزيع</span>
+      <span class="skill-pill px-4 py-2 rounded-full text-xs label-style text-on-surface-variant" data-en="SMEs" data-ar="الشركات الصغيرة">الشركات الصغيرة</span>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="py-stack-xl px-margin-mobile flex justify-center" id="about">
+    <div class="glass-panel max-w-5xl p-stack-lg md:p-12 rounded-3xl reveal text-center border border-primary/20">
+      <div class="label-style text-xs text-primary mb-stack-sm" data-en="ABOUT" data-ar="عني">عني</div>
+      <h2 class="font-display text-headline-lg-mobile md:text-headline-lg mb-stack-md text-white" data-en="The Consultant" data-ar="المستشار">المستشار</h2>
+      <p class="font-body text-body-lg text-on-surface-variant mb-stack-lg" data-en="Procurement and supply chain consultant with 18+ years of experience, focused on purchasing optimization, supplier evaluation, inventory management, demand planning, and developing models and procedures. I work with pharma, healthcare, manufacturing, distribution, and SME companies to transform procurement into a competitive advantage." data-ar="مستشار مشتريات وسلاسل إمداد بخبرة 18+ سنة، يركز على تحسين الشراء، تقييم الموردين، إدارة المخزون، التخطيط للطلب، وتطوير النماذج والإجراءات. أعمل مع شركات الأدوية والرعاية الصحية والمصنعين والموزعين والشركات الصغيرة والمتوسطة لتحويل المشتريات إلى ميزة تنافسية.">مستشار مشتريات وسلاسل إمداد بخبرة 18+ سنة، يركز على تحسين الشراء، تقييم الموردين، إدارة المخزون، التخطيط للطلب، وتطوير النماذج والإجراءات. أعمل مع شركات الأدوية والرعاية الصحية والمصنعين والموزعين والشركات الصغيرة والمتوسطة لتحويل المشتريات إلى ميزة تنافسية.</p>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-stack-md reveal-stagger">
+        <div class="p-4 border border-white/5 rounded-xl bg-white/5 hover:bg-primary/5 transition-colors">
+          <div class="text-primary font-bold text-2xl font-display">18+</div>
+          <div class="label-style text-[10px]" data-en="Years Experience" data-ar="سنة خبرة">سنة خبرة</div>
+        </div>
+        <div class="p-4 border border-white/5 rounded-xl bg-white/5 hover:bg-primary/5 transition-colors">
+          <div class="text-primary font-bold text-2xl font-display">50+</div>
+          <div class="label-style text-[10px]" data-en="Projects Done" data-ar="مشروع تم">مشروع تم</div>
+        </div>
+        <div class="p-4 border border-white/5 rounded-xl bg-white/5 hover:bg-primary/5 transition-colors">
+          <div class="text-primary font-bold text-2xl font-display">5</div>
+          <div class="label-style text-[10px]" data-en="Key Sectors" data-ar="قطاعات رئيسية">قطاعات رئيسية</div>
+        </div>
+        <div class="p-4 border border-white/5 rounded-xl bg-white/5 hover:bg-primary/5 transition-colors">
+          <div class="text-primary font-bold text-2xl font-display">100%</div>
+          <div class="label-style text-[10px]" data-en="Commitment" data-ar="التزام">التزام</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brand Hubs Overview -->
+  <section class="py-stack-xl px-margin-mobile md:px-margin-desktop" id="brands-overview">
+    <div class="max-w-container-max mx-auto">
+      <div class="text-center mb-stack-lg reveal">
+        <div class="label-style text-xs text-primary" data-en="FOUR BRANDS, ONE VISION" data-ar="أربعة مجالات، رؤية واحدة">أربعة مجالات، رؤية واحدة</div>
+        <h2 class="font-display text-headline-lg-mobile md:text-headline-lg text-white" data-en="What I Do" data-ar="مجالاتي">مجالاتي</h2>
+        <p class="font-body text-body-md text-on-surface-variant mt-2 max-w-2xl mx-auto" data-en="Four disciplines united by a commitment to excellence: business consulting, Arabic education, artificial intelligence, and knowledge sharing." data-ar="أربعة تخصصات تجمعها الالتزام بالتميز: استشارات الأعمال، تعليم العربية، الذكاء الاصطناعي، ومشاركة المعرفة.">أربعة تخصصات تجمعها الالتزام بالتميز: استشارات الأعمال، تعليم العربية، الذكاء الاصطناعي، ومشاركة المعرفة.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 reveal-stagger">
+        <a href="#business-hub" class="glass-card p-8 rounded-3xl text-center interactive-element float-animation block group">
+          <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+            <span class="material-symbols-outlined text-3xl text-primary">handshake</span>
+          </div>
+          <div class="label-style text-xs text-primary mb-2" data-en="CONSULTING" data-ar="استشارات">استشارات</div>
+          <h3 class="font-display text-2xl mb-3 text-white" data-en="Business Hub" data-ar="مركز الأعمال">مركز الأعمال</h3>
+          <p class="font-body text-sm text-on-surface-variant" data-en="Procurement, supply chain, inventory, and operational excellence for pharma, healthcare, and manufacturing." data-ar="المشتريات، سلاسل الإمداد، المخزون، والتميز التشغيلي للأدوية والرعاية الصحية والتصنيع.">المشتريات، سلاسل الإمداد، المخزون، والتميز التشغيلي للأدوية والرعاية الصحية والتصنيع.</p>
+          <div class="mt-4 text-primary font-body text-sm flex items-center justify-center gap-1 group-hover:gap-2 transition-all">
+            <span data-en="Learn More" data-ar="اعرف أكثر">اعرف أكثر</span>
+            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </div>
+        </a>
+        <a href="#arabic-academy" class="glass-card p-8 rounded-3xl text-center interactive-element float-animation-delayed block group">
+          <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+            <span class="material-symbols-outlined text-3xl text-primary">menu_book</span>
+          </div>
+          <div class="label-style text-xs text-primary mb-2" data-en="EDUCATION" data-ar="تعليم">تعليم</div>
+          <h3 class="font-display text-2xl mb-3 text-white" data-en="Arabic Academy" data-ar="الأكاديمية العربية">الأكاديمية العربية</h3>
+          <p class="font-body text-sm text-on-surface-variant" data-en="Teaching Arabic to non-native speakers, Quran recitation, and Tajweed with structured online lessons." data-ar="تعليم العربية للناطقين بغيرها، تلاوة القرآن، والتجويد بدروس منظمة عبر الإنترنت.">تعليم العربية للناطقين بغيرها، تلاوة القرآن، والتجويد بدروس منظمة عبر الإنترنت.</p>
+          <div class="mt-4 text-primary font-body text-sm flex items-center justify-center gap-1 group-hover:gap-2 transition-all">
+            <span data-en="Learn More" data-ar="اعرف أكثر">اعرف أكثر</span>
+            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </div>
+        </a>
+        <a href="#ai-lab" class="glass-card p-8 rounded-3xl text-center interactive-element float-animation block group">
+          <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+            <span class="material-symbols-outlined text-3xl text-primary">smart_toy</span>
+          </div>
+          <div class="label-style text-xs text-primary mb-2" data-en="TECHNOLOGY" data-ar="تقنية">تقنية</div>
+          <h3 class="font-display text-2xl mb-3 text-white" data-en="AI Lab" data-ar="مختبر AI">مختبر AI</h3>
+          <p class="font-body text-sm text-on-surface-variant" data-en="AI consulting, custom agents, prompt engineering, workflow automation, and local AI solutions." data-ar="استشارات AI، وكلاء ذكاء اصطناعي مخصصون، هندسة البرومبتات، أتمتة سير العمل، وحلول AI محلية.">استشارات AI، وكلاء ذكاء اصطناعي مخصصون، هندسة البرومبتات، أتمتة سير العمل، وحلول AI محلية.</p>
+          <div class="mt-4 text-primary font-body text-sm flex items-center justify-center gap-1 group-hover:gap-2 transition-all">
+            <span data-en="Learn More" data-ar="اعرف أكثر">اعرف أكثر</span>
+            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Business Hub -->
+  <section class="py-stack-xl px-margin-mobile md:px-margin-desktop bg-background/50 backdrop-blur-md" id="business-hub">
+    <div class="max-w-container-max mx-auto">
+      <div class="mb-stack-lg reveal text-center">
+        <div class="max-w-3xl mx-auto">
+          <div class="label-style text-xs text-primary mb-stack-sm" data-en="BUSINESS CONSULTING" data-ar="استشارات الأعمال">استشارات الأعمال</div>
+          <h2 class="font-display text-headline-lg-mobile md:text-headline-lg text-white mb-stack-md" data-en="Procurement & Supply Chain Hub" data-ar="مركز المشتريات وسلاسل الإمداد">مركز المشتريات وسلاسل الإمداد</h2>
+          <p class="font-body text-body-lg text-on-surface-variant mb-stack-md" data-en="18+ years optimizing procurement, inventory, and supply chains for pharma, healthcare, manufacturing, and distribution companies across the Middle East and globally." data-ar="أكثر من 18 سنة في تحسين المشتريات والمخزون وسلاسل الإمداد لشركات الأدوية والرعاية الصحية والتصنيع والتوزيع في الشرق الأوسط والعالم.">أكثر من 18 سنة في تحسين المشتريات والمخزون وسلاسل الإمداد لشركات الأدوية والرعاية الصحية والتصنيع والتوزيع في الشرق الأوسط والعالم.</p>
+          <div class="grid grid-cols-3 gap-4 reveal-stagger">
+            <div class="p-4 border border-white/5 rounded-xl bg-white/5">
+              <div class="text-primary font-bold text-2xl font-display">18+</div>
+              <div class="label-style text-[9px] mt-1 text-on-surface-variant" data-en="Years Exp" data-ar="سنة خبرة">سنة خبرة</div>
+            </div>
+            <div class="p-4 border border-white/5 rounded-xl bg-white/5">
+              <div class="text-primary font-bold text-2xl font-display">50+</div>
+              <div class="label-style text-[9px] mt-1 text-on-surface-variant" data-en="Projects" data-ar="مشروع">مشروع</div>
+            </div>
+            <div class="p-4 border border-white/5 rounded-xl bg-white/5">
+              <div class="text-primary font-bold text-2xl font-display">5</div>
+              <div class="label-style text-[9px] mt-1 text-on-surface-variant" data-en="Sectors" data-ar="قطاعات">قطاعات</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mb-stack-lg reveal">
+        <div class="label-style text-xs text-primary mb-stack-sm" data-en="TARGET SECTORS" data-ar="القطاعات المستهدفة">القطاعات المستهدفة</div>
+      </div>
+      <div class="flex flex-wrap justify-center gap-4 mb-stack-lg reveal-stagger">
+        <span class="skill-pill px-5 py-3 rounded-full text-sm label-style text-primary">Pharmaceuticals</span>
+        <span class="skill-pill px-5 py-3 rounded-full text-sm label-style text-primary">Healthcare</span>
+        <span class="skill-pill px-5 py-3 rounded-full text-sm label-style text-primary">Manufacturing</span>
+        <span class="skill-pill px-5 py-3 rounded-full text-sm label-style text-primary">Distribution</span>
+        <span class="skill-pill px-5 py-3 rounded-full text-sm label-style text-primary">Medical Devices</span>
+        <span class="skill-pill px-5 py-3 rounded-full text-sm label-style text-primary">SMEs</span>
+      </div>
+      <div class="mt-stack-lg reveal-stagger">
+        <div class="glass-card p-6 rounded-2xl interactive-element float-animation max-w-xl mx-auto">
+          <span class="material-symbols-outlined text-primary text-3xl mb-3">factory</span>
+          <h3 class="font-display text-lg mb-2 text-white" data-en="Local Manufacturing Sourcing" data-ar="توطين التوريد المحلي">توطين التوريد المحلي</h3>
+          <p class="font-body text-sm text-on-surface-variant" data-en="Connect companies — especially new launches — with suitable local manufacturers for their target market, to reduce lead time and cost and ensure alignment with local market requirements." data-ar="ربط الشركات، وخاصة عمليات الإطلاق (Launch) الجديدة، بمصنّعين محليين مناسبين لسوقها المستهدف — لتقليل زمن التوريد والتكلفة وضمان التوافق مع متطلبات السوق المحلي.">ربط الشركات، وخاصة عمليات الإطلاق (Launch) الجديدة، بمصنّعين محليين مناسبين لسوقها المستهدف — لتقليل زمن التوريد والتكلفة وضمان التوافق مع متطلبات السوق المحلي.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Arabic Academy -->
+  <section class="py-stack-xl px-margin-mobile md:px-margin-desktop" id="arabic-academy">
+    <div class="max-w-container-max mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-stack-lg reveal">
+        <div class="order-2 lg:order-1">
+          <div class="glass-panel p-8 rounded-3xl border border-primary/20 reveal">
+            <div class="label-style text-xs text-primary mb-4" data-en="COURSES" data-ar="الدورات">الدورات</div>
+            <div class="space-y-4">
+              <div class="flex items-start gap-4 pb-4 border-b border-white/5">
+                <span class="material-symbols-outlined text-primary">translate</span>
+                <div>
+                  <h4 class="font-display text-white font-bold" data-en="Arabic for Non-Native Speakers" data-ar="العربية للناطقين بغيرها">العربية للناطقين بغيرها</h4>
+                  <p class="font-body text-sm text-on-surface-variant" data-en="Structured curriculum from beginner to advanced, focusing on reading, writing, speaking, and grammar." data-ar="منهج منظم من المبتدئين إلى المتقدمين، مع التركيز على القراءة والكتابة والمحادثة والقواعد.">منهج منظم من المبتدئين إلى المتقدمين، مع التركيز على القراءة والكتابة والمحادثة والقواعد.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4 pb-4 border-b border-white/5">
+                <span class="material-symbols-outlined text-primary">book</span>
+                <div>
+                  <h4 class="font-display text-white font-bold" data-en="Quran Recitation" data-ar="تلاوة القرآن">تلاوة القرآن</h4>
+                  <p class="font-body text-sm text-on-surface-variant" data-en="Learn proper recitation with correct pronunciation and rhythm, with Ijazah track available." data-ar="تعلم التلاوة الصحيحة مع النطق السليم والتجويد، مع إمكانية الحصول على إجازة.">تعلم التلاوة الصحيحة مع النطق السليم والتجويد، مع إمكانية الحصول على إجازة.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <span class="material-symbols-outlined text-primary">sound_detection</span>
+                <div>
+                  <h4 class="font-display text-white font-bold" data-en="Tajweed Rules" data-ar="أحكام التجويد">أحكام التجويد</h4>
+                  <p class="font-body text-sm text-on-surface-variant" data-en="Master Tajweed rules with practical application and personalized feedback." data-ar="إتقان أحكام التجويد مع التطبيق العملي والتغذية الراجعة الشخصية.">إتقان أحكام التجويد مع التطبيق العملي والتغذية الراجعة الشخصية.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="order-1 lg:order-2">
+          <div class="label-style text-xs text-primary mb-stack-sm" data-en="ARABIC ACADEMY" data-ar="الأكاديمية العربية">الأكاديمية العربية</div>
+          <h2 class="font-display text-headline-lg-mobile md:text-headline-lg text-white mb-stack-md" data-en="Learn Arabic, Quran & Tajweed Online" data-ar="تعلّم العربية والقرآن والتجويد أونلاين">تعلّم العربية والقرآن والتجويد أونلاين</h2>
+          <p class="font-body text-body-lg text-on-surface-variant mb-stack-md" data-en="Personalized one-on-one online lessons with a qualified instructor. Flexible scheduling for all time zones, from beginner to advanced levels." data-ar="دروس خصوصية أونلاين مع مدرس مؤهل. جداول مرنة تناسب جميع المناطق الزمنية، من المستوى المبتدئ إلى المتقدم.">دروس خصوصية أونلاين مع مدرس مؤهل. جداول مرنة تناسب جميع المناطق الزمنية، من المستوى المبتدئ إلى المتقدم.</p>
+          <div class="flex flex-wrap gap-3 reveal-stagger">
+            <span class="skill-pill px-4 py-2 rounded-full text-xs label-style text-primary">One-on-One</span>
+            <span class="skill-pill px-4 py-2 rounded-full text-xs label-style text-primary">Flexible Schedule</span>
+            <span class="skill-pill px-4 py-2 rounded-full text-xs label-style text-primary">All Levels</span>
+            <span class="skill-pill px-4 py-2 rounded-full text-xs label-style text-primary">Ijazah Track</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI Lab -->
+  <section class="py-stack-xl px-margin-mobile md:px-margin-desktop bg-background/50 backdrop-blur-md" id="ai-lab">
+    <div class="max-w-container-max mx-auto">
+      <div class="text-center mb-stack-lg reveal">
+        <div class="label-style text-xs text-primary" data-en="AI LAB" data-ar="مختبر الذكاء الاصطناعي">مختبر الذكاء الاصطناعي</div>
+        <h2 class="font-display text-headline-lg-mobile md:text-headline-lg text-white" data-en="Artificial Intelligence Solutions" data-ar="حلول الذكاء الاصطناعي">حلول الذكاء الاصطناعي</h2>
+        <p class="font-body text-body-md text-on-surface-variant mt-2 max-w-2xl mx-auto" data-en="Leverage cutting-edge AI to automate workflows, build intelligent agents, and transform your business operations." data-ar="استخدم أحدث تقنيات الذكاء الاصطناعي لأتمتة سير العمل، بناء وكلاء أذكياء، وتحويل عملياتك التشغيلية.">استخدم أحدث تقنيات الذكاء الاصطناعي لأتمتة سير العمل، بناء وكلاء أذكياء، وتحويل عملياتك التشغيلية.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 reveal-stagger">
+        <div class="glass-card p-6 rounded-2xl interactive-element float-animation">
+          <span class="material-symbols-outlined text-primary text-3xl mb-3">smart_toy</span>
+          <h3 class="font-display text-lg mb-2 text-white" data-en="AI Agents" data-ar="وكلاء AI">وكلاء AI</h3>
+          <p class="font-body text-sm text-on-surface-variant" data-en="Custom AI agents for customer service, data analysis, content creation, and business process automation." data-ar="وكلاء AI مخصصون لخدمة العملاء، تحليل البيانات، إنشاء المحتوى، وأتمتة العمليات.">وكلاء AI مخصصون لخدمة العملاء، تحليل البيانات، إنشاء المحتوى، وأتمتة العمليات.</p>
+        </div>
+        <div class="glass-card p-6 rounded-2xl interactive-element float-animation-delayed">
+          <span class="material-symbols-outlined text-primary text-3xl mb-3">prompt</span>
+          <h3 class="font-display text-lg mb-2 text-white" data-en="Prompt Engineering" data-ar="هندسة البرومبتات">هندسة البرومبتات</h3>
+          <p class="font-body text-sm text-on-surface-variant" data-en="Design and optimize prompts for LLMs to get accurate, consistent, and actionable outputs." data-ar="تصميم وتحسين البرومبتات للنماذج اللغوية للحصول على مخرجات دقيقة ومتسقة وقابلة للتنفيذ.">تصميم وتحسين البرومبتات للنماذج اللغوية للحصول على مخرجات دقيقة ومتسقة وقابلة للتنفيذ.</p>
+        </div>
+        <div class="glass-card p-6 rounded-2xl interactive-element float-animation">
+          <span class="material-symbols-outlined text-primary text-3xl mb-3">repeat</span>
+          <h3 class="font-display text-lg mb-2 text-white" data-en="Workflow Automation" data-ar="أتمتة سير العمل">أتمتة سير العمل</h3>
+          <p class="font-body text-sm text-on-surface-variant" data-en="Automate repetitive tasks, integrate AI into existing systems, and build end-to-end automated pipelines." data-ar="أتمتة المهام المتكررة، دمج AI في الأنظمة الحالية، وبناء خطوط أتمتة متكاملة.">أتمتة المهام المتكررة، دمج AI في الأنظمة الحالية، وبناء خطوط أتمتة متكاملة.</p>
+        </div>
+        <div class="glass-card p-6 rounded-2xl interactive-element float-animation-delayed">
+          <span class="material-symbols-outlined text-primary text-3xl mb-3">computer</span>
+          <h3 class="font-display text-lg mb-2 text-white" data-en="Local AI Solutions" data-ar="حلول AI محلية">حلول AI محلية</h3>
+          <p class="font-body text-sm text-on-surface-variant" data-en="Deploy open-source AI models locally for complete data privacy and offline operation." data-ar="نشر نماذج AI مفتوحة المصدر محلياً لضمان خصوصية البيانات والتشغيل دون اتصال.">نشر نماذج AI مفتوحة المصدر محلياً لضمان خصوصية البيانات والتشغيل دون اتصال.</p>
+        </div>
+        <div class="glass-card p-6 rounded-2xl interactive-element float-animation">
+          <span class="material-symbols-outlined text-primary text-3xl mb-3">psychology</span>
+          <h3 class="font-display text-lg mb-2 text-white" data-en="AI Consulting" data-ar="استشارات AI">استشارات AI</h3>
+          <p class="font-body text-sm text-on-surface-variant" data-en="Strategic advice on AI adoption, tool selection, implementation roadmap, and ROI assessment." data-ar="استشارات استراتيجية حول تبني AI، اختيار الأدوات، خارطة التنفيذ، وتقييم العائد على الاستثمار.">استشارات استراتيجية حول تبني AI، اختيار الأدوات، خارطة التنفيذ، وتقييم العائد على الاستثمار.</p>
+        </div>
+        <div class="glass-card p-6 rounded-2xl interactive-element float-animation-delayed">
+          <span class="material-symbols-outlined text-primary text-3xl mb-3">code</span>
+          <h3 class="font-display text-lg mb-2 text-white" data-en="Custom Development" data-ar="تطوير مخصص">تطوير مخصص</h3>
+          <p class="font-body text-sm text-on-surface-variant" data-en="Build custom AI-powered tools, dashboards, and applications tailored to your specific needs." data-ar="بناء أدوات ولوحات بيانات وتطبيقات مخصصة مدعومة بالذكاء الاصطناعي تناسب احتياجاتك.">بناء أدوات ولوحات بيانات وتطبيقات مخصصة مدعومة بالذكاء الاصطناعي تناسب احتياجاتك.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-stack-xl px-margin-mobile md:px-margin-desktop" id="services">
+    <div class="max-w-container-max mx-auto">
+      <div class="text-center mb-stack-lg reveal">
+        <div class="label-style text-xs text-primary" data-en="WHAT I OFFER" data-ar="ما أقدّمه">ما أقدّمه</div>
+        <h2 class="font-display text-headline-lg-mobile md:text-headline-lg text-white" data-en="Services" data-ar="الخدمات">الخدمات</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 reveal-stagger">
+        <div class="glass-card p-6 rounded-2xl interactive-element float-animation">
+          <span class="material-symbols-outlined text-primary text-3xl mb-3">handshake</span>
+          <h3 class="font-display text-lg mb-2 text-white" data-en="Procurement Consulting" data-ar="استشارات مشتريات">استشارات مشتريات</h3>
+          <p class="font-body text-sm text-on-surface-variant" data-en="Optimize purchasing, evaluate suppliers, negotiate, and manage contracts to reduce costs and increase supply security." data-ar="تحسين عمليات الشراء، تقييم الموردين، التفاوض، وإدارة العقود لتقليل التكاليف وزيادة الأمان التوريدي.">تحسين عمليات الشراء، تقييم الموردين، التفاوض، وإدارة العقود لتقليل التكاليف وزيادة الأمان التوريدي.</p>
+        </div>
+        <div class="glass-card p-6 rounded-2xl interactive-element float-animation-delayed">
+          <span class="material-symbols-outlined text-primary text-3xl mb-3">route</span>
+          <h3 class="font-display text-lg mb-2 text-white" data-en="Supply Chain Management" data-ar="إدارة سلاسل الإمداد">إدارة سلاسل الإمداد</h3>
+          <p class="font-body text-sm text-on-surface-variant" data-en="Improve material flow, reduce lead times, and increase supply chain efficiency." data-ar="تحسين تدفق المواد والبضائع، تقليل المهل الزمنية، وزيادة كفاءة سلسلة التوريد.">تحسين تدفق المواد والبضائع، تقليل المهل الزمنية، وزيادة كفاءة سلسلة التوريد.</p>
+        </div>
+        <div class="glass-card p-6 rounded-2xl interactive-element float-animation">
+          <span class="material-symbols-outlined text-primary text-3xl mb-3">inventory</span>
+          <h3 class="font-display text-lg mb-2 text-white" data-en="Inventory Analysis" data-ar="تحليل المخزون">تحليل المخزون</h3>
+          <p class="font-body text-sm text-on-surface-variant" data-en="Assess inventory levels, perform ABC/XYZ analysis, and determine optimal reorder points." data-ar="تقييم مستويات المخزون، تحليل ABC/XYZ، وتحديد نقاط إعادة الطلب المثلى.">تقييم مستويات المخزون، تحليل ABC/XYZ، وتحديد نقاط إعادة الطلب المثلى.</p>
+        </div>
+        <div class="glass-card p-6 rounded-2xl interactive-element float-animation-delayed">
+          <span class="material-symbols-outlined text-primary text-3xl mb-3">query_stats</span>
+          <h3 class="font-display text-lg mb-2 text-white" data-en="Demand Planning" data-ar="التخطيط للطلب">التخطيط للطلب</h3>
+          <p class="font-body text-sm text-on-surface-variant" data-en="Predictive models using sales data and trends to reduce errors and improve planning." data-ar="نماذج تنبؤية باستخدام بيانات المبيعات والاتجاهات لتقليل الأخطاء وتحسين التخطيط.">نماذج تنبؤية باستخدام بيانات المبيعات والاتجاهات لتقليل الأخطاء وتحسين التخطيط.</p>
+        </div>
+        <div class="glass-card p-6 rounded-2xl interactive-element float-animation-delayed">
+          <span class="material-symbols-outlined text-primary text-3xl mb-3">medication</span>
+          <h3 class="font-display text-lg mb-2 text-white" data-en="Pharma Procurement" data-ar="مشتريات صيدلانية">مشتريات صيدلانية</h3>
+          <p class="font-body text-sm text-on-surface-variant" data-en="High compliance and quality standards, supplier risk management in pharma and medical sectors." data-ar="معايير امتثال وجودة عالية، إدارة مخاطر الموردين في القطاع الصيدلي والطبي.">معايير امتثال وجودة عالية، إدارة مخاطر الموردين في القطاع الصيدلي والطبي.</p>
+        </div>
+        <div class="glass-card p-6 rounded-2xl interactive-element float-animation">
+          <span class="material-symbols-outlined text-primary text-3xl mb-3">table_chart</span>
+          <h3 class="font-display text-lg mb-2 text-white" data-en="Excel Dashboards" data-ar="لوحات إكسل">لوحات إكسل</h3>
+          <p class="font-body text-sm text-on-surface-variant" data-en="Interactive dashboards to monitor KPIs and make real-time decisions." data-ar="لوحات بيانات Excel تفاعلية لمراقبة مؤشرات الأداء واتخاذ قرارات آنية.">لوحات بيانات Excel تفاعلية لمراقبة مؤشرات الأداء واتخاذ قرارات آنية.</p>
+        </div>
+        <div class="glass-card p-6 rounded-2xl interactive-element float-animation-delayed">
+          <span class="material-symbols-outlined text-primary text-3xl mb-3">school</span>
+          <h3 class="font-display text-lg mb-2 text-white" data-en="Corporate Training" data-ar="التدريب المؤسسي">التدريب المؤسسي</h3>
+          <p class="font-body text-sm text-on-surface-variant" data-en="Hands-on workshops in procurement, inventory, negotiation, and reporting." data-ar="ورش عمل عملية في المشتريات، المخزون، التفاوض، وإعداد التقارير.">ورش عمل عملية في المشتريات، المخزون، التفاوض، وإعداد التقارير.</p>
+        </div>
+        <div class="glass-card p-6 rounded-2xl interactive-element float-animation">
+          <span class="material-symbols-outlined text-primary text-3xl mb-3">smart_toy</span>
+          <h3 class="font-display text-lg mb-2 text-white" data-en="AI Workflows" data-ar="سير عمل بالذكاء الاصطناعي">سير عمل بالذكاء الاصطناعي</h3>
+          <p class="font-body text-sm text-on-surface-variant" data-en="Automate repetitive procurement tasks using modern AI tools." data-ar="أتمتة مهام المشتريات المتكررة باستخدام أدوات AI حديثة.">أتمتة مهام المشتريات المتكررة باستخدام أدوات AI حديثة.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How I Help -->
+  <section class="py-stack-xl px-margin-mobile md:px-margin-desktop" id="how-i-help">
+    <div class="max-w-4xl mx-auto">
+      <div class="glass-panel p-8 md:p-12 rounded-3xl reveal text-center border border-primary/20">
+        <div class="label-style text-xs text-primary mb-stack-sm" data-en="TANGIBLE RESULTS" data-ar="نتائج ملموسة">نتائج ملموسة</div>
+        <h2 class="font-display text-headline-lg-mobile md:text-headline-lg mb-stack-md text-white" data-en="How I Help" data-ar="كيف أساعدك؟">كيف أساعدك؟</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-right reveal-stagger">
+          <div class="glass-card p-4 rounded-xl flex items-start gap-3">
+            <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+            <p class="font-body text-sm text-on-surface-variant" data-en="Reduce procurement costs by 10-15% through better supplier evaluation and negotiation." data-ar="تخفيض تكاليف الشراء بنسبة 10-15% عبر تحسين تقييم الموردين والتفاوض.">تخفيض تكاليف الشراء بنسبة 10-15% عبر تحسين تقييم الموردين والتفاوض.</p>
+          </div>
+          <div class="glass-card p-4 rounded-xl flex items-start gap-3">
+            <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+            <p class="font-body text-sm text-on-surface-variant" data-en="Reduce inventory by 20% while maintaining 98%+ availability rates." data-ar="تقليل المخزون بنسبة 20% مع الحفاظ على معدلات توافر 98%+.">تقليل المخزون بنسبة 20% مع الحفاظ على معدلات توافر 98%+.</p>
+          </div>
+          <div class="glass-card p-4 rounded-xl flex items-start gap-3">
+            <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+            <p class="font-body text-sm text-on-surface-variant" data-en="Shorten RFP cycle from 3 weeks to 1 week." data-ar="اختصار دورة إعداد RFP من 3 أسابيع إلى أسبوع واحد.">اختصار دورة إعداد RFP من 3 أسابيع إلى أسبوع واحد.</p>
+          </div>
+          <div class="glass-card p-4 rounded-xl flex items-start gap-3">
+            <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+            <p class="font-body text-sm text-on-surface-variant" data-en="Build a demand planning model reducing forecast errors by 30%." data-ar="بناء نموذج تخطيط طلب يقلل الأخطاء التنبؤية بنسبة 30%.">بناء نموذج تخطيط طلب يقلل الأخطاء التنبؤية بنسبة 30%.</p>
+          </div>
+          <div class="glass-card p-4 rounded-xl flex items-start gap-3 md:col-span-2">
+            <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+            <p class="font-body text-sm text-on-surface-variant" data-en="Standardize procurement procedures into an actionable SOP package." data-ar="توحيد إجراءات المشتريات في حزمة SOP قابلة للتنفيذ.">توحيد إجراءات المشتريات في حزمة SOP قابلة للتنفيذ.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="py-stack-xl px-margin-mobile md:px-margin-desktop" id="process">
+    <div class="max-w-container-max mx-auto">
+      <div class="text-center mb-stack-lg reveal">
+        <div class="label-style text-xs text-primary" data-en="MY APPROACH" data-ar="منهجية العمل">منهجية العمل</div>
+        <h2 class="font-display text-headline-lg-mobile md:text-headline-lg text-white" data-en="The Process" data-ar="المنهجية">المنهجية</h2>
+        <p class="font-body text-body-md text-on-surface-variant mt-2" data-en="Four steps to turn your challenge into a measurable solution" data-ar="أربع خطوات لتحويل التحدي إلى حل قابل للقياس">أربع خطوات لتحويل التحدي إلى حل قابل للقياس</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 reveal-stagger">
+        <div class="glass-card p-6 rounded-2xl text-center interactive-element float-animation">
+          <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-4">
+            <span class="font-display text-xl font-bold text-primary">١</span>
+          </div>
+          <h3 class="font-display text-lg mb-2 text-white">Discover</h3>
+          <p class="font-body text-sm text-on-surface-variant" data-en="Understand the challenge, gather data, and analyze the current state." data-ar="فهم التحدي، جمع البيانات، وتحليل الوضع الحالي لتحديد الفجوات والفرص.">فهم التحدي، جمع البيانات، وتحليل الوضع الحالي لتحديد الفجوات والفرص.</p>
+        </div>
+        <div class="glass-card p-6 rounded-2xl text-center interactive-element float-animation-delayed">
+          <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-4">
+            <span class="font-display text-xl font-bold text-primary">٢</span>
+          </div>
+          <h3 class="font-display text-lg mb-2 text-white">Diagnose</h3>
+          <p class="font-body text-sm text-on-surface-variant" data-en="Precise diagnosis using financial and operational analysis tools." data-ar="تشخيص دقيق للمشكلة باستخدام أدوات التحليل المالي والتشغيلي.">تشخيص دقيق للمشكلة باستخدام أدوات التحليل المالي والتشغيلي.</p>
+        </div>
+        <div class="glass-card p-6 rounded-2xl text-center interactive-element float-animation">
+          <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-4">
+            <span class="font-display text-xl font-bold text-primary">٣</span>
+          </div>
+          <h3 class="font-display text-lg mb-2 text-white">Design</h3>
+          <p class="font-body text-sm text-on-surface-variant" data-en="Design tailored solutions — procedures, templates, dashboards." data-ar="تصميم حلول مخصصة — إجراءات، نماذج، لوحات بيانات — قابلة للتطبيق الفوري.">تصميم حلول مخصصة — إجراءات، نماذج، لوحات بيانات — قابلة للتطبيق الفوري.</p>
+        </div>
+        <div class="glass-card p-6 rounded-2xl text-center interactive-element float-animation-delayed">
+          <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-4">
+            <span class="font-display text-xl font-bold text-primary">٤</span>
+          </div>
+          <h3 class="font-display text-lg mb-2 text-white">Deliver</h3>
+          <p class="font-body text-sm text-on-surface-variant" data-en="Deliver with training and follow-up to ensure sustainability." data-ar="تسليم الحل مع تدريب الفريق ومتابعة النتائج لضمان الاستدامة.">تسليم الحل مع تدريب الفريق ومتابعة النتائج لضمان الاستدامة.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="py-stack-xl px-margin-mobile md:px-margin-desktop" id="projects">
+    <div class="max-w-container-max mx-auto">
+      <div class="flex justify-between items-end mb-stack-lg reveal">
+        <div>
+          <div class="label-style text-xs text-primary" data-en="PORTFOLIO" data-ar="نماذج الأعمال">نماذج الأعمال</div>
+          <h2 class="font-display text-headline-lg-mobile md:text-headline-lg text-white" data-en="Selected Works" data-ar="أعمال مختارة">أعمال مختارة</h2>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 reveal-stagger" id="projectsGrid">
+        <div class="glass-panel rounded-2xl overflow-hidden interactive-element float-animation">
+          <div class="h-48 bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center">
+            <span class="material-symbols-outlined text-5xl text-primary/40">inventory_2</span>
+          </div>
+          <div class="p-6">
+            <div class="flex gap-1.5 mb-3 flex-wrap">
+              <span class="bg-primary/10 text-[9px] label-style px-2 py-1 rounded text-primary">المشتريات</span>
+              <span class="bg-primary/10 text-[9px] label-style px-2 py-1 rounded text-primary">الأدوية</span>
+              <span class="bg-primary/10 text-[9px] label-style px-2 py-1 rounded text-primary">120+ مليون</span>
+            </div>
+            <h3 class="font-display text-lg mb-2 text-white" data-en="Procurement Management — 120+ M EGP Annual Spend" data-ar="إدارة مشتريات بقيمة 120+ مليون جنيه سنوياً">إدارة مشتريات بقيمة 120+ مليون جنيه سنوياً</h3>
+            <p class="font-body text-xs text-on-surface-variant mb-3" data-en="Led annual procurement exceeding 120 million EGP, with broad pharmaceutical expertise covering 4,000+ local and imported medicine SKUs, reducing costs and maximizing profitability." data-ar="قيادة عمليات شراء سنوية تتجاوز 120 مليون جنيه، بخبرة دوائية واسعة تغطي فوق 4000 صنف دواء مصري ومستورد، مع السعي لتقليل التكاليف وتعظيم الربحية.">قيادة عمليات شراء سنوية تتجاوز 120 مليون جنيه، بـخبرة دوائية واسعة تغطي فوق 4000 صنف دواء مصري ومستورد، مع السعي لتقليل التكاليف وتعظيم الربحية.</p>
+            <div class="glass-panel p-3 rounded-xl mb-4 border border-secondary/20">
+              <div class="label-style text-[10px] text-secondary" data-en="KEY RESULT" data-ar="النتيجة الرئيسية">النتيجة الرئيسية</div>
+              <p class="font-body text-sm text-white font-bold" data-en="Effective cross-department communication (warehouse, sales, accounts, top management) ensuring smooth operations." data-ar="تواصل فعال مع كافة الأقسام — مخزن، مبيعات، حسابات، والإدارة العليا — لضمان سير العمل.">تواصل فعال مع كافة الأقسام — مخزن، مبيعات، حسابات، والإدارة العليا — لضمان سير العمل.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- أعمال حقيقية معروضة أعلاه -->
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="py-stack-xl px-margin-mobile md:px-margin-desktop overflow-hidden" id="skills">
+    <div class="max-w-container-max mx-auto">
+      <div class="text-center mb-stack-lg reveal">
+        <div class="label-style text-xs text-primary" data-en="EXPERTISE" data-ar="الخبرات">الخبرات</div>
+        <h2 class="font-display text-headline-lg-mobile md:text-headline-lg text-white" data-en="Skills & Tools" data-ar="المهارات والأدوات">المهارات والأدوات</h2>
+      </div>
+      <div class="flex flex-wrap justify-center gap-4 reveal-stagger">
+        <div class="glass-panel px-6 py-4 rounded-full flex items-center gap-3 border border-primary/20 hover:border-primary/50 hover:bg-primary/5 transition-all float-animation interactive-element">
+          <span class="material-symbols-outlined text-primary">handshake</span>
+          <span class="label-style text-sm">Procurement</span>
+          <div class="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+        </div>
+        <div class="glass-panel px-6 py-4 rounded-full flex items-center gap-3 border border-primary/20 hover:border-primary/50 hover:bg-primary/5 transition-all float-animation-delayed interactive-element">
+          <span class="material-symbols-outlined text-primary">route</span>
+          <span class="label-style text-sm">Supply Chain</span>
+        </div>
+        <div class="glass-panel px-6 py-4 rounded-full flex items-center gap-3 border border-primary/20 hover:border-primary/50 hover:bg-primary/5 transition-all float-animation interactive-element">
+          <span class="material-symbols-outlined text-primary">inventory</span>
+          <span class="label-style text-sm">Inventory Mgmt</span>
+        </div>
+        <div class="glass-panel px-6 py-4 rounded-full flex items-center gap-3 border border-primary/20 hover:border-primary/50 hover:bg-primary/5 transition-all float-animation-delayed interactive-element">
+          <span class="material-symbols-outlined text-primary">query_stats</span>
+          <span class="label-style text-sm">Demand Planning</span>
+        </div>
+        <div class="glass-panel px-6 py-4 rounded-full flex items-center gap-3 border border-primary/20 hover:border-primary/50 hover:bg-primary/5 transition-all float-animation interactive-element">
+          <span class="material-symbols-outlined text-primary">table_chart</span>
+          <span class="label-style text-sm">Excel / Dashboards</span>
+        </div>
+        <div class="glass-panel px-6 py-4 rounded-full flex items-center gap-3 border border-primary/20 hover:border-primary/50 hover:bg-primary/5 transition-all float-animation-delayed interactive-element">
+          <span class="material-symbols-outlined text-primary">smart_toy</span>
+          <span class="label-style text-sm">AI Automation</span>
+        </div>
+        <div class="glass-panel px-6 py-4 rounded-full flex items-center gap-3 border border-primary/20 hover:border-primary/50 hover:bg-primary/5 transition-all float-animation interactive-element">
+          <span class="material-symbols-outlined text-primary">school</span>
+          <span class="label-style text-sm">Corporate Training</span>
+        </div>
+      </div>
+      <div class="mt-stack-lg max-w-2xl mx-auto space-y-8 reveal">
+        <div class="space-y-2">
+          <div class="flex justify-between label-style text-[10px] text-on-surface-variant">
+            <span data-en="PROCUREMENT" data-ar="المشتريات">المشتريات</span>
+            <span class="text-primary">95%</span>
+          </div>
+          <div class="h-1 w-full bg-white/10 rounded-full overflow-hidden">
+            <div class="h-full bg-primary" style="width: 95%"></div>
+          </div>
+        </div>
+        <div class="space-y-2">
+          <div class="flex justify-between label-style text-[10px] text-on-surface-variant">
+            <span data-en="SUPPLY CHAIN" data-ar="سلاسل الإمداد">سلاسل الإمداد</span>
+            <span class="text-primary">92%</span>
+          </div>
+          <div class="h-1 w-full bg-white/10 rounded-full overflow-hidden">
+            <div class="h-full bg-primary opacity-70" style="width: 92%"></div>
+          </div>
+        </div>
+        <div class="space-y-2">
+          <div class="flex justify-between label-style text-[10px] text-on-surface-variant">
+            <span data-en="INVENTORY & FORECASTING" data-ar="المخزون والتنبؤ">المخزون والتنبؤ</span>
+            <span class="text-primary">90%</span>
+          </div>
+          <div class="h-1 w-full bg-white/10 rounded-full overflow-hidden">
+            <div class="h-full bg-primary" style="width: 90%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-stack-xl px-margin-mobile md:px-margin-desktop" id="faq">
+    <div class="max-w-3xl mx-auto">
+      <div class="text-center mb-stack-lg reveal">
+        <div class="label-style text-xs text-primary" data-en="FAQ" data-ar="الأسئلة الشائعة">الأسئلة الشائعة</div>
+        <h2 class="font-display text-headline-lg-mobile md:text-headline-lg text-white" data-en="Common Questions" data-ar="أسئلة شائعة">أسئلة شائعة</h2>
+      </div>
+      <div class="space-y-4 reveal-stagger">
+        <div class="glass-card rounded-2xl overflow-hidden">
+          <button class="faq-q w-full p-6 text-right flex justify-between items-center interactive-element">
+            <span class="font-display text-lg text-white" data-en="How do we get started?" data-ar="كيف نبدأ العمل؟">كيف نبدأ العمل؟</span>
+            <span class="material-symbols-outlined text-primary transition-transform duration-300 faq-icon">expand_more</span>
+          </button>
+          <div class="faq-a max-h-0 overflow-hidden transition-all duration-300 px-6">
+            <p class="font-body text-sm text-on-surface-variant pb-6" data-en="Contact me through the form below. I offer a free discovery call (30 min) to understand your needs, then provide a proposed action plan and timeline." data-ar="تواصل معي عبر النموذج أدناه. أجري مكالمة اكتشاف مجانية (30 دقيقة) لفهم احتياجاتك، ثم أقدم خطة عمل مقترحة وجدول زمني.">تواصل معي عبر النموذج أدناه. أجري مكالمة اكتشاف مجانية (30 دقيقة) لفهم احتياجاتك، ثم أقدم خطة عمل مقترحة وجدول زمني.</p>
+          </div>
+        </div>
+        <div class="glass-card rounded-2xl overflow-hidden">
+          <button class="faq-q w-full p-6 text-right flex justify-between items-center interactive-element">
+            <span class="font-display text-lg text-white" data-en="Do you work with companies outside my region?" data-ar="هل تعمل مع شركات خارج منطقتي؟">هل تعمل مع شركات خارج منطقتي؟</span>
+            <span class="material-symbols-outlined text-primary transition-transform duration-300 faq-icon">expand_more</span>
+          </button>
+          <div class="faq-a max-h-0 overflow-hidden transition-all duration-300 px-6">
+            <p class="font-body text-sm text-on-surface-variant pb-6" data-en="Yes. I provide remote consulting via Zoom/Teams, and travel for fieldwork when needed." data-ar="نعم. أقدم استشارات عن بُعد عبر Zoom/Teams، وأسافر للعمل الميداني عند الحاجة.">نعم. أقدم استشارات عن بُعد عبر Zoom/Teams، وأسافر للعمل الميداني عند الحاجة.</p>
+          </div>
+        </div>
+        <div class="glass-card rounded-2xl overflow-hidden">
+          <button class="faq-q w-full p-6 text-right flex justify-between items-center interactive-element">
+            <span class="font-display text-lg text-white" data-en="What is the minimum contract duration?" data-ar="ما هي أقل مدة تعاقد؟">ما هي أقل مدة تعاقد؟</span>
+            <span class="material-symbols-outlined text-primary transition-transform duration-300 faq-icon">expand_more</span>
+          </button>
+          <div class="faq-a max-h-0 overflow-hidden transition-all duration-300 px-6">
+            <p class="font-body text-sm text-on-surface-variant pb-6" data-en="I start with specific projects (inventory analysis, procurement audit) that may take 2-4 weeks. Longer-term contracts are available." data-ar="أبدأ بمشاريع محددة (تحليل مخزون، تدقيق مشتريات) قد تستغرق 2-4 أسابيع. العقود الطويلة متاحة أيضاً.">أبدأ بمشاريع محددة (تحليل مخزون، تدقيق مشتريات) قد تستغرق 2-4 أسابيع. العقود الطويلة متاحة أيضاً.</p>
+          </div>
+        </div>
+        <div class="glass-card rounded-2xl overflow-hidden">
+          <button class="faq-q w-full p-6 text-right flex justify-between items-center interactive-element">
+            <span class="font-display text-lg text-white" data-en="Do you guarantee results?" data-ar="هل تضمن النتائج؟">هل تضمن النتائج؟</span>
+            <span class="material-symbols-outlined text-primary transition-transform duration-300 faq-icon">expand_more</span>
+          </button>
+          <div class="faq-a max-h-0 overflow-hidden transition-all duration-300 px-6">
+            <p class="font-body text-sm text-on-surface-variant pb-6" data-en="I guarantee a structured methodology and proven tools. Results depend on data accuracy and team commitment." data-ar="أضمن منهجية عمل منظمة وأدوات مثبتة. النتائج تعتمد على دقة البيانات والتزام الفريق.">أضمن منهجية عمل منظمة وأدوات مثبتة. النتائج تعتمد على دقة البيانات والتزام الفريق.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-stack-xl px-margin-mobile md:px-margin-desktop bg-background/50 backdrop-blur-md" id="testimonials">
+    <div class="max-w-container-max mx-auto">
+      <div class="text-center mb-stack-lg reveal">
+        <div class="label-style text-xs text-primary" data-en="TESTIMONIALS" data-ar="آراء العملاء">آراء العملاء</div>
+        <h2 class="font-display text-headline-lg-mobile md:text-headline-lg text-white" data-en="What People Say" data-ar="ماذا يقولون عني">ماذا يقولون عني</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 reveal-stagger">
+        <div class="glass-card p-6 rounded-2xl interactive-element float-animation">
+          <div class="flex gap-1 text-secondary text-sm mb-3">
+            <span class="material-symbols-outlined text-sm">star</span>
+            <span class="material-symbols-outlined text-sm">star</span>
+            <span class="material-symbols-outlined text-sm">star</span>
+            <span class="material-symbols-outlined text-sm">star</span>
+            <span class="material-symbols-outlined text-sm">star</span>
+          </div>
+          <p class="font-body text-sm text-on-surface-variant mb-4 italic" data-en='"Mahmoud transformed our procurement process. His structured approach and deep industry knowledge delivered tangible results in just weeks."' data-ar='"محمود غيّر عملية المشتريات لدينا. منهجيته المنظمة ومعرفته العميقة بالصناعة حققت نتائج ملموسة في أسابيع فقط."'>"محمود غيّر عملية المشتريات لدينا. منهجيته المنظمة ومعرفته العميقة بالصناعة حققت نتائج ملموسة في أسابيع فقط."</p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold text-sm">A</div>
+            <div>
+              <div class="font-display text-sm text-white">A. Al-Otaibi</div>
+              <div class="font-body text-[10px] text-on-surface-variant" data-en="Procurement Manager, Pharma" data-ar="مدير مشتريات، قطاع الأدوية">مدير مشتريات، قطاع الأدوية</div>
+            </div>
+          </div>
+        </div>
+        <div class="glass-card p-6 rounded-2xl interactive-element float-animation-delayed">
+          <div class="flex gap-1 text-secondary text-sm mb-3">
+            <span class="material-symbols-outlined text-sm">star</span>
+            <span class="material-symbols-outlined text-sm">star</span>
+            <span class="material-symbols-outlined text-sm">star</span>
+            <span class="material-symbols-outlined text-sm">star</span>
+            <span class="material-symbols-outlined text-sm">star</span>
+          </div>
+          <p class="font-body text-sm text-on-surface-variant mb-4 italic" data-en='"Excellent Arabic teacher! His patient methodology and clear explanations helped me progress from beginner to conversational in months."' data-ar='"مدرس عربي ممتاز! منهجيته الصبورة وشروحاته الواضحة ساعدتني على التقدم من مبتدئ إلى محادثة في أشهر."'>"مدرس عربي ممتاز! منهجيته الصبورة وشروحاته الواضحة ساعدتني على التقدم من مبتدئ إلى محادثة في أشهر."</p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold text-sm">S</div>
+            <div>
+              <div class="font-display text-sm text-white">Sarah K.</div>
+              <div class="font-body text-[10px] text-on-surface-variant" data-en="Arabic Learner, USA" data-ar="متعلّمة عربية، أمريكا">متعلّمة عربية، أمريكا</div>
+            </div>
+          </div>
+        </div>
+        <div class="glass-card p-6 rounded-2xl interactive-element float-animation">
+          <div class="flex gap-1 text-secondary text-sm mb-3">
+            <span class="material-symbols-outlined text-sm">star</span>
+            <span class="material-symbols-outlined text-sm">star</span>
+            <span class="material-symbols-outlined text-sm">star</span>
+            <span class="material-symbols-outlined text-sm">star</span>
+            <span class="material-symbols-outlined text-sm">star</span>
+          </div>
+          <p class="font-body text-sm text-on-surface-variant mb-4 italic" data-en='"The AI workflow automation saved us 15+ hours per week. Mahmoud understood our needs and delivered a custom solution quickly."' data-ar='"أتمتة سير العمل بالذكاء الاصطناعي وفرت لنا أكثر من 15 ساعة أسبوعياً. فهم محمود احتياجاتنا وقدّم حلاً مخصصاً بسرعة."'>"أتمتة سير العمل بالذكاء الاصطناعي وفرت لنا أكثر من 15 ساعة أسبوعياً. فهم محمود احتياجاتنا وقدّم حلاً مخصصاً بسرعة."</p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold text-sm">M</div>
+            <div>
+              <div class="font-display text-sm text-white">M. Al-Rashid</div>
+              <div class="font-body text-[10px] text-on-surface-variant" data-en="Operations Director, Logistics" data-ar="مدير عمليات، لوجستيات">مدير عمليات، لوجستيات</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="py-stack-xl px-margin-mobile md:px-margin-desktop" id="contact">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-stack-lg reveal">
+        <div class="label-style text-xs text-primary" data-en="CONTACT" data-ar="تواصل">تواصل</div>
+        <h2 class="font-display text-headline-lg-mobile md:text-headline-lg text-white" data-en="Let's Talk" data-ar="تواصل معي">تواصل معي</h2>
+        <p class="font-body text-body-md text-on-surface-variant mt-2" data-en="Free discovery call — 30 minutes" data-ar="مكالمة استكشافية مجانية — 30 دقيقة">مكالمة استكشافية مجانية — 30 دقيقة</p>
+      </div>
+      <div class="glass-panel p-8 md:p-12 rounded-3xl border border-primary/20 reveal">
+        <form class="max-w-2xl mx-auto" id="contactForm" action="https://formspree.io/f/xnqevjdr" method="POST">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+            <input type="text" name="name" maxlength="100" required class="w-full p-4 rounded-xl bg-background/60 border border-white/10 text-white font-body focus:border-primary/50 focus:outline-none transition-all" data-en-placeholder="Your Name" data-ar-placeholder="الاسم" placeholder="الاسم">
+            <input type="email" name="email" maxlength="254" required class="w-full p-4 rounded-xl bg-background/60 border border-white/10 text-white font-body focus:border-primary/50 focus:outline-none transition-all" data-en-placeholder="Your Email" data-ar-placeholder="البريد الإلكتروني" placeholder="البريد الإلكتروني">
+          </div>
+          <textarea name="message" maxlength="2000" class="w-full p-4 rounded-xl bg-background/60 border border-white/10 text-white font-body focus:border-primary/50 focus:outline-none transition-all mb-4" rows="4" data-en-placeholder="What do you need? (optional)" data-ar-placeholder="ماذا تحتاج؟ (اختياري)" placeholder="ماذا تحتاج؟ (اختياري)"></textarea>
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true">
+          <button type="submit" class="gradient-button w-full py-4 rounded-xl font-bold text-white text-lg shadow-xl hover:shadow-primary/40 transition-all interactive-element" data-en="Send Request" data-ar="إرسال الطلب">إرسال الطلب</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="w-full px-margin-mobile md:px-margin-desktop py-stack-lg backdrop-blur-xl border-t border-white/5 relative z-20">
+  <div class="max-w-container-max mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+      <div>
+        <div class="font-display text-xl font-bold text-primary glitch-hover cursor-pointer mb-4" data-scroll-to="#home" data-en="Mahmoud Rabeh" data-ar="محمود رابح">محمود رابح</div>
+        <p class="font-body text-sm text-on-surface-variant" data-en="Consultant | Educator | AI Specialist — 18+ years of experience." data-ar="مستشار | مدرس | مختص AI — أكثر من 18 سنة خبرة.">مستشار | مدرس | مختص AI — أكثر من 18 سنة خبرة.</p>
+      </div>
+      <div>
+        <h4 class="font-display text-sm text-white font-bold mb-3" data-en="Brands" data-ar="المجالات">المجالات</h4>
+        <div class="space-y-2">
+          <a href="#business-hub" class="block font-body text-sm text-on-surface-variant/60 hover:text-primary transition-colors" data-en="Business Consulting" data-ar="استشارات الأعمال">استشارات الأعمال</a>
+          <a href="#arabic-academy" class="block font-body text-sm text-on-surface-variant/60 hover:text-primary transition-colors" data-en="Arabic Academy" data-ar="الأكاديمية العربية">الأكاديمية العربية</a>
+          <a href="#ai-lab" class="block font-body text-sm text-on-surface-variant/60 hover:text-primary transition-colors" data-en="AI Lab" data-ar="مختبر AI">مختبر AI</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="font-display text-sm text-white font-bold mb-3" data-en="Quick Links" data-ar="روابط سريعة">روابط سريعة</h4>
+        <div class="space-y-2">
+          <a href="#projects" class="block font-body text-sm text-on-surface-variant/60 hover:text-primary transition-colors" data-en="Portfolio" data-ar="الأعمال">الأعمال</a>
+          <a href="#testimonials" class="block font-body text-sm text-on-surface-variant/60 hover:text-primary transition-colors" data-en="Testimonials" data-ar="آراء العملاء">آراء العملاء</a>
+          <a href="#faq" class="block font-body text-sm text-on-surface-variant/60 hover:text-primary transition-colors" data-en="FAQ" data-ar="الأسئلة">الأسئلة</a>
+          <a href="#contact" class="block font-body text-sm text-on-surface-variant/60 hover:text-primary transition-colors" data-en="Contact" data-ar="اتصل">اتصل</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="font-display text-sm text-white font-bold mb-3" data-en="Contact" data-ar="تواصل">تواصل</h4>
+        <div class="space-y-2">
+          <a href="mailto:contact@mahmoud-rabeh.com" class="block font-body text-sm text-on-surface-variant/60 hover:text-primary transition-colors">contact@mahmoud-rabeh.com</a>
+          <a href="tel:+20-01006125478" class="block font-body text-sm text-on-surface-variant/60 hover:text-primary transition-colors">+20-01006125478</a>
+          <a href="https://wa.me/201006125478" target="_blank" rel="noopener noreferrer" class="block font-body text-sm text-on-surface-variant/60 hover:text-primary transition-colors mt-2" data-en="WhatsApp" data-ar="واتساب">واتساب</a>
+          <div class="flex gap-4 mt-3 pt-3 border-t border-white/5">
+            <a href="https://www.linkedin.com/in/mahmoud-rabeh-7102071a3" target="_blank" rel="noopener noreferrer" class="text-on-surface-variant/60 hover:text-primary transition-colors font-body text-sm interactive-element">LinkedIn</a>
+            <a href="https://www.upwork.com/freelancers/~mahmoudrabeh" target="_blank" rel="noopener noreferrer" class="text-on-surface-variant/60 hover:text-primary transition-colors font-body text-sm interactive-element">Upwork</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col md:flex-row justify-between items-center gap-4 pt-4 border-t border-white/5">
+      <div class="font-body text-xs text-on-surface-variant/60" data-en="© 2026 Mahmoud Rabeh. All rights reserved." data-ar="© 2026 محمود رابح. جميع الحقوق محفوظة.">© 2026 محمود رابح. جميع الحقوق محفوظة.</div>
+    </div>
+  </div>
+</footer>
+
+<!-- Modal -->
+<div class="modal-overlay" id="projectModal">
+  <div class="modal-content">
+    <button class="modal-close" id="modalClose" aria-label="Close"><span class="material-symbols-outlined text-sm">close</span></button>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<script src="js/app.js" defer></script>
+</body>
+</html>

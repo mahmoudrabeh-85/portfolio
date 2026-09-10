@@ -1,0 +1,5 @@
+# robots.txt - https://mahmoud-rabeh.com
+User-agent: *
+Allow: /
+
+Sitemap: https://mahmoud-rabeh.com/sitemap.xml

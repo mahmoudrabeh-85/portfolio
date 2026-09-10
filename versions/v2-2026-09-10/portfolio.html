@@ -1,4 +1,4 @@
-<!DOCTYPE html><html class="dark scroll-smooth" dir="rtl" lang="ar" style=""><head>
+<!DOCTYPE html><html class="dark scroll-smooth" dir="rtl" lang="ar"><head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <title>محمود رابح | Mahmoud Rabeh - Executive Consultant, Arabic Academy &amp; AI Lab</title>
@@ -137,40 +137,6 @@
     .modal-overlay.active {
       display: flex;
     }
-
-    /* Bilingual hover tooltips */
-    [data-tip] { position: relative; }
-    [data-tip]::after {
-      content: attr(data-tip);
-      position: absolute;
-      bottom: calc(100% + 8px);
-      left: 50%;
-      transform: translateX(-50%);
-      background: #0F131C;
-      color: #FDE047;
-      border: 1px solid rgba(212, 168, 67, 0.45);
-      padding: 5px 10px;
-      border-radius: 6px;
-      font-size: 11px;
-      font-weight: 600;
-      white-space: nowrap;
-      z-index: 70;
-      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.55);
-      pointer-events: none;
-      opacity: 0;
-      transition: opacity 0.15s ease;
-    }
-    [data-tip]:hover::after { opacity: 1; }
-    [data-tip].tip-down::after {
-      bottom: auto;
-      top: calc(100% + 8px);
-    }
-    [data-tip].tip-side::after {
-      bottom: auto;
-      top: 50%;
-      left: calc(100% + 10px);
-      transform: translateY(-50%);
-    }
   </style>
 </head>
 <body class="bg-obsidian-900 text-gray-100 antialiased selection:bg-gold-500 selection:text-obsidian-950">
@@ -200,11 +166,11 @@
 <!-- Action & Language Toggle -->
 <div class="flex items-center gap-4">
 <!-- Language Switcher Button -->
-<button class="lang-toggle interactive-element px-3 py-1.5 rounded-md border border-gold-500/40 text-gold-400 hover:bg-gold-500 hover:text-obsidian-950 transition font-medium text-xs sm:text-sm flex items-center gap-2" id="langToggle" data-tip="تبديل لغة الموقع بين العربية والإنجليزية" data-tip-ar="تبديل لغة الموقع بين العربية والإنجليزية" data-tip-en="Switch site language between Arabic and English" data-tip-default="ar">
+<button class="lang-toggle interactive-element px-3 py-1.5 rounded-md border border-gold-500/40 text-gold-400 hover:bg-gold-500 hover:text-obsidian-950 transition font-medium text-xs sm:text-sm flex items-center gap-2" id="langToggle">
 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 <span id="langText" class="">تغيير اللغة</span>
 </button>
-<a class="hidden sm:inline-flex items-center justify-center px-4 py-2 text-xs uppercase tracking-wider font-semibold rounded-md bg-gold-500 text-obsidian-950 hover:bg-gold-400 transition shadow-gold-glow tip-down" data-ar="احجز استشارة" data-en="Book Consultation" data-tip="احجز جلسة استشارة مجانية مع محمود رابح" data-tip-ar="احجز جلسة استشارة مجانية مع محمود رابح" data-tip-en="Book a free consultation session with Mahmoud Rabeh" data-tip-default="ar" href="#contact">
+<a class="hidden sm:inline-flex items-center justify-center px-4 py-2 text-xs uppercase tracking-wider font-semibold rounded-md bg-gold-500 text-obsidian-950 hover:bg-gold-400 transition shadow-gold-glow" data-ar="احجز استشارة" data-en="Book Consultation" href="#contact">
           احجز استشارة
         </a>
 </div>
@@ -213,20 +179,20 @@
 <!-- END: StickyNavigation -->
 <!-- BEGIN: FloatingSocialBar -->
 <aside aria-label="Social Channels" class="social-bar social-stack">
-<a class="social-icon interactive-element tip-side" href="https://wa.me/201006125478" rel="noopener" target="_blank" data-tip="تواصل عبر واتساب" data-tip-ar="تواصل عبر واتساب" data-tip-en="Chat on WhatsApp" data-tip-default="ar">
+<a class="social-icon interactive-element" href="https://wa.me/201006125478" rel="noopener" target="_blank" title="WhatsApp">
 <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path></svg>
 </a>
-<a class="social-icon interactive-element tip-side" href="https://t.me/mahmoudrabeh1" rel="noopener" target="_blank" data-tip="تواصل عبر تيليجرام" data-tip-ar="تواصل عبر تيليجرام" data-tip-en="Chat on Telegram" data-tip-default="ar">
+<a class="social-icon interactive-element" href="https://t.me/mahmoudrabeh1" rel="noopener" target="_blank" title="Telegram">
 <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.536-.195 1.006.128.832.922z"></path></svg>
 </a>
-<a class="social-icon interactive-element tip-side" href="https://linkedin.com" rel="noopener" target="_blank" data-tip="تابعني على لينكد إن" data-tip-ar="تابعني على لينكد إن" data-tip-en="Follow me on LinkedIn" data-tip-default="ar">
+<a class="social-icon interactive-element" href="https://linkedin.com" rel="noopener" target="_blank" title="LinkedIn">
 <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
 </a>
 </aside>
 <!-- END: FloatingSocialBar -->
 <!-- BEGIN: FloatingQRBadge -->
 <div class="qr-float hidden md:block">
-<button class="glass-panel p-2.5 rounded-xl flex items-center gap-3 border border-gold-500/30 hover:border-gold-400 group cursor-pointer shadow-lg tip-side" id="qrOpenBtn" data-tip="افتح بطاقة العمل الرقمية للمسح السريع بالهاتف" data-tip-ar="افتح بطاقة العمل الرقمية للمسح السريع بالهاتف" data-tip-en="Open the digital business card for quick phone scanning" data-tip-default="ar">
+<button class="glass-panel p-2.5 rounded-xl flex items-center gap-3 border border-gold-500/30 hover:border-gold-400 group cursor-pointer shadow-lg" id="qrOpenBtn" title="Quick Contact Card">
 <div class="w-9 h-9 bg-gold-500/20 text-gold-400 rounded-lg flex items-center justify-center group-hover:bg-gold-500 group-hover:text-obsidian-950 transition">
 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 </div>
@@ -245,7 +211,7 @@
 <p class="text-xs text-gray-300 mb-6" data-ar="امسح الرمز للتواصل المباشر مع محمود رابح عبر واتساب" data-en="Scan code to connect instantly with Mahmoud Rabeh on WhatsApp">امسح الرمز للتواصل المباشر مع محمود رابح عبر واتساب</p>
 <!-- Stylized simulated QR frame -->
 <div class="w-48 h-48 mx-auto bg-white p-3 rounded-xl shadow-lg flex items-center justify-center">
-<img alt="WhatsApp QR Code" class="w-full h-full object-contain" src="assets/qr-portfolio.png">
+<img alt="WhatsApp QR Code" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbHfAkSGcF1zxOfLQFoj838cvo_8K--gOW5uYTPM_z2zqv4lactNdZPCvdkrnhTPya_IJ3ZJ8WFlATo4E_xx6pjNYa92pSZld20IXEWCWkZf99lCPOKBoVkzPPXDUfIgR9EXdwWry8LpXJalZRiqYimgjcrC4wFJtfh20h3z8CvLnShVHvggqjdevq27zWC5WmShGpepQWhUIhWqV0W6P6CaVnmJuCfHpdDaoiMWlxnvpfBobxCJQ">
 </div>
 <p class="mt-4 text-xs font-mono text-gold-400">+20 100 612 5478</p>
 </div>
@@ -253,7 +219,7 @@
 <!-- END: QRModal -->
 <main>
 <!-- BEGIN: HeroSection (#home) -->
-<section class="relative min-h-[92vh] flex items-center justify-center py-20 px-4 sm:px-6 lg:px-8 overflow-hidden" id="home"><div class="absolute inset-0 pointer-events-none z-0 overflow-hidden"><div class="absolute top-1/4 right-1/4 w-3 h-3 rounded-full bg-gold-400 blur-[1px] float-particle-1"></div><div class="absolute top-1/2 left-1/5 w-2 h-2 rounded-full bg-gold-300 blur-[1px] float-particle-2"></div><div class="absolute bottom-1/3 right-1/3 w-2.5 h-2.5 rounded-full bg-gold-500 blur-[1px] float-particle-3"></div><div class="absolute top-2/3 left-1/3 w-1.5 h-1.5 rounded-full bg-gold-300 blur-[0.5px] float-particle-1"></div></div><div class="absolute inset-0 pointer-events-none z-0 overflow-hidden"><div class="absolute inset-0 bg-gradient-to-t from-obsidian-900 via-obsidian-900/80 to-obsidian-950/70"></div><div class="absolute inset-0 bg-obsidian-950/40 backdrop-blur-[2px]"></div></div>
+<section class="relative min-h-[92vh] flex items-center justify-center py-20 px-4 sm:px-6 lg:px-8 overflow-hidden" id="home"><div class="absolute inset-0 pointer-events-none z-0 overflow-hidden"><img src="https://lh3.googleusercontent.com/aida/AEtjO1Voq8NfmfuMvYKOwK2Xm8FdcNouTw_8G2QYLnzwAsrEUWdA016TJoWmfHik9spumfLLVTpGv_tvT3LMZHC7m1MI_nSU5AIv6wNaFU-NTtSw-REKRncf75BpPeL6OhXIBCDOCJm-D6P_LzG_ZJWsE-k5NYEbknRHQg1GQzXaOdjb8Lh3tL77iPjwPDxd_dkefNzlP7W4U6zPj7-JHxlBfM9g4oUGtrI9EkHft0WoMVf8FoDX4Qo-dQtbsoaEywROGhBPzm_MaPv-" alt="Background Cover" class="w-full h-full object-cover object-top opacity-30 filter blur-[1px] transform scale-105"><div class="absolute inset-0 bg-gradient-to-t from-obsidian-900 via-obsidian-900/80 to-obsidian-950/70"></div><div class="absolute inset-0 bg-obsidian-950/40 backdrop-blur-[2px]"></div></div>
 <!-- Decorative Obsidian & Gold ambient backdrop -->
 <div class="absolute top-1/4 -right-40 w-96 h-96 bg-gold-500/10 rounded-full blur-3xl pointer-events-none"></div>
 <div class="absolute bottom-10 -left-40 w-96 h-96 bg-obsidian-700/50 rounded-full blur-3xl pointer-events-none"></div>
@@ -275,11 +241,11 @@
           </p>
 <!-- CTAs -->
 <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
-<a class="interactive-element px-7 py-3.5 rounded-lg bg-gold-500 hover:bg-gold-400 text-obsidian-950 font-bold transition shadow-gold-glow flex items-center gap-2.5" data-ar="تواصل واتساب مباشر" data-en="Direct WhatsApp Chat" data-tip="تواصل فوراً عبر واتساب — رد سريع خلال ساعات العمل" data-tip-ar="تواصل فوراً عبر واتساب — رد سريع خلال ساعات العمل" data-tip-en="Chat instantly on WhatsApp — fast reply during working hours" data-tip-default="ar" href="https://wa.me/201006125478" rel="noopener" target="_blank">
+<a class="interactive-element px-7 py-3.5 rounded-lg bg-gold-500 hover:bg-gold-400 text-obsidian-950 font-bold transition shadow-gold-glow flex items-center gap-2.5" data-ar="تواصل واتساب مباشر" data-en="Direct WhatsApp Chat" href="https://wa.me/201006125478" rel="noopener" target="_blank">
 <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654z"></path></svg>
 <span class="">تواصل واتساب مباشر</span>
 </a>
-<a class="interactive-element px-7 py-3.5 rounded-lg glass-panel text-white hover:text-gold-400 border border-gold-500/30 hover:border-gold-400 font-semibold transition flex items-center gap-2.5" data-ar="ملف لينكد إن" data-en="LinkedIn Profile" data-tip="شاهد ملفي المهني الكامل وخلاصة المسيرة على لينكد إن" data-tip-ar="شاهد ملفي المهني الكامل وخلاصة المسيرة على لينكد إن" data-tip-en="See my full professional profile and career highlights on LinkedIn" data-tip-default="ar" href="https://linkedin.com" rel="noopener" target="_blank">
+<a class="interactive-element px-7 py-3.5 rounded-lg glass-panel text-white hover:text-gold-400 border border-gold-500/30 hover:border-gold-400 font-semibold transition flex items-center gap-2.5" data-ar="ملف لينكد إن" data-en="LinkedIn Profile" href="https://linkedin.com" rel="noopener" target="_blank">
 <svg class="w-5 h-5 fill-current text-gold-400" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
 <span class="">ملف لينكد إن</span>
 </a>
@@ -306,8 +272,8 @@
 <!-- Golden Glow Ambient Halo -->
 <div class="absolute inset-0 rounded-3xl bg-gold-500/20 filter blur-2xl transform scale-105"></div>
 <!-- Portrait Container -->
-<div class="relative w-full h-full rounded-3xl overflow-hidden border-2 border-gold-500/40 halo-gold shadow-2xl bg-obsidian-800 breathing-halo">
-<img alt="محمود رابح - مستشار تنفيذي" class="w-full h-full object-cover object-top hover:scale-105 transition duration-700 ease-out" src="jpg.png">
+<div class="relative w-full h-full rounded-3xl overflow-hidden border-2 border-gold-500/40 halo-gold shadow-2xl bg-obsidian-800">
+<img alt="محمود رابح - مستشار تنفيذي" class="w-full h-full object-cover object-top hover:scale-105 transition duration-700 ease-out" src="https://lh3.googleusercontent.com/aida/AEtjO1Voq8NfmfuMvYKOwK2Xm8FdcNouTw_8G2QYLnzwAsrEUWdA016TJoWmfHik9spumfLLVTpGv_tvT3LMZHC7m1MI_nSU5AIv6wNaFU-NTtSw-REKRncf75BpPeL6OhXIBCDOCJm-D6P_LzG_ZJWsE-k5NYEbknRHQg1GQzXaOdjb8Lh3tL77iPjwPDxd_dkefNzlP7W4U6zPj7-JHxlBfM9g4oUGtrI9EkHft0WoMVf8FoDX4Qo-dQtbsoaEywROGhBPzm_MaPv-">
 </div>
 <!-- Floating Glass Badge 1: Experience -->
 <div class="absolute -bottom-5 -left-4 glass-panel py-2.5 px-4 rounded-xl shadow-xl flex items-center gap-3 border border-gold-500/40">
@@ -350,7 +316,28 @@
             </p>
 </div>
 <!-- Key metric badges (4 badges) -->
-<div class="lg:col-span-5 grid grid-cols-2 gap-4"><div class="glass-panel p-6 rounded-2xl border border-gold-500/20 text-center reveal-on-scroll"><span class="block text-4xl font-display font-extrabold text-gold-400 mb-1 counter-number" data-target="18" data-suffix="+">18+</span><span class="text-sm font-semibold text-gray-200 block" data-ar="سنوات خبرة" data-en="Years Exp">سنوات خبرة</span><span class="text-xs text-gray-400" data-ar="إدارة ومشتريات" data-en="Procurement Hub">إدارة ومشتريات</span></div><div class="glass-panel p-6 rounded-2xl border border-gold-500/20 text-center reveal-on-scroll"><span class="block text-4xl font-display font-extrabold text-gold-400 mb-1 counter-number" data-target="50" data-suffix="+">50+</span><span class="text-sm font-semibold text-gray-200 block" data-ar="مشروع استشاري" data-en="Projects Done">مشروع استشاري</span><span class="text-xs text-gray-400" data-ar="تحول وتطوير" data-en="Transformation">تحول وتطوير</span></div><div class="glass-panel p-6 rounded-2xl border border-gold-500/20 text-center reveal-on-scroll"><span class="block text-4xl font-display font-extrabold text-gold-400 mb-1 counter-number" data-target="5" data-suffix="">5</span><span class="text-sm font-semibold text-gray-200 block" data-ar="قطاعات حيوية" data-en="Core Sectors">قطاعات حيوية</span><span class="text-xs text-gray-400" data-ar="أدوية، صحة، تجارة" data-en="Pharma, Trade, etc">أدوية، صحة، تجارة</span></div><div class="glass-panel p-6 rounded-2xl border border-gold-500/20 text-center reveal-on-scroll"><span class="block text-4xl font-display font-extrabold text-gold-400 mb-1 counter-number" data-target="100" data-suffix="%">100%</span><span class="text-sm font-semibold text-gray-200 block" data-ar="التزام بالنتائج" data-en="Commitment">التزام بالنتائج</span><span class="text-xs text-gray-400" data-ar="مؤشرات أداء واضحة" data-en="Measurable KPIs">مؤشرات أداء واضحة</span></div></div>
+<div class="lg:col-span-5 grid grid-cols-2 gap-4">
+<div class="glass-panel p-6 rounded-2xl border border-gold-500/20 text-center">
+<span class="block text-4xl font-display font-extrabold text-gold-400 mb-1">18+</span>
+<span class="text-sm font-semibold text-gray-200 block" data-ar="سنوات خبرة" data-en="Years Exp">سنوات خبرة</span>
+<span class="text-xs text-gray-400" data-ar="إدارة ومشتريات" data-en="Procurement Hub">إدارة ومشتريات</span>
+</div>
+<div class="glass-panel p-6 rounded-2xl border border-gold-500/20 text-center">
+<span class="block text-4xl font-display font-extrabold text-gold-400 mb-1">50+</span>
+<span class="text-sm font-semibold text-gray-200 block" data-ar="مشروع استشاري" data-en="Projects Done">مشروع استشاري</span>
+<span class="text-xs text-gray-400" data-ar="تحول وتطوير" data-en="Transformation">تحول وتطوير</span>
+</div>
+<div class="glass-panel p-6 rounded-2xl border border-gold-500/20 text-center">
+<span class="block text-4xl font-display font-extrabold text-gold-400 mb-1">5</span>
+<span class="text-sm font-semibold text-gray-200 block" data-ar="قطاعات حيوية" data-en="Core Sectors">قطاعات حيوية</span>
+<span class="text-xs text-gray-400" data-ar="أدوية، صحة، تجارة" data-en="Pharma, Trade, etc">أدوية، صحة، تجارة</span>
+</div>
+<div class="glass-panel p-6 rounded-2xl border border-gold-500/20 text-center">
+<span class="block text-4xl font-display font-extrabold text-gold-400 mb-1">100%</span>
+<span class="text-sm font-semibold text-gray-200 block" data-ar="التزام بالنتائج" data-en="Commitment">التزام بالنتائج</span>
+<span class="text-xs text-gray-400" data-ar="مؤشرات أداء واضحة" data-en="Measurable KPIs">مؤشرات أداء واضحة</span>
+</div>
+</div>
 </div>
 </div>
 </section>
@@ -1103,20 +1090,7 @@
 <!-- Executive Contact Form -->
 <div class="lg:col-span-7 glass-panel p-8 rounded-3xl border border-gold-500/30">
 <h4 class="text-2xl font-bold font-display text-white mb-6" data-ar="إرسال طلب استشارة أو استفسار" data-en="Submit Consultation Request">إرسال طلب استشارة أو استفسار</h4>
-<form class="space-y-4" id="contactForm" onsubmit="event.preventDefault();var f=document.getElementById('contactForm');var d=new FormData(f);var obj={};d.forEach(function(v,k){obj[k]=v;});fetch('/api/telegram',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(obj)}).then(function(r){return r.json();}).then(function(j){if(j.success){f.reset();alert(document.documentElement.dir==='rtl'?'Done! Check Telegram.':'Done! Check Telegram.');}else{alert('Error. Try again.');}}).catch(function(e){alert('Connection error.');});"محمد"]').value;
-var phone=document.querySelector('#contactForm input[placeholder*="20 100"]').value;
-var email=document.querySelector('#contactForm input[placeholder*="name@"]').value;
-var field=document.querySelector('#contactForm select').value;
-var details=document.querySelector('#contactForm textarea').value;
-var msg='--- New Consultation Request ---'+'
-Name: '+name+'
-Phone: '+phone+'
-Email: '+email+'
-Field: '+field+'
-Details: '+details;
-var telegramMsg=encodeURIComponent(msg);
-window.open('https://t.me/mahmoudrabeh1?text='+telegramMsg,'_blank');
-alert(document.documentElement.dir==='rtl'?'تم فتح تيليجرام. أرسل الرسالة لإتمام الطلب.';'Thank you. Telegram is opening. Send the message to complete.');">
+<form class="space-y-4" id="contactForm" onsubmit="event.preventDefault(); alert(document.documentElement.dir === 'rtl' ? 'شكراً لتواصلك. سيتم الرد خلال ساعات العمل الرسمية.' : 'Thank you. We will get back to you during business hours.');">
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
 <div>
 <label class="block text-xs font-semibold text-gray-300 mb-1" data-ar="الاسم الكريم" data-en="Full Name">الاسم الكريم</label>
@@ -1146,7 +1120,7 @@ alert(document.documentElement.dir==='rtl'?'تم فتح تيليجرام. أرس
 <label class="block text-xs font-semibold text-gray-300 mb-1" data-ar="تفاصيل المشروع أو الاستفسار" data-en="Project Scope or Message">تفاصيل المشروع أو الاستفسار</label>
 <textarea class="w-full bg-obsidian-900 border border-gold-500/30 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-gold-400" placeholder="اذكر بإيجاز طبيعة عمل شركتك، التحدي الحالي، أو الهدف المنشود..." required="" rows="4"></textarea>
 </div>
-<button class="w-full py-3.5 rounded-xl bg-gold-500 hover:bg-gold-400 text-obsidian-950 font-bold text-sm tracking-wide transition shadow-gold-glow flex items-center justify-center gap-2 cursor-pointer tip-down" type="submit" data-tip="إرسال الطلب — سيصل مباشرة إلى محمود عبر تيليجرام" data-tip-ar="إرسال الطلب — سيصل مباشرة إلى محمود عبر تيليجرام" data-tip-en="Send request — it reaches Mahmoud directly via Telegram" data-tip-default="ar">
+<button class="w-full py-3.5 rounded-xl bg-gold-500 hover:bg-gold-400 text-obsidian-950 font-bold text-sm tracking-wide transition shadow-gold-glow flex items-center justify-center gap-2 cursor-pointer" type="submit">
 <span data-ar="إرسال الطلب الآن" data-en="Send Consultation Request Now" class="">إرسال الطلب الآن</span>
 <svg class="w-4 h-4 rtl:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 </button>
@@ -1202,13 +1176,6 @@ alert(document.documentElement.dir==='rtl'?'تم فتح تيليجرام. أرس
             }
           }
         });
-
-        // Update hover tooltips to match the active language
-        const tooltips = document.querySelectorAll('[data-tip]');
-        tooltips.forEach(el => {
-          const tip = el.getAttribute(`data-tip-${currentLang}`);
-          if (tip) el.setAttribute('data-tip', tip);
-        });
       }
 
       if (langToggleBtn) {
@@ -1217,13 +1184,6 @@ alert(document.documentElement.dir==='rtl'?'تم فتح تيليجرام. أرس
           updateLanguage(nextLang);
         });
       }
-
-      // Initial tooltip sync to the default language
-      const initialTips = document.querySelectorAll('[data-tip-default]');
-      initialTips.forEach(el => {
-        const tip = el.getAttribute(`data-tip-${currentLang}`);
-        if (tip) el.setAttribute('data-tip', tip);
-      });
 
       // 2. FAQ Accordion Handling
       const faqToggles = document.querySelectorAll('.faq-toggle');
@@ -1279,61 +1239,4 @@ alert(document.documentElement.dir==='rtl'?'تم فتح تيليجرام. أرس
 <!-- END: ScriptConcerns -->
 
 
-
-
-<script id="dynamic-motion-script">
-document.addEventListener('DOMContentLoaded', () => {
-  // 1. Mouse-tracking radial spotlight on glass-panels
-  const panels = document.querySelectorAll('.glass-panel');
-  panels.forEach(panel => {
-    panel.addEventListener('mousemove', (e) => {
-      const rect = panel.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
-      panel.style.setProperty('--mouse-x', `${x}px`);
-      panel.style.setProperty('--mouse-y', `${y}px`);
-    });
-  });
-
-  // 2. Scroll-reveal with IntersectionObserver
-  const revealElements = document.querySelectorAll('.reveal-on-scroll, section h3, section .glass-panel');
-  revealElements.forEach(el => {
-    if (!el.classList.contains('reveal-on-scroll')) {
-      el.classList.add('reveal-on-scroll');
-    }
-  });
-
-  const revealObserver = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-        // Animate counter if present inside
-        const counters = entry.target.querySelectorAll('.counter-number');
-        counters.forEach(counter => {
-          if (counter.dataset.animated) return;
-          counter.dataset.animated = 'true';
-          const target = parseFloat(counter.dataset.target || 0);
-          const suffix = counter.dataset.suffix || '';
-          let current = 0;
-          const duration = 1400;
-          const stepTime = 20;
-          const steps = duration / stepTime;
-          const increment = target / steps;
-          const timer = setInterval(() => {
-            current += increment;
-            if (current >= target) {
-              counter.textContent = target + suffix;
-              clearInterval(timer);
-            } else {
-              counter.textContent = Math.floor(current) + suffix;
-            }
-          }, stepTime);
-        });
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.15 });
-
-  revealElements.forEach(el => revealObserver.observe(el));
-});
-</script></body></html>
+</body></html>

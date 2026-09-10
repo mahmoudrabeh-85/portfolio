@@ -1,0 +1,104 @@
+{
+  "bot_name": "Rabeh Consultant",
+  "bot_name_ar": "مساعد محمود رباح",
+  "welcome_ar": "مرحباً بك! 👋\nأنا مساعد محمود رباح — مستشار مشتريات وسلاسل إمداد.\n\nكيف يمكنني مساعدتك اليوم؟",
+  "welcome_en": "Welcome! 👋\nI'm Mahmoud Rabeh's assistant — Procurement & Supply Chain Consultant.\n\nHow can I help you today?",
+  "owner_chat_id": "184519943",
+  "owner_name": "محمود رباح",
+
+  "services": [
+    {
+      "id": "consulting",
+      "name_ar": "استشارات المشتريات",
+      "name_en": "Procurement Consulting",
+      "desc_ar": "تحسين عمليات الشراء وتقييم الموردين والتفاوض على العقود لتحقيق أفضل قيمة.",
+      "desc_en": "Improving procurement processes, evaluating suppliers, and negotiating contracts for best value.",
+      "duration": "45-60 دقيقة",
+      "type": "consultation"
+    },
+    {
+      "id": "supply_chain",
+      "name_ar": "استشارات سلاسل الإمداد",
+      "name_en": "Supply Chain Consulting",
+      "desc_ar": "تحسين سلاسل الإمداد من المورد إلى العميل النهائي مع خفض التكاليف.",
+      "desc_en": "Optimizing supply chains from supplier to end customer with cost reduction.",
+      "duration": "45-60 دقيقة",
+      "type": "consultation"
+    },
+    {
+      "id": "inventory",
+      "name_ar": "تحليل وتحسين المخزون",
+      "name_en": "Inventory Analysis & Optimization",
+      "desc_ar": "تحليل المخزون الحالي وتحديد الفائض والنقص مع وضع خطة تحسين.",
+      "desc_en": "Analyzing current inventory, identifying surplus and shortages, with an improvement plan.",
+      "duration": "30-45 دقيقة",
+      "type": "consultation"
+    },
+    {
+      "id": "training",
+      "name_ar": "التدريب والورش",
+      "name_en": "Training & Workshops",
+      "desc_ar": "تدريب الفرق على أفضل ممارسات المشتريات وإدارة المخزون.",
+      "desc_en": "Training teams on best practices in procurement and inventory management.",
+      "duration": "2-3 ساعات",
+      "type": "training"
+    },
+    {
+      "id": "quran",
+      "name_ar": "تحفيظ القرآن الكريم",
+      "name_en": "Quran Memorization",
+      "desc_ar": "جلسات تحفيظ القرآن الكريم — مبتدئين ومتقدمين.",
+      "desc_en": "Quran memorization sessions — beginners and advanced.",
+      "duration": "30-45 دقيقة",
+      "type": "quran"
+    },
+    {
+      "id": "arabic",
+      "name_ar": "تعلم اللغة العربية",
+      "name_en": "Arabic Language Learning",
+      "desc_ar": "دروس اللغة العربية للمبتدئين ومحبي اللغة.",
+      "desc_en": "Arabic language lessons for beginners and enthusiasts.",
+      "duration": "45-60 دقيقة",
+      "type": "education"
+    }
+  ],
+
+  "faq": [
+    {
+      "q_ar": "ما هي خبرتك؟",
+      "q_en": "What is your experience?",
+      "a_ar": "لديّ أكثر من 18 سنة خبرة في المشتريات وسلاسل الإمداد في قطاع الأدوية والرعاية الصحية.",
+      "a_en": "I have over 18 years of experience in procurement and supply chain in the pharmaceutical and healthcare sectors."
+    },
+    {
+      "q_ar": "كيف أحجز استشارة؟",
+      "q_en": "How do I book a consultation?",
+      "a_ar": "اختر نوع الخدمة التي تحتاجها، ثم أرسل لي الوقت المناسب وسأرسل لك تأكيداً خلال ساعات العمل.",
+      "a_en": "Choose the service you need, then send me your preferred time and I'll send you a confirmation within business hours."
+    },
+    {
+      "q_ar": "ما هي ساعات العمل؟",
+      "q_en": "What are your working hours?",
+      "a_ar": "ساعات العمل الرسمية: الأحد إلى الخميس، 9 صباحاً إلى 6 مساءً بتوقيت القاهرة.",
+      "a_en": "Official working hours: Sunday to Thursday, 9 AM to 6 PM Cairo time."
+    },
+    {
+      "q_ar": "هل تقدم خدمة عن بُعد؟",
+      "q_en": "Do you offer remote services?",
+      "a_ar": "نعم، جميع الاستشارات متاحة عبر Zoom أو Microsoft Teams أو أي منصة تفضّلها.",
+      "a_en": "Yes, all consultations are available via Zoom, Microsoft Teams, or any platform you prefer."
+    }
+  ],
+
+  "booking_states": {
+    "IDLE": "idle",
+    "AWAITING_SERVICE": "awaiting_service",
+    "AWAITING_NAME": "awaiting_name",
+    "AWAITING_PHONE": "awaiting_phone",
+    "AWAITING_DATE": "awaiting_date",
+    "AWAITING_TIME": "awaiting_time",
+    "AWAITING_DETAILS": "awaiting_details",
+    "AWAITING_CONFIRMATION": "awaiting_confirmation",
+    "AWAITING_LANG": "awaiting_lang"
+  }
+}
