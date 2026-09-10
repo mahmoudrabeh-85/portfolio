@@ -1,0 +1,21 @@
+# DECISIONS
+
+- Versioning system: every design version stored as a complete self-contained folder under `versions/vX-YYYY-MM-DD/` + registry in VERSIONS.md. Switching = copy chosen version's files to root. Current active = v1 (2026-09-08); v2 (Stitch, 2026-09-10) under review.
+- Media buying strategy: learn for self first (small budget 100-150 EGP/day) → prove results → then sell as a service. Scaling rule: max +30-40% budget increase at a time.
+- Word reference doc (Media-Buyer-Reference.docx) is the living knowledge base — user must only say "حدّث المرجع" to update it continuously.
+- OpenRouter free models: added all models with pricing 0, including openai/gpt-oss models per user confirmation they are free.
+- Session continuity: use file-based handover (PROGRESS.md/NEXT_STEPS.md/DECISIONS.md) instead of relying on session resume only.
+- Missing handover files: build agent auto-creates PROGRESS.md, NEXT_STEPS.md, DECISIONS.md when absent in a project.
+- Created MASTER WORK PROTOCOL (PROTOCOL.md): unified protocol distilled from real patterns across all projects (winner druge / lead-intel / ai studio / pharmacy / portfolio). Level 1 = shared core (12 rules), Level 2 = one-question-at-a-time classification survey, Level 3 = tiered structure (simple/medium/enterprise), Level 4 = reusable project-start prompt.
+- Added Mentoring Mode (Level 5) to PROTOCOL.md: tiered explanation system (brief/simple/lead/deep) with stop commands (kafi/sufficient/yalla).
+- Created LEARNING.md (global, cumulative): persistent memory across all projects. Updated automatically after every project session. Covers: accumulated skills, winning patterns, lessons learned, user preferences, project registry, and cumulative stats.
+- Added LEARNING.md to global opencode.jsonc instructions array — auto-loaded in every session.
+- Updated build agent prompt to read AND update LEARNING.md at start/end of every session.
+- Added CHANGELOG.md requirement to all tiers in PROTOCOL.md.
+- Added COMMON_LANGUAGE.md (multi-model collaboration protocol) to medium tier.
+- Added Resilience/Fallback strategy pattern to enterprise tier (from ai studio + pharmacy patterns: local storage, JSON fallback, pipeline error handling).
+- Removed Knowledge Center section from portfolio.html (all items were "Coming Soon" with no content — weakens credibility).
+- Removed Knowledge Center card from brands-overview section + all nav/footer links to it.
+- Moved floating social bar (WhatsApp, Telegram, LinkedIn) from right (RTL inset-inline-start) to left (fixed left:14px) — user requested all social icons on the left.
+- Unified language toggle to a single button (removed langToggleMobile from mobile menu). Button text matches current language: "Change Language" in English, "تغيير اللغة" in Arabic.
+- Unified language toggle to a single button (removed langToggleMobile from mobile menu). Button text matches current language: "Change Language" in English, "تغيير اللغة" in Arabic.
