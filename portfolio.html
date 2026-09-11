@@ -1103,20 +1103,7 @@
 <!-- Executive Contact Form -->
 <div class="lg:col-span-7 glass-panel p-8 rounded-3xl border border-gold-500/30">
 <h4 class="text-2xl font-bold font-display text-white mb-6" data-ar="إرسال طلب استشارة أو استفسار" data-en="Submit Consultation Request">إرسال طلب استشارة أو استفسار</h4>
-<form class="space-y-4" id="contactForm" onsubmit="event.preventDefault();var f=document.getElementById('contactForm');var d=new FormData(f);var obj={};d.forEach(function(v,k){obj[k]=v;});fetch('/api/telegram',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(obj)}).then(function(r){return r.json();}).then(function(j){if(j.success){f.reset();alert(document.documentElement.dir==='rtl'?'Done! Check Telegram.':'Done! Check Telegram.');}else{alert('Error. Try again.');}}).catch(function(e){alert('Connection error.');});"محمد"]').value;
-var phone=document.querySelector('#contactForm input[placeholder*="20 100"]').value;
-var email=document.querySelector('#contactForm input[placeholder*="name@"]').value;
-var field=document.querySelector('#contactForm select').value;
-var details=document.querySelector('#contactForm textarea').value;
-var msg='--- New Consultation Request ---'+'
-Name: '+name+'
-Phone: '+phone+'
-Email: '+email+'
-Field: '+field+'
-Details: '+details;
-var telegramMsg=encodeURIComponent(msg);
-window.open('https://t.me/mahmoudrabeh1?text='+telegramMsg,'_blank');
-alert(document.documentElement.dir==='rtl'?'تم فتح تيليجرام. أرسل الرسالة لإتمام الطلب.';'Thank you. Telegram is opening. Send the message to complete.');">
+<form class="space-y-4" id="contactForm">
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
 <div>
 <label class="block text-xs font-semibold text-gray-300 mb-1" data-ar="الاسم الكريم" data-en="Full Name">الاسم الكريم</label>
@@ -1151,6 +1138,29 @@ alert(document.documentElement.dir==='rtl'?'تم فتح تيليجرام. أرس
 <svg class="w-4 h-4 rtl:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 </button>
 </form>
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  var f = this;
+  var name = f.querySelector('input[type="text"]').value;
+  var phone = f.querySelector('input[type="tel"]').value;
+  var email = f.querySelector('input[type="email"]').value;
+  var field = f.querySelector('select').value;
+  var details = f.querySelector('textarea').value;
+  var msg = '--- New Consultation Request ---' + String.fromCharCode(10)
+    + 'Name: ' + name + String.fromCharCode(10)
+    + 'Phone: ' + phone + String.fromCharCode(10)
+    + 'Email: ' + email + String.fromCharCode(10)
+    + 'Field: ' + field + String.fromCharCode(10)
+    + 'Details: ' + details;
+  window.open('https://t.me/mahmoudagent26_bot?text=' + encodeURIComponent(msg), '_blank');
+  var isAr = document.documentElement.dir === 'rtl';
+  alert(isAr
+    ? String.fromCharCode(1578,1605,32,1601,1578,1581,32,1578,1610,1604,1610,1580,1585,1575,1605,46,32,1571,1585,1587,1604,32,1575,1604,1585,1587,1575,1604,1577,32,1604,1573,1578,1605,1575,1605,32,1575,1604,1591,1604,1576,46)
+    : 'Done! Telegram is opening. Send the message to complete.');
+});
+</script>
+
 </div>
 </div>
 </div>
