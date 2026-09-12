@@ -19,3 +19,4 @@
 - Moved floating social bar (WhatsApp, Telegram, LinkedIn) from right (RTL inset-inline-start) to left (fixed left:14px) — user requested all social icons on the left.
 - Unified language toggle to a single button (removed langToggleMobile from mobile menu). Button text matches current language: "Change Language" in English, "تغيير اللغة" in Arabic.
 - Unified language toggle to a single button (removed langToggleMobile from mobile menu). Button text matches current language: "Change Language" in English, "تغيير اللغة" in Arabic.
+- 2026-09-12: Preview Rule — بعد كل تعديل مهم (UI/محتوى/تصميم) يفتح المساعد المعاينة في المتصفح فوراً ولا ينتقل للخطوة التالية قبل رؤية المستخدم للنتيجة. محفوظة في AGENTS.md (مشروع) + PROTOCOL.md قاعدة 14-15 (عالمي).
