@@ -1,5 +1,10 @@
 # PROGRESS
 
+## Section 2026-09-13 (Subagents + LOCAL-ONLY protection — DONE)
+- ✅ **Multi-project management from ONE chat confirmed**: direct paths + parallel subagents + opencode-delegate + reading any project's memory files. Limit: 2-3 parallel agents max (free provider 429 risk at 4+).
+- ✅ **Custom subagents added to global config** (`~/.config/opencode/opencode.jsonc`, braces 177/177 verified): `arabic` (opencode/mimo-v2.5-free — best Arabic), `coder` (opencode/nemotron-3-ultra-free — heavy analysis), `fast` (opencode/ling-3.0-flash-fin-free — light checks). Each agent = own model.
+- ✅ **media-buying project = LOCAL-ONLY (user explicit decision)**: no .git, no remote; `.gitignore` safety net blocks everything by default; AGENTS.md + DECISIONS.md contain hard block rules.
+
 ## Section 2026-09-13 (Marketing/learning SPLIT into private project — DONE)
 - ✅ All `docs/marketing/*` files moved to new private project `D:\ai\media-buying\` (own AGENTS/PROGRESS/NEXT_STEPS/DECISIONS).
 - ✅ Portfolio repo cleaned: `eeedd7f` pushed — repo now = site code + site docs only (privacy fix: strategy files were public on winner-dev).

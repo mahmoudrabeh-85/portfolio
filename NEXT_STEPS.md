@@ -1,9 +1,13 @@
 # NEXT STEPS
 
+## Today (2026-09-13) — Subagents + memory updated, RESTART opencode
+- ✅ **RESTART opencode now** to load the 3 new custom subagents (arabic/coder/fast) + GitHub MCP.
+- ✅ After restart, test parallel agents: "أطلق coder و arabic في مهمتين متوازيتين".
+- ⬜ USER works in `D:\ai\media-buying\` (LOCAL-ONLY, never push): configure LinkedIn (LINKEDIN-PROFILE-COPY.md → personal profile) → post the 10 posts → create social accounts per checklist.
+- ⬜ MCP: playwright + context7 installed; github MCP needs the restart too (GITHUB_TOKEN set & verified).
+
 ## Today (2026-09-13) — Marketing files MOVED to private project
 - ✅ **SPLIT COMPLETE**: all marketing/learning files moved to `D:\ai\media-buying\` (own AGENTS/PROGRESS/NEXT_STEPS/DECISIONS). Portfolio repo = site code only (`eeedd7f` pushed).
-- ⬜ **USER works in the new project now**: configure LinkedIn (LINKEDIN-PROFILE-COPY.md → personal profile) → post the 10 posts → create social accounts per checklist. All files ready there.
-- ⬜ MCP: playwright + context7 + github installed (github needs GITHUB_TOKEN — token set & verified in User env; restart opencode to activate).
 
 ## Pending decisions from today (2026-09-13)
 - ⬜ **Hardware decision**: user asked which dependable local coding model + required specs. Answer delivered (Qwen3-Coder-30B-A3B @ 24GB VRAM — used RTX 3090 best value ~16-20k EGP, total ~32-42k; or economic 16GB path = Qwen3-Coder-14B w/ RTX 4060 Ti ~24-28k). **Awaiting user's choice** between the two levels (or final build parts list).
