@@ -1,5 +1,5 @@
-# robots.txt - https://mahmoud-rabeh.com
+# robots.txt - https://mahmoudrabeh-85.github.io/winner-dev/
 User-agent: *
 Allow: /
 
-Sitemap: https://mahmoud-rabeh.com/sitemap.xml
+Sitemap: https://mahmoudrabeh-85.github.io/winner-dev/sitemap.xml
