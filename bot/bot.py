@@ -180,10 +180,30 @@ def admin_confirm_keyboard(booking_id):
     ]
     return InlineKeyboardMarkup(buttons)
 
+async def _notify_admin(context, text: str):
+    """Instant admin alert — the owner always knows what visitors are doing."""
+    try:
+        await context.bot.send_message(chat_id=ADMIN_CHAT_ID, text=text)
+    except Exception as e:
+        logger.error(f"Admin notify failed: {e}")
+
+def _sender_label(update: Update) -> str:
+    u = update.effective_user
+    name = (u.first_name or "") + (" " + u.last_name if getattr(u, "last_name", None) else "")
+    name = name.strip() or "زائر"
+    if u.username:
+        return f"{name} (@{u.username})"
+    return name
+
 # --- Command Handlers ---
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     lang = get_lang(update)
     context.user_data["lang"] = lang
+    # Alert the owner: a new visitor started a conversation
+    await _notify_admin(
+        context,
+        f"👋 محادثة جديدة بدأت!\n👤 {_sender_label(update)}\n🆔 {update.effective_user.id}"
+    )
     welcome = KB[f"welcome_{lang}"]
     await update.message.reply_text(welcome, reply_markup=main_menu_keyboard(lang))
     return IDLE
@@ -283,13 +303,13 @@ async def callback_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
             "📱 واتساب: +201006125478\n"
             "📱 تيليجرام: @mahmoudrabeh1\n"
             "🔗 لينكدإن: linkedin.com/in/mahmoud-rabeh-7102071a3\n"
-            "📧 بريد: contact@mahmoud-rabeh.com\n\n"
+            "📅 احجز موعداً مباشرة من القائمة الرئيسية\n\n"
             "⏰ ساعات العمل: الأحد-الخميس، 9 صباحاً - 6 مساءً",
             "📞 Contact Mahmoud Rabeh:\n\n"
             "📱 WhatsApp: +201006125478\n"
             "📱 Telegram: @mahmoudrabeh1\n"
             "🔗 LinkedIn: linkedin.com/in/mahmoud-rabeh-7102071a3\n"
-            "📧 Email: contact@mahmoud-rabeh.com\n\n"
+            "📅 Book an appointment directly from the main menu\n\n"
             "⏰ Working Hours: Sun-Thu, 9AM - 6PM"
         )
         await query.edit_message_text(text, reply_markup=main_menu_keyboard(lang))
@@ -505,6 +525,9 @@ async def voice_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Handle voice messages — transcribe then process as text"""
     lang = context.user_data.get("lang", "ar")
     
+    # Alert the owner: voice message received
+    await _notify_admin(context, f"🎤 رسالة صوتية من {_sender_label(update)}")
+    
     # Show "typing" indicator
     await context.bot.send_chat_action(chat_id=update.effective_chat.id, action="typing")
     
@@ -532,6 +555,14 @@ async def message_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
     lang = context.user_data.get("lang", "ar")
     awaiting = context.user_data.get("awaiting")
     
+    # Alert the owner about every free-text message (not booking-flow fields)
+    if awaiting is None:
+        raw_text = message_text(update, context)
+        await _notify_admin(
+            context,
+            f"💬 رسالة من {_sender_label(update)}:\n\n{raw_text}"
+        )
+    
     if awaiting == "name":
         return await receive_name(update, context)
     elif awaiting == "phone":
@@ -543,31 +574,108 @@ async def message_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
     elif awaiting == "details":
         return await receive_details(update, context)
     else:
-        # Free text — try to understand intent
-        text = message_text(update, context).lower()
-        if any(w in text for w in ["حجز", "موعد", "book", "appointment"]):
-            # Redirect to booking flow
+        # Free text — smart intent detection
+        text = message_text(update, context).lower().strip()
+        
+        # Greetings
+        if any(w in text for w in ["مرحبا", "أهلا", "اهلا", "هلا", "السلام", "صباح", "مساء", "هاي", "hello", "hi", "hey", "salam", "marhaba"]):
+            await update.message.reply_text(
+                t(lang,
+                    "أهلاً وسهلاً بك! 👋\nكيف أقدر أخدمك اليوم؟ اختر من القائمة:",
+                    "Welcome! 👋\nHow can I help you today? Choose from the menu:"),
+                reply_markup=main_menu_keyboard(lang)
+            )
+        # Who is he / about
+        elif any(w in text for w in ["من أنت", "من انت", "عني", "نبذة", "من هو", "من هو محمود", "who are you", "about you", "about me", "information", "سيرة"]):
+            await update.message.reply_text(
+                t(lang,
+                    "👤 **محمود رابح**\n\n"
+                    "مستشار مشتريات وسلاسل إمداد — أكثر من 18 عاماً خبرة في قطاع التوزيع والتجارة.\n"
+                    "مبرمج ومطور مواقع وتطبيقات، ومحفظ قرآن ومعلم لغة عربية.\n\n"
+                    "اختر من القائمة لمعرفة الخدمات أو حجز موعد:",
+                    "👤 **Mahmoud Rabeh**\n\n"
+                    "Procurement & Supply Chain Consultant — 18+ years in trading & distribution.\n"
+                    "Developer & builder of websites and apps, Quran tutor and Arabic teacher.\n\n"
+                    "Choose from the menu for services or to book:"),
+                reply_markup=main_menu_keyboard(lang)
+            )
+        # Pricing
+        elif any(w in text for w in ["سعر", "ثمن", "تكلفة", "بكام", "كام سعر", "اسعار", "أسعار", "مقابل", "price", "cost", "fee", "charge", "how much", "الأسعار"]):
+            await update.message.reply_text(
+                t(lang,
+                    "💰 الأسعار تُحدد حسب المشروع وحجمه.\n"
+                    "الأفضل: احجز استشارة قصيرة ونتفق على الأفضل لك.\n\n"
+                    "اضغط 'حجز موعد' من القائمة:",
+                    "💰 Pricing depends on the project scope.\n"
+                    "Best approach: book a short consultation and we find the right fit.\n\n"
+                    "Click 'Book Appointment' from the menu:"),
+                reply_markup=book_type_keyboard(lang)
+            )
+        # Quran / memorization
+        elif any(w in text for w in ["قرآن", "قران", "تحفيظ", "حفظ", "تجويد", "quran", "memorization", "تلقين"]):
+            svc = next((s for s in KB["services"] if s["id"] == "quran"), None)
+            if svc:
+                await update.message.reply_text(
+                    f"**{svc[f'name_{lang}']}**\n\n{svc[f'desc_{lang}']}\n\n"
+                    + t(lang, "هل تريد حجز موعد تحفيظ؟", "Would you like to book a memorization session?"),
+                    reply_markup=book_type_keyboard(lang)
+                )
+            else:
+                await update.message.reply_text(
+                    t(lang, "لدينا برنامج تحفيظ قرآن شامل — اختر حجز موعد للبدء!", 
+                      "We have a full Quran memorization program — pick Book Appointment to start!"),
+                    reply_markup=book_type_keyboard(lang)
+                )
+        # Contact
+        elif any(w in text for w in ["تواصل", "هاتف", "رقم", "واتساب", "contact", "phone", "whatsapp", "رقمك"]):
+            await update.message.reply_text(
+                t(lang,
+                    "📞 تواصل مع محمود رباح:\n\n"
+                    "📱 واتساب: +201006125478\n"
+                    "📱 تيليجرام: @mahmoudrabeh1\n"
+                    "🔗 لينكدإن: linkedin.com/in/mahmoud-rabeh-7102071a3\n\n"
+                    "أو احجز موعداً مباشرة من القائمة:", 
+                    "📞 Contact Mahmoud Rabeh:\n\n"
+                    "📱 WhatsApp: +201006125478\n"
+                    "📱 Telegram: @mahmoudrabeh1\n"
+                    "🔗 LinkedIn: linkedin.com/in/mahmoud-rabeh-7102071a3\n\n"
+                    "Or book an appointment right from the menu:"),
+                reply_markup=main_menu_keyboard(lang)
+            )
+        # Thanks
+        elif any(w in text for w in ["شكرا", "شكراً", "تسلم", "يعطيك", "مشكور", "جزاك", "thank", "thanks", "thx", "nice", "great"]):
+            await update.message.reply_text(
+                t(lang,
+                    "العفو! 😊 سعيد بخدمتك — لا تتردد في التواصل في أي وقت.",
+                    "You're welcome! 😊 Happy to help — feel free to reach out anytime."),
+                reply_markup=main_menu_keyboard(lang)
+            )
+        # Goodbye
+        elif any(w in text for w in ["مع السلامة", "باي", "وداعا", "وداعاً", "تصبح", "bye", "goodbye", "see you"]):
+            await update.message.reply_text(
+                t(lang,
+                    "وداعاً! 👋 نتمنى أن نراك قريباً.",
+                    "Goodbye! 👋 Hope to see you soon."),
+                reply_markup=main_menu_keyboard(lang)
+            )
+        # Book / appointment (existing)
+        elif any(w in text for w in ["حجز", "موعد", "book", "appointment"]):
             await update.message.reply_text(
                 t(lang, "اختر نوع الحجز:", "Select booking type:"),
                 reply_markup=book_type_keyboard(lang)
             )
-        elif any(w in text for w in ["خدمة", "استشارة", "service", "consulting"]):
+        # Services (existing)
+        elif any(w in text for w in ["خدمة", "خدمات", "استشارة", "service", "services", "consulting"]):
             await update.message.reply_text(
                 t(lang, "اختر الخدمة للاطلاع على التفاصيل:", "Select a service for details:"),
                 reply_markup=services_keyboard(lang)
             )
-        elif any(w in text for w in ["شائع", "سؤال", "faq"]):
+        # FAQ (existing)
+        elif any(w in text for w in ["شائع", "سؤال", "faq", "أسئلة"]):
             text_faq = t(lang, "❓ الأسئلة الشائعة:", "❓ Frequently Asked Questions:\n")
             for i, item in enumerate(KB["faq"], 1):
                 text_faq += f"\n**{i}. {item[f'q_{lang}']}**\n{item[f'a_{lang}']}\n"
             await update.message.reply_text(text_faq, reply_markup=main_menu_keyboard(lang))
-        elif any(w in text for w in ["تواصل", "هاتف", "contact", "phone"]):
-            await update.message.reply_text(
-                t(lang,
-                    "📞 تواصل مع محمود رباح:\n\n📱 واتساب: +201006125478\n📱 تيليجرام: @mahmoudrabeh1\n🔗 لينكدإن: linkedin.com/in/mahmoud-rabeh-7102071a3\n📧 بريد: contact@mahmoud-rabeh.com",
-                    "📞 Contact Mahmoud Rabeh:\n\n📱 WhatsApp: +201006125478\n📱 Telegram: @mahmoudrabeh1\n🔗 LinkedIn: linkedin.com/in/mahmoud-rabeh-7102071a3\n📧 Email: contact@mahmoud-rabeh.com"),
-                reply_markup=main_menu_keyboard(lang)
-            )
         else:
             await update.message.reply_text(
                 t(lang, "كيف يمكنني مساعدتك؟ اختر من القائمة:", "How can I help you? Choose from the menu:"),

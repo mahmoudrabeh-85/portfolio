@@ -1,5 +1,47 @@
 # PROGRESS
 
+## Section 2026-09-13 (v3 activated + responsive fix — DONE, user-approved)
+- ✅ **v3 = active version now**: copied `versions/v3-2026-09-10/` → root (portfolio.html 118KB, identity verified). Backup of previous v1 kept at `versions/v1-2026-09-13-backup/`.
+- ✅ **Responsive gap found & fixed**: v3 had ONLY background media queries — v1's full responsive CSS (css/input.css lines 144-203) was MISSING in v3 → that's why mobile/tablet looked broken. Added `<style data-purpose="responsive-fix">` (37 rules, ≤768px tablet + ≤480px mobile, RTL/LTR aware): social bar 44→36→32px icons, QR hidden on ≤480px, section padding 48/32px, glass-panel padding, compact #langToggle, modal padding.
+- ✅ User tested via DevTools (390×844 + 768×1024) and confirmed: **"ممتاز ظبطت"**.
+- ✅ Added `docs/RESPONSIVE-TESTING.md` — quick mobile/tablet test method (F12 → Ctrl+Shift+M → presets).
+- ✅ small_model switched: `opencodefree/deepseek-v4-flash-free` (429) → `opencode/mimo-v2.5-free` (works, no proxy needed).
+- ⬜ NEXT: user "go" → security scan (rule 13) → push → test live on Vercel/Cloudflare (#8).
+
+## Section 2026-09-13 (Model list filter + openrouter restore — DONE, verified)
+- ✅ Added `disabled_providers` to global opencode.jsonc (12 providers without keys) → /models shrunk 576 → 43.
+- ✅ **openrouter restored immediately** after user feedback: its `:free` models DO work without key (was the device default model). Now 414 models (371 openrouter incl. 23 `:free`).
+- ✅ Verified keys untouched: `OPENROUTER_API_KEY` in User env (len 73) + `openrouter` in `%USERPROFILE%\.local\share\opencode\auth.json` + `{env:OPENROUTER_API_KEY}` intact in config line 69.
+- ✅ Runtime check: `opencode run --model opencode/big-pickle` → replied OK (config valid, default model works).
+- ✅ Hardware consult delivered (Qwen3-Coder-30B-A3B = the dependable local coding model; needs 24GB VRAM e.g. used RTX 3090 ~16-20k; economic 16GB option = Qwen3-Coder-14B) — awaiting user's final choice.
+
+## Section 2026-09-13 (Free AI proxy providers — DONE, tested)
+- ✅ Added free proxy providers to global opencode.jsonc: duckai (3000), opencodefree (6446), freellmpool (8080), freellmapi (3001, manual), freeinference + free models in groq/google/openrouter/nim/mistral/cerebras/sambanova/github-models.
+- ✅ Created launcher `~/free-ai-proxies/start-proxies.ps1/.bat/.sh` (port checks, auto-install git-clone/zip, bun/uv/npm installs, logs) — UTF-8 BOM fixed for PS 5.1.
+- ✅ Test results: duckai → geo-blocked (ECONNRESET, needs VPN); opencodefree → 429 rate-limit (temporary); freellmpool → Pollinations shared budget exhausted; mimo built-in remains the only practical free option. Documented in DECISIONS.md + LEARNING.md.
+
+## Session 2026-09-13 (Supervisor bot — multi-model support DONE)
+- ✅ Created `D:\ai\supervisor\` — Telegram remote-control bot for OpenCode across ALL projects.
+- ✅ New bot via BotFather (token in supervisor/.env, ADMIN_ID=184519943, .gitignore protects secrets).
+- ✅ projects.json: portfolio, winner-druge, ai-studio, lead-intel, lead-intel-v2, second-brain.
+- ✅ Commands: /start /help /projects /models /task /status /log /cancel + voice messages (OGG→WAV→Google STT ar/en).
+- ✅ Model selection: `/task <proj> model:<alias> <prompt>` + bare alias + voice ("portfolio model claude ...").
+- ✅ MODEL_ALIASES: local qwen3/llama3 + OpenRouter gpt4o/gpt4/claude/claude35/claude3/gemini/deepseek/mistral.
+- ✅ _run_task passes --model + provider keys (OPENROUTER/OPENAI/ANTHROPIC) as subprocess env; warns if key missing.
+- ✅ Task notifications + /status + /log show the model used.
+- ✅ Both bots RUNNING: portfolio bot (bot.py) + supervisor bot (PID 26468, polling 200 OK).
+- ✅ qwen3 speed fix: created `qwen3-fast` (Modelfile: num_ctx 2048) — 8.4 → 17.9 tok/s on GTX 1660 Ti 6GB (was ~60s/reply with 40k ctx + thinking).
+- ✅ Registered `qwen3-fast` in global opencode.jsonc ollama provider (tool_call:true, ctx 2k) + `fast` alias in supervisor bot.
+- ⚠️ opencode+ollama local models still impractical: qwen3 unregistered→server error; registered→timeout (thinking per agentic step × slow tokens). Bot stays on mimo (cloud, fast, Arabic-capable).
+- ⚠️ qwen3 Arabic quality is weak (answers English to Arabic prompts) — cloud models better for Arabic.
+- ✅ Downloaded `qwen2.5-coder:1.5b` (986MB) — 73 tok/s direct API (4x qwen3-fast). Registered in opencode.jsonc + `coder` alias in bot.
+- ⚠️ opencode+local still hangs even for 1.5b (weak tool-calling in small model + slow prefill on Ryzen 3750H). Direct `ollama run` is the fast path; bot tasks stay on mimo.
+- ✅ FINAL DECISION: no more local model downloads — local models are NOT viable for coding with opencode. Local use = direct `ollama run qwen2.5-coder:1.5b` (quick Q&A/code only). opencode + supervisor bot = cloud only (mimo default, OpenRouter/Anthropic/OpenAI when keys added). Documented in DECISIONS.md.
+- ✅ Chat with @mahmoudoc26_bot established (user pressed START, test message delivered MSG_ID=9).
+- ⬜ User must /start the new bot (chat not found until first contact).
+- ⬜ User must add API keys to supervisor/.env for cloud models (local qwen3:8b works now).
+- ⬜ Long-term: run both bots as Windows services (die if PC off).
+
 ## Session 2026-09-10 (Versioning system — DONE)
 - ✅ Created versions system: `versions/v1-2026-09-08/` (current design, full copy HTML+CSS+JS+assets) + `versions/v2-2026-09-10/` (new Google Stitch design, self-contained).
 - ✅ Created VERSIONS.md — version registry with dates + 3 switching methods (manual copy, local preview, temp subpath deploy).
