@@ -1,14 +1,9 @@
 # NEXT STEPS
 
-## Today (2026-09-13) — Marketing Package (DONE, awaiting USER action)
-- ✅ SEO audit + fix — LIVE on winner-dev (commit `5c78390`, verified 200 + JSON-LD). Meta description/keywords/author/robots + canonical + favicon link + 8 OG + 4 Twitter + 2 JSON-LD (Person+Service). robots.txt + sitemap.xml fixed (were pointing to wrong domain mahmoud-rabeh.com).
-- ✅ LinkedIn posts (10: 5 AR + 5 EN) — `docs/marketing/LINKEDIN-POSTS.md`
-- ✅ Social content plan Egypt (FB/IG/TikTok/YT columns + 30-day start) — `docs/marketing/SOCIAL-CONTENT-PLAN.md`
-- ✅ Affiliate roadmap (Noon/Jumia/Amazon, 100-150 EGP/day test, +30-40% scale) — `docs/marketing/AFFILIATE-ROADMAP.md`
-- ✅ Accounts setup checklist (7 platforms) — `docs/marketing/ACCOUNTS-SETUP.md`
-- ⬜ **USER: configure LinkedIn profile (checklist step 1) → then post the 10 posts**
-- ⬜ USER: create FB page + TikTok/YT/IG/WA Business/Upwork accounts per checklist
-- ⬜ USER (later): Meta Pixel after learning basics
+## Today (2026-09-13) — Marketing files MOVED to private project
+- ✅ **SPLIT COMPLETE**: all marketing/learning files moved to `D:\ai\media-buying\` (own AGENTS/PROGRESS/NEXT_STEPS/DECISIONS). Portfolio repo = site code only (`eeedd7f` pushed).
+- ⬜ **USER works in the new project now**: configure LinkedIn (LINKEDIN-PROFILE-COPY.md → personal profile) → post the 10 posts → create social accounts per checklist. All files ready there.
+- ⬜ MCP: playwright + context7 + github installed (github needs GITHUB_TOKEN — token set & verified in User env; restart opencode to activate).
 
 ## Pending decisions from today (2026-09-13)
 - ⬜ **Hardware decision**: user asked which dependable local coding model + required specs. Answer delivered (Qwen3-Coder-30B-A3B @ 24GB VRAM — used RTX 3090 best value ~16-20k EGP, total ~32-42k; or economic 16GB path = Qwen3-Coder-14B w/ RTX 4060 Ti ~24-28k). **Awaiting user's choice** between the two levels (or final build parts list).

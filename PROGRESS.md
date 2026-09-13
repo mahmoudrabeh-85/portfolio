@@ -1,5 +1,11 @@
 # PROGRESS
 
+## Section 2026-09-13 (Marketing/learning SPLIT into private project — DONE)
+- ✅ All `docs/marketing/*` files moved to new private project `D:\ai\media-buying\` (own AGENTS/PROGRESS/NEXT_STEPS/DECISIONS).
+- ✅ Portfolio repo cleaned: `eeedd7f` pushed — repo now = site code + site docs only (privacy fix: strategy files were public on winner-dev).
+- ⬜ USER now works in `D:\ai\media-buying\` for: LinkedIn profile copy-paste, 10 posts, affiliate, ads learning.
+- Related decision: LinkedIn = personal profile (linkedin.com/in/mahmoud-rabeh-7102071a3).
+
 ## Section 2026-09-13 (Marketing package + SEO — DONE, live)
 - ✅ **SEO audit + fix** (from marketing package list): added meta description/keywords/author/robots, canonical → live domain, favicon link (svg existed but unlinked), 8 OG + 4 Twitter cards, **2 JSON-LD blocks (Person w/ LinkedIn + Service)**. Fixed **robots.txt + sitemap.xml pointing to wrong domain** (mahmoud-rabeh.com → mahmoudrabeh-85.github.io/winner-dev). Committed `5c78390` → **verified LIVE** (HTTP 200, JSON-LD present in served copy, size 104631). Lessons: GitHub Pages deploy has ~1min delay (verify via raw.githubusercontent instantly, then re-check after 60s).
 - ✅ **Marketing package files** (committed `756afd7`):
