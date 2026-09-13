@@ -1,5 +1,12 @@
 # PROGRESS
 
+## Section 2026-09-13 (v3 DEPLOYED — LIVE on GitHub Pages ✅)
+- ✅ **Security scan (rule 13) passed**: git status clean-except-expected; rg scan of tracked files = 0 secrets; bot/.py reads token from env; .gitignore hardened (added versions/v1-2026-09-13-backup/ + assistant.exe).
+- ✅ **CRITICAL security finding handled**: old token `8963442423:AAH5QySc...` was in git history (api/telegram.js commit 73d1949) **but is now REVOKED/401** (rotated long ago) — no live risk. Current site-bot token (`bot/.env` = `...AAFyhoVw...`) was **never** in git history. **User actually rotated the SUPERVISOR bot** (`@mahmoudoc26_bot`) — new token `8703195403:AAF3Js3T...` verified (getMe OK) → saved to `supervisor/.env` → bot restarted (PID 3008) → delivered test message to user (msg_id=45). Old supervisor token was 401 (revoked).
+- ✅ **Pushed**: commit `30d4994` → `origin/main` (winner-dev repo, 7 files: portfolio.html, docs/RESPONSIVE-TESTING.md, memory files, bot/bot.py admin alerts, .gitignore).
+- ✅ **LIVE VERIFIED**: `https://mahmoudrabeh-85.github.io/winner-dev/` → HTTP 200 redirects to `/portfolio.html` → live copy = 102k chars, contains `responsive-fix` + media-768 CSS + QR asset (HTTP 200 on assets) + `mahmoudagent26_bot` form link. **Deploy #8 COMPLETE** (GitHub Pages was already enabled — no Vercel/Cloudflare needed).
+- ⬜ Optional later: clean git history (old dead token text from api/telegram.js) — cosmetic only, token is 401.
+
 ## Section 2026-09-13 (v3 activated + responsive fix — DONE, user-approved)
 - ✅ **v3 = active version now**: copied `versions/v3-2026-09-10/` → root (portfolio.html 118KB, identity verified). Backup of previous v1 kept at `versions/v1-2026-09-13-backup/`.
 - ✅ **Responsive gap found & fixed**: v3 had ONLY background media queries — v1's full responsive CSS (css/input.css lines 144-203) was MISSING in v3 → that's why mobile/tablet looked broken. Added `<style data-purpose="responsive-fix">` (37 rules, ≤768px tablet + ≤480px mobile, RTL/LTR aware): social bar 44→36→32px icons, QR hidden on ≤480px, section padding 48/32px, glass-panel padding, compact #langToggle, modal padding.

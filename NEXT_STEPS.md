@@ -5,13 +5,15 @@
 - ⬜ **openrouter stays enabled** in opencode.jsonc (`disabled_providers` excludes it — its `:free` models work without key). When user adds keys for other providers, remove that provider from `disabled_providers` (comment in file explains).
 - ✅ small_model switched to `opencode/mimo-v2.5-free` (user approved; old `opencodefree/deepseek-v4-flash-free` was 429 rate-limited).
 - ✅ **v3 activated as active version** + responsive fixed + user-approved ("ممتاز ظبطت"). Test method saved in docs/RESPONSIVE-TESTING.md.
-- ⬜ **Deploy**: user "go" → security scan (rule 13) → push → test live on Vercel/Cloudflare (#8 form test).
+- ✅ **Deploy #8 COMPLETE**: security scan passed → pushed `30d4994` → **LIVE**: `https://mahmoudrabeh-85.github.io/winner-dev/` (GitHub Pages was already enabled; redirects `/portfolio.html`; verified v3+responsive-fix+assets 200). Optional: Vercel/Cloudflare Pages connection later for custom domain/branch previews.
+- ✅ **Supervisor bot token was actually the one rotated** (not site bot) — new token in `supervisor/.env`, bot restarted (PID 3008), test msg delivered. Old site token in git history is 401/dead (cosmetic leftover) — optional git history cleanup later.
 
 ## Tomorrow (2026-09-14) — Resume Here ⭐
 - الجلسة انتهت 2026-09-13 بموافقة المستخدم ("نكمل غدا"). نقطة البداية غداً:
 - ⬜ Test end-to-end from phone: /projects → /models → `/task portfolio اعرض هيكل المشروع` → notification
 - ⬜ USER: add API keys to supervisor/.env (OPENROUTER/OPENAI/ANTHROPIC) — optional, mimo works without them
 - ⬜ Test voice task from phone
+- ⬜ (optional) git history cleanup of dead 401 token from api/telegram.js — cosmetic, needs force-push; get user "go" first.
 
 ## Today — Supervisor Bot (built, needs user actions)
 - ✅ Supervisor bot built + running (D:\ai\supervisor\, PID 16696 → current PID 26468)
