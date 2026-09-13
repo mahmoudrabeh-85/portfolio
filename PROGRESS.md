@@ -1,5 +1,12 @@
 # PROGRESS
 
+## Section 2026-09-13 (Supervisor bot smart replies + auto-start — DONE, user-verified from phone)
+- ✅ **Smart reply logic** (`D:\ai\supervisor\supervisor_bot.py`): project detection ANYWHERE in sentence via `_match_project` (priority: first word, then multi-word phrases, then word-token match) + `PROJECT_SYNONYMS` (بورتفوليو/وينر/ذكاء الاعمال/الدماغ الثاني... for all 6 projects) + `_strip_project` + `_smart_reply` (المشاريع/النماذج/المهام/مرحبا/شكراً natural commands, no slash needed). **11/11 unit tests PASS locally + user tested from phone: "كل شيء يعمل"**.
+- ✅ **Voice handler upgraded**: same smart detection (previously first-word-only — "اعرض هيكل المشروع في portfolio" would have failed).
+- ✅ **Auto-start on logon**: `%APPDATA%\...\Startup\start_bots.vbs` starts supervisor_bot.py + portfolio bot/bot.py hidden with Win32_Process duplicate-guard (schtasks failed: Access denied without admin).
+- ✅ Supervisor bot running as ONE clean instance (PID 2468), current token `8703195403:AAF3Js3T...` (getMe OK, test msg msg_id=45 delivered).
+- ✅ Help text fixed: default model now shows mimo (was outdated qwen3:8b).
+
 ## Section 2026-09-13 (v3 DEPLOYED — LIVE on GitHub Pages ✅)
 - ✅ **Security scan (rule 13) passed**: git status clean-except-expected; rg scan of tracked files = 0 secrets; bot/.py reads token from env; .gitignore hardened (added versions/v1-2026-09-13-backup/ + assistant.exe).
 - ✅ **CRITICAL security finding handled**: old token `8963442423:AAH5QySc...` was in git history (api/telegram.js commit 73d1949) **but is now REVOKED/401** (rotated long ago) — no live risk. Current site-bot token (`bot/.env` = `...AAFyhoVw...`) was **never** in git history. **User actually rotated the SUPERVISOR bot** (`@mahmoudoc26_bot`) — new token `8703195403:AAF3Js3T...` verified (getMe OK) → saved to `supervisor/.env` → bot restarted (PID 3008) → delivered test message to user (msg_id=45). Old supervisor token was 401 (revoked).

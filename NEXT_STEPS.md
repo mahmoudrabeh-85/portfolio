@@ -9,11 +9,13 @@
 - ✅ **Supervisor bot token was actually the one rotated** (not site bot) — new token in `supervisor/.env`, bot restarted (PID 3008), test msg delivered. Old site token in git history is 401/dead (cosmetic leftover) — optional git history cleanup later.
 
 ## Tomorrow (2026-09-14) — Resume Here ⭐
-- الجلسة انتهت 2026-09-13 بموافقة المستخدم ("نكمل غدا"). نقطة البداية غداً:
-- ⬜ Test end-to-end from phone: /projects → /models → `/task portfolio اعرض هيكل المشروع` → notification
-- ⬜ USER: add API keys to supervisor/.env (OPENROUTER/OPENAI/ANTHROPIC) — optional, mimo works without them
-- ⬜ Test voice task from phone
-- ⬜ (optional) git history cleanup of dead 401 token from api/telegram.js — cosmetic, needs force-push; get user "go" first.
+- الجلسة انتهت 2026-09-13 **بوضع "كل شيء مكتمل"** (user confirmed: "جرّبت البوت — كل شيء يعمل").
+- ✅ **Smart-reply tests PASSED on user's phone**: مرحبا → greeting رد ترحيب؛ المشاريع → قائمة؛ اعرض هيكل المشروع في portfolio → task انطلق؛ رسالة صوتية → فهمت ونفذت. **المنطق الجديد مُختبَر 11/11 محلياً + فعلياً من الهاتف.**
+- ✅ Supervisor bot: نسخة واحدة نظيفة (PID 2468) + توكن جديد `8703195403:AAF3Js3T...` + auto-start VBS في Startup.
+- ⬜ USER (أي وقت): add API keys to supervisor/.env (OPENROUTER/OPENAI/ANTHROPIC) — optional, mimo works without them
+- ⬜ USER: إعادة تسمية البوت عبر BotFather (Rabeh Consultant Bot) — 5 ثوانٍ
+- ⬜ USER (اختياري): git history cleanup of dead 401 token from api/telegram.js — cosmetic, needs force-push + "go"
+- ⬜ لاحقاً: حزمة التسويق (من قائمة مهام سابقة: LinkedIn/Facebook/affiliate/SEO)
 
 ## Today — Supervisor Bot (built, needs user actions)
 - ✅ Supervisor bot built + running (D:\ai\supervisor\, PID 16696 → current PID 26468)
