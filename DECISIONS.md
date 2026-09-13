@@ -1,5 +1,7 @@
 # DECISIONS
 
+- 2026-09-13: تحسينات SEO للموقع الحي (winner-dev): canonical/OG/Twitter/JSON-LD/description/favicon + تصحيح robots.txt + sitemap.xml من النطاق الخاطئ (mahmoud-rabeh.com) إلى النطاق الحي. **درس:** أي تحديث مستقبلي للنطاق/النشر — تحقق أولاً من robots.txt + sitemap.xml + canonical (هم الثلاثة المعرضون للنسيان).
+- 2026-09-13: حزمة التسويق ملفاتها جاهزة في `docs/marketing/` (منشورات لينكدإن 10 عربي/إنجليزي + خطة سوشيال مصر + خارطة أفلييت Noon/Jumia/Amazon + قائمة إعداد الحسابات). **الخطوة القادمة إجراء المستخدم:** تكوين LinkedIn أولاً ثم النشر. لا أرقام غير مؤكدة + لا أسعار في البروفايلات/المنشورات (قواعد موجودة في الملفات).
 - Versioning system: every design version stored as a complete self-contained folder under `versions/vX-YYYY-MM-DD/` + registry in VERSIONS.md. Switching = copy chosen version's files to root. Current active = **v3 (2026-09-13 activated, responsive fixed, user-approved)**; v1 backup at `versions/v1-2026-09-13-backup/`.
 - Media buying strategy: learn for self first (small budget 100-150 EGP/day) → prove results → then sell as a service. Scaling rule: max +30-40% budget increase at a time.
 - Word reference doc (Media-Buyer-Reference.docx) is the living knowledge base — user must only say "حدّث المرجع" to update it continuously.
